@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pinecone-client
+openai
+httpx
+requests
+googlemaps
+yelpapi
+pyowm
+beautifulsoup4
+requests-html
+pydantic
+torch
+transformers
+python-dotenv
+firebase-admin
+pandas
