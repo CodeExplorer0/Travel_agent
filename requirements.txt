@@ -1,5 +1,5 @@
-fastapi
-uvicorn
+flask
+flask-cors
 pinecone-client
 openai
 httpx
@@ -15,3 +15,24 @@ transformers
 python-dotenv
 firebase-admin
 pandas
+
+flask
+flask-cors
+flask-socketio
+python-dotenv
+requests
+googlemaps
+yelpapi
+pyowm
+beautifulsoup4
+requests-html
+firebase-admin
+pandas
+folium
+
+# Optional / used later for scraping, NLP, embeddings
+torch
+transformers
+langchain
+pinecone-client
+openai
