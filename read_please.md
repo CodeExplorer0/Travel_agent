@@ -1,7 +1,3 @@
-Sure! Here's a very detailed breakdown of each file and folder in your project, and how everything is interconnected:
-
----
-
 ## **Folder Structure:**
 
 ```

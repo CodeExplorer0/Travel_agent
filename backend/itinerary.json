@@ -1,0 +1,254 @@
+{
+  "destination": "Kolkata",
+  "duration_days": 3,
+  "total_budget": 50000,
+  "interests": [
+    "honeymoon",
+    "romance",
+    "culture"
+  ],
+  "number_of_people": 2,
+  "reason_of_visit": "honeymoon",
+  "start_date": "2025-05-10",
+  "end_date": "2025-05-13",
+  "city_segments": [
+    {
+      "city": "Kolkata",
+      "checkin": "2025-05-10",
+      "checkout": "2025-05-13"
+    }
+  ],
+  "hotels": [
+    {
+      "city": "Kolkata",
+      "checkin": "2025-05-10",
+      "checkout": "2025-05-13",
+      "hotel": {
+        "hotel_id": 9758508,
+        "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/593416339.jpg?k=3c67e2840291410f193cbe9b5749cbdf3fba4bbe7c81642c4029a480d53e2194&o=",
+        "ufi": 436880,
+        "type": "property_card",
+        "city_in_trans": "in Salua",
+        "soldout": 0,
+        "main_photo_id": 593416339,
+        "checkin": {
+          "until": "00:00",
+          "from": "12:00"
+        },
+        "updated_checkout": null,
+        "accommodation_type": 204,
+        "bwallet": {
+          "hotel_eligibility": 0
+        },
+        "countrycode": "in",
+        "checkout": {
+          "from": "11:00",
+          "until": "11:30"
+        },
+        "has_free_parking": 1,
+        "is_free_cancellable": 1,
+        "hotel_name_trans": "Comfort Stays Kolkata airport",
+        "is_no_prepayment_block": 1,
+        "composite_price_breakdown": {
+          "has_long_stays_weekly_rate_price": 0,
+          "excluded_amount": {
+            "value": 256.229994272813,
+            "amount_rounded": "Rs.\u00a0256",
+            "currency": "INR",
+            "amount_unrounded": "Rs.\u00a0256.23"
+          },
+          "charges_details": {
+            "mode": "extra_charges",
+            "translated_copy": "",
+            "amount": {
+              "value": 256,
+              "currency": "INR"
+            }
+          },
+          "all_inclusive_amount": {
+            "amount_unrounded": "Rs.\u00a02,391.48",
+            "value": 2391.47999427281,
+            "amount_rounded": "Rs.\u00a02,391",
+            "currency": "INR"
+          },
+          "gross_amount": {
+            "amount_rounded": "Rs.\u00a02,135",
+            "value": 2135.25,
+            "currency": "INR",
+            "amount_unrounded": "Rs.\u00a02,135.25"
+          },
+          "net_amount": {
+            "value": 2135.25,
+            "amount_rounded": "Rs.\u00a02,135",
+            "currency": "INR",
+            "amount_unrounded": "Rs.\u00a02,135.25"
+          },
+          "strikethrough_amount_per_night": {
+            "amount_unrounded": "Rs.\u00a0949",
+            "value": 949,
+            "amount_rounded": "Rs.\u00a0949",
+            "currency": "INR"
+          },
+          "discounted_amount": {
+            "amount_rounded": "Rs.\u00a0712",
+            "value": 711.75,
+            "currency": "INR",
+            "amount_unrounded": "Rs.\u00a0711.75"
+          },
+          "benefits": [
+            {
+              "name": "Getaway Deal",
+              "icon": null,
+              "details": "This property is offering a discount on stays between 28 Mar\u201330 Sept 2025.",
+              "kind": "badge",
+              "badge_variant": "constructive",
+              "identifier": "getaway-2021"
+            }
+          ],
+          "included_taxes_and_charges_amount": {
+            "amount_unrounded": "Rs.\u00a00",
+            "currency": "INR",
+            "value": 0,
+            "amount_rounded": "Rs.\u00a00"
+          },
+          "all_inclusive_amount_hotel_currency": {
+            "currency": "INR",
+            "amount_rounded": "Rs.\u00a02,391",
+            "value": 2391.47999427281,
+            "amount_unrounded": "Rs.\u00a02,391.48"
+          },
+          "gross_amount_hotel_currency": {
+            "value": 2135.25,
+            "amount_rounded": "Rs.\u00a02,135",
+            "currency": "INR",
+            "amount_unrounded": "Rs.\u00a02,135.25"
+          },
+          "items": [
+            {
+              "details": null,
+              "kind": "charge",
+              "base": {
+                "kind": "variable_amount",
+                "base_amount": 0
+              },
+              "item_amount": {
+                "amount_unrounded": "Rs.\u00a0256.23",
+                "currency": "INR",
+                "value": 256.229994272813,
+                "amount_rounded": "Rs.\u00a0256"
+              },
+              "inclusion_type": "excluded",
+              "name": "Goods & services tax"
+            },
+            {
+              "name": "Getaway Deal",
+              "details": "This property is offering a discount on stays between 28 Mar\u201330 Sept 2025.",
+              "base": {
+                "kind": "rate"
+              },
+              "kind": "discount",
+              "item_amount": {
+                "amount_unrounded": "Rs.\u00a0711.75",
+                "value": 711.75,
+                "amount_rounded": "Rs.\u00a0712",
+                "currency": "INR"
+              },
+              "identifier": "campaign_38"
+            }
+          ],
+          "price_display_config": [
+            {
+              "key": "use_nightly_prices",
+              "value": 0
+            },
+            {
+              "value": 0,
+              "key": "use_nightly_as_dominant"
+            },
+            {
+              "key": "use_js_tracking",
+              "value": 1
+            }
+          ],
+          "strikethrough_amount": {
+            "amount_unrounded": "Rs.\u00a02,847",
+            "currency": "INR",
+            "value": 2847,
+            "amount_rounded": "Rs.\u00a02,847"
+          },
+          "has_long_stays_monthly_rate_price": 0,
+          "gross_amount_per_night": {
+            "value": 711.75,
+            "amount_rounded": "Rs.\u00a0712",
+            "currency": "INR",
+            "amount_unrounded": "Rs.\u00a0711.75"
+          }
+        },
+        "hotel_name": "Comfort Stays Kolkata airport",
+        "hotel_has_vb_boost": 0,
+        "block_ids": [
+          "975850801_369948094_1_42_0"
+        ],
+        "default_language": "en",
+        "preferred": 1,
+        "is_tpi_exclusive_property": 0,
+        "timezone": "Asia/Kolkata",
+        "genius_discount_percentage": 0,
+        "longitude": 88.4398263015747,
+        "is_geo_rate": "",
+        "review_score": 8,
+        "latitude": 22.6241075008452,
+        "unit_configuration_label": "<b>Hotel room</b>: 1\u00a0bed",
+        "id": "property_card_9758508",
+        "min_total_price": 2135.25,
+        "cant_book": null,
+        "currencycode": "INR",
+        "hotel_include_breakfast": 0,
+        "default_wishlist_name": "Salua",
+        "distances": [],
+        "is_smart_deal": 0,
+        "last_reservation_data": {
+          "last_reservation_ellapsed_months": 1
+        },
+        "is_genius_deal": 0,
+        "review_score_word": "Very good",
+        "preferred_plus": 0,
+        "city": "New Town",
+        "review_nr": 229,
+        "extended": 0,
+        "badges": [
+          {
+            "id": "Getaway 2021 Deals",
+            "badge_variant": "constructive",
+            "text": "Getaway Deal"
+          }
+        ],
+        "updated_checkin": null,
+        "class_is_estimated": 0,
+        "children_not_allowed": null,
+        "class": 5
+      }
+    }
+  ],
+  "food_total": 15000.0,
+  "sights_total": 10000.0,
+  "hotel_total": 2135.25,
+  "total_spent": 27135.25,
+  "daily_plan": [
+    {
+      "day": 1,
+      "date": "2025-05-10",
+      "city": "Kolkata"
+    },
+    {
+      "day": 2,
+      "date": "2025-05-11",
+      "city": "Kolkata"
+    },
+    {
+      "day": 3,
+      "date": "2025-05-12",
+      "city": "Kolkata"
+    }
+  ]
+}

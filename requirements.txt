@@ -34,5 +34,7 @@ folium
 torch
 transformers
 langchain
-pinecone-client
+pinecone
 openai
+praw
+google-generativeai

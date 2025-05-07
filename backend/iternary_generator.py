@@ -1,72 +1,39 @@
-import random
-from backend.utils.weather_api import get_weather
-from backend.utils.yelp_api import get_places
-from backend.utils.stays_api import get_stays
-from backend.utils.maps_api import get_directions
-from datetime import datetime
+from datetime import datetime, timedelta
 
-MANDATORY_FIELDS = ["destination", "start_date", "end_date", "interests", "travel_style"]
+def group_days_by_city(itinerary_days):
+    grouped = []
+    if not itinerary_days:
+        return grouped
+    current_city = itinerary_days[0]["city"]
+    start_date = itinerary_days[0]["date"]
+    prev_date = start_date
+    for i, day in enumerate(itinerary_days[1:], 1):
+        if day["city"] != current_city:
+            grouped.append({
+                "city": current_city,
+                "checkin": start_date,
+                "checkout": prev_date
+            })
+            current_city = day["city"]
+            start_date = day["date"]
+        prev_date = day["date"]
+    grouped.append({
+        "city": current_city,
+        "checkin": start_date,
+        "checkout": (datetime.strptime(prev_date, "%Y-%m-%d") + timedelta(days=1)).strftime("%Y-%m-%d")
+    })
+    return grouped
 
-def validate_user_input(user_input):
-    missing_fields = [field for field in MANDATORY_FIELDS if field not in user_input or not user_input[field]]
-    return missing_fields
-
-def cross_question(user_input):
-    missing = validate_user_input(user_input)
-    if missing:
-        return {
-            "status": "incomplete",
-            "message": f"Missing details: {', '.join(missing)}. Please provide them to proceed."
-        }
-    if "budget" not in user_input:
-        return {
-            "status": "incomplete",
-            "message": "What is your estimated budget for the trip?"
-        }
-    if "purpose" not in user_input:
-        return {
-            "status": "incomplete",
-            "message": "Could you tell us the main purpose of your trip (leisure, honeymoon, adventure, etc.)?"
-        }
-    return {"status": "complete"}
-
-def calculate_days(start_date, end_date):
-    """Calculate number of days between start_date and end_date."""
-    try:
-        start = datetime.strptime(start_date, "%Y-%m-%d")
-        end = datetime.strptime(end_date, "%Y-%m-%d")
-        return (end - start).days
-    except Exception as e:
-        return {"status": "error", "message": f"Error calculating days: {e}"}
-
-def generate_itinerary(user_input):
-    check = cross_question(user_input)
-    if check["status"] != "complete":
-        return check
-
-    city = user_input["destination"]
-    interests = user_input["interests"]
-    travel_style = user_input.get("travel_style", "solo")
-    start_date = user_input.get("start_date")
-    end_date = user_input.get("end_date")
-
-    # Calculate days based on start_date and end_date
-    days = calculate_days(start_date, end_date)
-    if isinstance(days, dict):  # If there's an error
-        return days
-
-    itinerary = []
-    for day in range(1, days + 1):
-        day_plan = {
-            "day": day,
-            "weather": get_weather(city),
-            "activities": get_places(city, interests),
-            "accommodation": get_stays(city, travel_style),
-            "directions": get_directions(city)
-        }
-        itinerary.append(day_plan)
-
+def allocate_budget(total_budget, days, hotel_pct=0.5, food_pct=0.3, sights_pct=0.2):
+    hotel_budget = total_budget * hotel_pct
+    food_budget = total_budget * food_pct
+    sights_budget = total_budget * sights_pct
     return {
-        "status": "success",
-        "itinerary": itinerary
+        "hotel_per_day": hotel_budget / days,
+        "food_per_day": food_budget / days,
+        "sights_per_day": sights_budget / days
     }
+
+def validate_total_spend(total_budget, hotel_sum, food_sum, sights_sum):
+    total = hotel_sum + food_sum + sights_sum
+    return total <= total_budget

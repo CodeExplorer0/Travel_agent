@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_81f8d9719b0219adc68215193d2f5ed4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_81f8d9719b0219adc68215193d2f5ed4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_81f8d9719b0219adc68215193d2f5ed4 = L.map(
+                "map_81f8d9719b0219adc68215193d2f5ed4",
+                {
+                    center: [22.5743545, 88.3628734],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a42ad37f52460aed34b40a4f870723a6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a42ad37f52460aed34b40a4f870723a6.addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var marker_eed0b8df1d4b59f5d16ff4c358921c9a = L.marker(
+                [22.5691049, 88.35702769999999],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_0c947bd16469cd5adb846fc9ce7f202e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16c0e2748adc85fd93be152e06d5d419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9abf31741baae90be0e53bc37d8260f5 = $(`<div id="html_9abf31741baae90be0e53bc37d8260f5" style="width: 100.0%; height: 100.0%;">Quick-O-City (⭐4.9)</div>`)[0];
+                popup_16c0e2748adc85fd93be152e06d5d419.setContent(html_9abf31741baae90be0e53bc37d8260f5);
+            
+        
+
+        marker_eed0b8df1d4b59f5d16ff4c358921c9a.bindPopup(popup_16c0e2748adc85fd93be152e06d5d419)
+        ;
+
+        
+    
+    
+                marker_eed0b8df1d4b59f5d16ff4c358921c9a.setIcon(icon_0c947bd16469cd5adb846fc9ce7f202e);
+            
+    
+            var marker_eb043a8abef0670569711d3dfbc00e97 = L.marker(
+                [22.5725671, 88.35591819999999],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_ecb0a8e88771bfd59576dd468baae369 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38ad2d14db80f05f4d2c8afb533dcc30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcfe5cf67369ba7648fdd9242f34e636 = $(`<div id="html_fcfe5cf67369ba7648fdd9242f34e636" style="width: 100.0%; height: 100.0%;">Heavenly® Steps Travel Private Limited (⭐4.4)</div>`)[0];
+                popup_38ad2d14db80f05f4d2c8afb533dcc30.setContent(html_fcfe5cf67369ba7648fdd9242f34e636);
+            
+        
+
+        marker_eb043a8abef0670569711d3dfbc00e97.bindPopup(popup_38ad2d14db80f05f4d2c8afb533dcc30)
+        ;
+
+        
+    
+    
+                marker_eb043a8abef0670569711d3dfbc00e97.setIcon(icon_ecb0a8e88771bfd59576dd468baae369);
+            
+    
+            var marker_8cf0e0e4b63c9215cd16cfb4a052709b = L.marker(
+                [22.55989079999999, 88.3554736],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_26fa94a57130b80a66384291d967b2ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c667b95603d71125af9fc7e658d8830 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_493abdb64e5e33f992b6c75330e146c1 = $(`<div id="html_493abdb64e5e33f992b6c75330e146c1" style="width: 100.0%; height: 100.0%;">St. Anthony's Shrine (⭐4.7)</div>`)[0];
+                popup_9c667b95603d71125af9fc7e658d8830.setContent(html_493abdb64e5e33f992b6c75330e146c1);
+            
+        
+
+        marker_8cf0e0e4b63c9215cd16cfb4a052709b.bindPopup(popup_9c667b95603d71125af9fc7e658d8830)
+        ;
+
+        
+    
+    
+                marker_8cf0e0e4b63c9215cd16cfb4a052709b.setIcon(icon_26fa94a57130b80a66384291d967b2ac);
+            
+    
+            var marker_b5c320113040116180161dc499e86255 = L.marker(
+                [22.5827884, 88.37375469999999],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_27367cdb83f5dbadbe0191edb05be72a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9b36650558bbff0631df9ee44d260aa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea8c4210948083869e370a534a577027 = $(`<div id="html_ea8c4210948083869e370a534a577027" style="width: 100.0%; height: 100.0%;">Kolkata Police Museum (⭐4.6)</div>`)[0];
+                popup_9b36650558bbff0631df9ee44d260aa2.setContent(html_ea8c4210948083869e370a534a577027);
+            
+        
+
+        marker_b5c320113040116180161dc499e86255.bindPopup(popup_9b36650558bbff0631df9ee44d260aa2)
+        ;
+
+        
+    
+    
+                marker_b5c320113040116180161dc499e86255.setIcon(icon_27367cdb83f5dbadbe0191edb05be72a);
+            
+    
+            var marker_1595894451f218cdd23e5a7a669c1566 = L.marker(
+                [22.5784735, 88.35264459999999],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_7794a76a9b2e48c1a7c5ba4fc7139429 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0eb071267bcbf79d51140863f7268313 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_765791799da111cf581d2b503514ec42 = $(`<div id="html_765791799da111cf581d2b503514ec42" style="width: 100.0%; height: 100.0%;">CATHEDRAL OF THE MOST HOLY ROSARY (⭐4.5)</div>`)[0];
+                popup_0eb071267bcbf79d51140863f7268313.setContent(html_765791799da111cf581d2b503514ec42);
+            
+        
+
+        marker_1595894451f218cdd23e5a7a669c1566.bindPopup(popup_0eb071267bcbf79d51140863f7268313)
+        ;
+
+        
+    
+    
+                marker_1595894451f218cdd23e5a7a669c1566.setIcon(icon_7794a76a9b2e48c1a7c5ba4fc7139429);
+            
+    
+            var marker_c152b59e3fadfb106c90cc6c84f87b89 = L.marker(
+                [22.568401, 88.3486958],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_65b1169afef927e9219c7f2b8823fbb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ab0fc8ff5ce564a213c53616e9cdede = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fe444f69047a67ae915fb8dec90be82e = $(`<div id="html_fe444f69047a67ae915fb8dec90be82e" style="width: 100.0%; height: 100.0%;">Himachal Tours (⭐4.6)</div>`)[0];
+                popup_8ab0fc8ff5ce564a213c53616e9cdede.setContent(html_fe444f69047a67ae915fb8dec90be82e);
+            
+        
+
+        marker_c152b59e3fadfb106c90cc6c84f87b89.bindPopup(popup_8ab0fc8ff5ce564a213c53616e9cdede)
+        ;
+
+        
+    
+    
+                marker_c152b59e3fadfb106c90cc6c84f87b89.setIcon(icon_65b1169afef927e9219c7f2b8823fbb3);
+            
+    
+            var marker_4f39f9e4601824c05c406150e1cc2f2e = L.marker(
+                [22.569895, 88.34607179999999],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_7b6db21d844da3327c6d35eb1c621a14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff1fdc818d25f5fc8f787daa01ad4a00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f1bde1662ee02e5a967eb8a99fa0312 = $(`<div id="html_9f1bde1662ee02e5a967eb8a99fa0312" style="width: 100.0%; height: 100.0%;">St. John's Church (⭐4.6)</div>`)[0];
+                popup_ff1fdc818d25f5fc8f787daa01ad4a00.setContent(html_9f1bde1662ee02e5a967eb8a99fa0312);
+            
+        
+
+        marker_4f39f9e4601824c05c406150e1cc2f2e.bindPopup(popup_ff1fdc818d25f5fc8f787daa01ad4a00)
+        ;
+
+        
+    
+    
+                marker_4f39f9e4601824c05c406150e1cc2f2e.setIcon(icon_7b6db21d844da3327c6d35eb1c621a14);
+            
+    
+            var marker_a33dcb01bb74d7bc6c003bb29e7ff057 = L.marker(
+                [22.5793717, 88.3736787],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_36c245bd98c9a1baf284307024162fb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f8171028f7f79e7d297242295a31638 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8415b8e839823bdac8484904d0a5285 = $(`<div id="html_c8415b8e839823bdac8484904d0a5285" style="width: 100.0%; height: 100.0%;">Acharya Bhaban (⭐4.4)</div>`)[0];
+                popup_9f8171028f7f79e7d297242295a31638.setContent(html_c8415b8e839823bdac8484904d0a5285);
+            
+        
+
+        marker_a33dcb01bb74d7bc6c003bb29e7ff057.bindPopup(popup_9f8171028f7f79e7d297242295a31638)
+        ;
+
+        
+    
+    
+                marker_a33dcb01bb74d7bc6c003bb29e7ff057.setIcon(icon_36c245bd98c9a1baf284307024162fb7);
+            
+    
+            var marker_1d5756ea015d7b611c8591d87c5d0021 = L.marker(
+                [22.5851545, 88.3468342],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_bc440d2a4bd65ec06a9a02473ad5e350 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03952f60d5ceaef875831a0ecd58c4a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b3996acc65a93139eb5eaa9b7590cfa = $(`<div id="html_4b3996acc65a93139eb5eaa9b7590cfa" style="width: 100.0%; height: 100.0%;">Howrah Bridge (⭐4.6)</div>`)[0];
+                popup_03952f60d5ceaef875831a0ecd58c4a5.setContent(html_4b3996acc65a93139eb5eaa9b7590cfa);
+            
+        
+
+        marker_1d5756ea015d7b611c8591d87c5d0021.bindPopup(popup_03952f60d5ceaef875831a0ecd58c4a5)
+        ;
+
+        
+    
+    
+                marker_1d5756ea015d7b611c8591d87c5d0021.setIcon(icon_bc440d2a4bd65ec06a9a02473ad5e350);
+            
+    
+            var marker_45d13376348d4f14ab77de7af7b8b013 = L.marker(
+                [22.5738409, 88.3487808],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_241415463fad56490c13edf6d5518bef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ba4d379ff7af283bff99dc759beae08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e724d1e0c0a657bc905a9a709804379 = $(`<div id="html_1e724d1e0c0a657bc905a9a709804379" style="width: 100.0%; height: 100.0%;">Writers' Building (⭐4.4)</div>`)[0];
+                popup_4ba4d379ff7af283bff99dc759beae08.setContent(html_1e724d1e0c0a657bc905a9a709804379);
+            
+        
+
+        marker_45d13376348d4f14ab77de7af7b8b013.bindPopup(popup_4ba4d379ff7af283bff99dc759beae08)
+        ;
+
+        
+    
+    
+                marker_45d13376348d4f14ab77de7af7b8b013.setIcon(icon_241415463fad56490c13edf6d5518bef);
+            
+    
+            var marker_98f4aaabb72f30e39cb6cc1c31ffa18c = L.marker(
+                [22.558288, 88.3579936],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_eeafd5d89c1595d304d7e414e298b7e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27b0a6427c6a66f15c2fccfdb5b5b905 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b70dbb3fea2e26e8b38c318fb3ca885 = $(`<div id="html_5b70dbb3fea2e26e8b38c318fb3ca885" style="width: 100.0%; height: 100.0%;">Lord Jesus Church (⭐4.5)</div>`)[0];
+                popup_27b0a6427c6a66f15c2fccfdb5b5b905.setContent(html_5b70dbb3fea2e26e8b38c318fb3ca885);
+            
+        
+
+        marker_98f4aaabb72f30e39cb6cc1c31ffa18c.bindPopup(popup_27b0a6427c6a66f15c2fccfdb5b5b905)
+        ;
+
+        
+    
+    
+                marker_98f4aaabb72f30e39cb6cc1c31ffa18c.setIcon(icon_eeafd5d89c1595d304d7e414e298b7e1);
+            
+    
+            var marker_46f336f1d618241053e403669fa6865c = L.marker(
+                [22.5677105, 88.3560921],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_a9d2d8dfbbeb928eb984a93832612a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86df2567339cf3b1a98e22d3706c28a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2768c148ae810578ee05e3eb9f642351 = $(`<div id="html_2768c148ae810578ee05e3eb9f642351" style="width: 100.0%; height: 100.0%;">Himachal Pradesh Helpline Tourism (⭐4.2)</div>`)[0];
+                popup_86df2567339cf3b1a98e22d3706c28a5.setContent(html_2768c148ae810578ee05e3eb9f642351);
+            
+        
+
+        marker_46f336f1d618241053e403669fa6865c.bindPopup(popup_86df2567339cf3b1a98e22d3706c28a5)
+        ;
+
+        
+    
+    
+                marker_46f336f1d618241053e403669fa6865c.setIcon(icon_a9d2d8dfbbeb928eb984a93832612a0c);
+            
+    
+            var marker_67e388f79acb6cd2ce3f440e629ef4de = L.marker(
+                [22.5541269, 88.3555849],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_46b0297a519a3f76ce5e20dd4a0cb7c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0107d3cbff8b1907875b9d06894d5e0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6857c03d34cde942f88824ef5d3c1914 = $(`<div id="html_6857c03d34cde942f88824ef5d3c1914" style="width: 100.0%; height: 100.0%;">Kolkata Police Library, Museum & Cafeteria (⭐4.6)</div>`)[0];
+                popup_0107d3cbff8b1907875b9d06894d5e0c.setContent(html_6857c03d34cde942f88824ef5d3c1914);
+            
+        
+
+        marker_67e388f79acb6cd2ce3f440e629ef4de.bindPopup(popup_0107d3cbff8b1907875b9d06894d5e0c)
+        ;
+
+        
+    
+    
+                marker_67e388f79acb6cd2ce3f440e629ef4de.setIcon(icon_46b0297a519a3f76ce5e20dd4a0cb7c3);
+            
+    
+            var marker_c05a29e0c78f7077bfae624779e0f23d = L.marker(
+                [22.55788579999999, 88.3511268],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_79567ec21820d2f84b7d1d92359e3a44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e9bb426c3af8a7cbcfb74af6a8b9341 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21617a964f1fbc7619babd7d5f88bd64 = $(`<div id="html_21617a964f1fbc7619babd7d5f88bd64" style="width: 100.0%; height: 100.0%;">Indian Museum (⭐4.5)</div>`)[0];
+                popup_5e9bb426c3af8a7cbcfb74af6a8b9341.setContent(html_21617a964f1fbc7619babd7d5f88bd64);
+            
+        
+
+        marker_c05a29e0c78f7077bfae624779e0f23d.bindPopup(popup_5e9bb426c3af8a7cbcfb74af6a8b9341)
+        ;
+
+        
+    
+    
+                marker_c05a29e0c78f7077bfae624779e0f23d.setIcon(icon_79567ec21820d2f84b7d1d92359e3a44);
+            
+    
+            var marker_992e35d5c544843cec7acb91bb163ceb = L.marker(
+                [22.5437225, 88.3820013],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_762b12e6f2893b2c2549d7f96ebb1df8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efdf95d7d4719029a5a349e2a0263ff0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_152f846e815e8ef9bfd74b00d940796b = $(`<div id="html_152f846e815e8ef9bfd74b00d940796b" style="width: 100.0%; height: 100.0%;">Auxilium Parish (⭐4.7)</div>`)[0];
+                popup_efdf95d7d4719029a5a349e2a0263ff0.setContent(html_152f846e815e8ef9bfd74b00d940796b);
+            
+        
+
+        marker_992e35d5c544843cec7acb91bb163ceb.bindPopup(popup_efdf95d7d4719029a5a349e2a0263ff0)
+        ;
+
+        
+    
+    
+                marker_992e35d5c544843cec7acb91bb163ceb.setIcon(icon_762b12e6f2893b2c2549d7f96ebb1df8);
+            
+    
+            var marker_63c6cb367ce17fb3d0fc396ebd20c12b = L.marker(
+                [22.6241075008452, 88.4398263015747],
+                {
+}
+            ).addTo(map_81f8d9719b0219adc68215193d2f5ed4);
+        
+    
+            var icon_84dd4c6795b52fa14509040938be0bff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bed",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f85738ea0a09875ff6c7d8b718c61e0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26fbd7f8daa519bd7e17261e1ecce049 = $(`<div id="html_26fbd7f8daa519bd7e17261e1ecce049" style="width: 100.0%; height: 100.0%;">Comfort Stays Kolkata airport (₹N/A)</div>`)[0];
+                popup_f85738ea0a09875ff6c7d8b718c61e0f.setContent(html_26fbd7f8daa519bd7e17261e1ecce049);
+            
+        
+
+        marker_63c6cb367ce17fb3d0fc396ebd20c12b.bindPopup(popup_f85738ea0a09875ff6c7d8b718c61e0f)
+        ;
+
+        
+    
+    
+                marker_63c6cb367ce17fb3d0fc396ebd20c12b.setIcon(icon_84dd4c6795b52fa14509040938be0bff);
+            
+</script>
+</html>
