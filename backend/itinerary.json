@@ -1,161 +1,132 @@
 {
-  "destination": "Kolkata",
-  "duration_days": 3,
-  "total_budget": 50000,
+  "destination": "Kerala",
+  "duration_days": 5,
+  "total_budget": 180000,
   "interests": [
-    "honeymoon",
     "romance",
-    "culture"
+    "relaxation",
+    "nature"
   ],
   "number_of_people": 2,
   "reason_of_visit": "honeymoon",
-  "start_date": "2025-05-10",
+  "start_date": "2025-05-09",
   "end_date": "2025-05-13",
   "city_segments": [
     {
-      "city": "Kolkata",
-      "checkin": "2025-05-10",
-      "checkout": "2025-05-13"
+      "city": "Kerala",
+      "checkin": "2025-05-09",
+      "checkout": "2025-05-14"
     }
   ],
   "hotels": [
     {
-      "city": "Kolkata",
-      "checkin": "2025-05-10",
-      "checkout": "2025-05-13",
+      "city": "Kerala",
+      "checkin": "2025-05-09",
+      "checkout": "2025-05-14",
       "hotel": {
-        "hotel_id": 9758508,
-        "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/593416339.jpg?k=3c67e2840291410f193cbe9b5749cbdf3fba4bbe7c81642c4029a480d53e2194&o=",
-        "ufi": 436880,
-        "type": "property_card",
-        "city_in_trans": "in Salua",
-        "soldout": 0,
-        "main_photo_id": 593416339,
-        "checkin": {
-          "until": "00:00",
-          "from": "12:00"
-        },
-        "updated_checkout": null,
-        "accommodation_type": 204,
+        "hotel_id": 10650600,
+        "main_photo_id": 676883117,
+        "is_free_cancellable": 0,
+        "updated_checkin": null,
+        "review_score_word": "Fabulous",
+        "is_tpi_exclusive_property": 0,
+        "currencycode": "INR",
+        "preferred": 1,
+        "is_smart_deal": 0,
+        "has_free_parking": 1,
         "bwallet": {
           "hotel_eligibility": 0
         },
-        "countrycode": "in",
-        "checkout": {
-          "from": "11:00",
-          "until": "11:30"
+        "hotel_name_trans": "ASHRAMAM HEALTH RESORT",
+        "hotel_name": "ASHRAMAM HEALTH RESORT",
+        "review_nr": 46,
+        "block_ids": [
+          "1065060012_391484046_1_42_0"
+        ],
+        "min_total_price": 1795.5,
+        "timezone": "Asia/Kolkata",
+        "review_score": 8.7,
+        "class_is_estimated": 0,
+        "last_reservation_data": {
+          "last_reservation_ellapsed_months": 1
         },
-        "has_free_parking": 1,
-        "is_free_cancellable": 1,
-        "hotel_name_trans": "Comfort Stays Kolkata airport",
+        "class": 0,
+        "checkout": {
+          "until": "12:00",
+          "from": "11:00"
+        },
+        "is_genius_deal": 0,
+        "ufi": 900055555,
+        "updated_checkout": null,
+        "distances": [],
+        "preferred_plus": 1,
+        "type": "property_card",
+        "extended": 0,
+        "city_in_trans": "in Kattappana",
+        "id": "property_card_10650600",
+        "default_language": "xu",
+        "genius_discount_percentage": 0,
+        "unit_configuration_label": "<b>Bed in dormitory</b>: 1\u00a0bed",
+        "cant_book": null,
+        "checkin": {
+          "until": "12:00",
+          "from": "11:00"
+        },
+        "countrycode": "in",
+        "latitude": 9.7980157,
+        "soldout": 0,
+        "city": "idukki",
+        "hotel_include_breakfast": 0,
+        "accommodation_type": 206,
+        "children_not_allowed": null,
+        "hotel_has_vb_boost": 0,
+        "is_geo_rate": 1,
+        "badges": [],
+        "longitude": 77.0584847,
+        "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/676883117.jpg?k=80d656ab9a678a3237fa28eb274b4eb9f93271b2d298173ea1292c8b508b81f7&o=",
+        "default_wishlist_name": "Kattappana",
+        "has_swimming_pool": 1,
         "is_no_prepayment_block": 1,
         "composite_price_breakdown": {
-          "has_long_stays_weekly_rate_price": 0,
-          "excluded_amount": {
-            "value": 256.229994272813,
-            "amount_rounded": "Rs.\u00a0256",
-            "currency": "INR",
-            "amount_unrounded": "Rs.\u00a0256.23"
-          },
-          "charges_details": {
-            "mode": "extra_charges",
-            "translated_copy": "",
-            "amount": {
-              "value": 256,
-              "currency": "INR"
-            }
-          },
-          "all_inclusive_amount": {
-            "amount_unrounded": "Rs.\u00a02,391.48",
-            "value": 2391.47999427281,
-            "amount_rounded": "Rs.\u00a02,391",
-            "currency": "INR"
-          },
-          "gross_amount": {
-            "amount_rounded": "Rs.\u00a02,135",
-            "value": 2135.25,
-            "currency": "INR",
-            "amount_unrounded": "Rs.\u00a02,135.25"
-          },
-          "net_amount": {
-            "value": 2135.25,
-            "amount_rounded": "Rs.\u00a02,135",
-            "currency": "INR",
-            "amount_unrounded": "Rs.\u00a02,135.25"
-          },
-          "strikethrough_amount_per_night": {
-            "amount_unrounded": "Rs.\u00a0949",
-            "value": 949,
-            "amount_rounded": "Rs.\u00a0949",
-            "currency": "INR"
-          },
-          "discounted_amount": {
-            "amount_rounded": "Rs.\u00a0712",
-            "value": 711.75,
-            "currency": "INR",
-            "amount_unrounded": "Rs.\u00a0711.75"
-          },
-          "benefits": [
-            {
-              "name": "Getaway Deal",
-              "icon": null,
-              "details": "This property is offering a discount on stays between 28 Mar\u201330 Sept 2025.",
-              "kind": "badge",
-              "badge_variant": "constructive",
-              "identifier": "getaway-2021"
-            }
-          ],
-          "included_taxes_and_charges_amount": {
-            "amount_unrounded": "Rs.\u00a00",
-            "currency": "INR",
-            "value": 0,
-            "amount_rounded": "Rs.\u00a00"
-          },
-          "all_inclusive_amount_hotel_currency": {
-            "currency": "INR",
-            "amount_rounded": "Rs.\u00a02,391",
-            "value": 2391.47999427281,
-            "amount_unrounded": "Rs.\u00a02,391.48"
-          },
-          "gross_amount_hotel_currency": {
-            "value": 2135.25,
-            "amount_rounded": "Rs.\u00a02,135",
-            "currency": "INR",
-            "amount_unrounded": "Rs.\u00a02,135.25"
-          },
           "items": [
             {
-              "details": null,
-              "kind": "charge",
+              "inclusion_type": "excluded",
+              "name": "Goods & services tax",
+              "item_amount": {
+                "value": 215.459995184094,
+                "amount_unrounded": "Rs.\u00a0215.46",
+                "amount_rounded": "Rs.\u00a0215",
+                "currency": "INR"
+              },
               "base": {
                 "kind": "variable_amount",
                 "base_amount": 0
               },
-              "item_amount": {
-                "amount_unrounded": "Rs.\u00a0256.23",
-                "currency": "INR",
-                "value": 256.229994272813,
-                "amount_rounded": "Rs.\u00a0256"
-              },
-              "inclusion_type": "excluded",
-              "name": "Goods & services tax"
-            },
-            {
-              "name": "Getaway Deal",
-              "details": "This property is offering a discount on stays between 28 Mar\u201330 Sept 2025.",
-              "base": {
-                "kind": "rate"
-              },
-              "kind": "discount",
-              "item_amount": {
-                "amount_unrounded": "Rs.\u00a0711.75",
-                "value": 711.75,
-                "amount_rounded": "Rs.\u00a0712",
-                "currency": "INR"
-              },
-              "identifier": "campaign_38"
+              "details": null,
+              "kind": "charge"
             }
           ],
+          "included_taxes_and_charges_amount": {
+            "amount_rounded": "Rs.\u00a00",
+            "currency": "INR",
+            "value": 0,
+            "amount_unrounded": "Rs.\u00a00"
+          },
+          "has_long_stays_monthly_rate_price": 0,
+          "gross_amount_per_night": {
+            "currency": "INR",
+            "amount_rounded": "Rs.\u00a0359",
+            "value": 359.1,
+            "amount_unrounded": "Rs.\u00a0359.10"
+          },
+          "charges_details": {
+            "translated_copy": "",
+            "mode": "extra_charges",
+            "amount": {
+              "value": 215,
+              "currency": "INR"
+            }
+          },
           "price_display_config": [
             {
               "key": "use_nightly_prices",
@@ -170,85 +141,271 @@
               "value": 1
             }
           ],
-          "strikethrough_amount": {
-            "amount_unrounded": "Rs.\u00a02,847",
-            "currency": "INR",
-            "value": 2847,
-            "amount_rounded": "Rs.\u00a02,847"
+          "all_inclusive_amount": {
+            "value": 2010.95999518409,
+            "amount_unrounded": "Rs.\u00a02,010.96",
+            "amount_rounded": "Rs.\u00a02,011",
+            "currency": "INR"
           },
-          "has_long_stays_monthly_rate_price": 0,
-          "gross_amount_per_night": {
-            "value": 711.75,
-            "amount_rounded": "Rs.\u00a0712",
+          "all_inclusive_amount_hotel_currency": {
             "currency": "INR",
-            "amount_unrounded": "Rs.\u00a0711.75"
+            "amount_rounded": "Rs.\u00a02,011",
+            "value": 2010.95999518409,
+            "amount_unrounded": "Rs.\u00a02,010.96"
+          },
+          "has_long_stays_weekly_rate_price": 0,
+          "benefits": [],
+          "gross_amount_hotel_currency": {
+            "amount_unrounded": "Rs.\u00a01,795.50",
+            "value": 1795.5,
+            "currency": "INR",
+            "amount_rounded": "Rs.\u00a01,796"
+          },
+          "net_amount": {
+            "value": 1795.5,
+            "amount_unrounded": "Rs.\u00a01,795.50",
+            "amount_rounded": "Rs.\u00a01,796",
+            "currency": "INR"
+          },
+          "gross_amount": {
+            "amount_rounded": "Rs.\u00a01,796",
+            "currency": "INR",
+            "amount_unrounded": "Rs.\u00a01,795.50",
+            "value": 1795.5
+          },
+          "excluded_amount": {
+            "value": 215.459995184094,
+            "amount_unrounded": "Rs.\u00a0215.46",
+            "amount_rounded": "Rs.\u00a0215",
+            "currency": "INR"
           }
-        },
-        "hotel_name": "Comfort Stays Kolkata airport",
-        "hotel_has_vb_boost": 0,
-        "block_ids": [
-          "975850801_369948094_1_42_0"
-        ],
-        "default_language": "en",
-        "preferred": 1,
-        "is_tpi_exclusive_property": 0,
-        "timezone": "Asia/Kolkata",
-        "genius_discount_percentage": 0,
-        "longitude": 88.4398263015747,
-        "is_geo_rate": "",
-        "review_score": 8,
-        "latitude": 22.6241075008452,
-        "unit_configuration_label": "<b>Hotel room</b>: 1\u00a0bed",
-        "id": "property_card_9758508",
-        "min_total_price": 2135.25,
-        "cant_book": null,
-        "currencycode": "INR",
-        "hotel_include_breakfast": 0,
-        "default_wishlist_name": "Salua",
-        "distances": [],
-        "is_smart_deal": 0,
-        "last_reservation_data": {
-          "last_reservation_ellapsed_months": 1
-        },
-        "is_genius_deal": 0,
-        "review_score_word": "Very good",
-        "preferred_plus": 0,
-        "city": "New Town",
-        "review_nr": 229,
-        "extended": 0,
-        "badges": [
-          {
-            "id": "Getaway 2021 Deals",
-            "badge_variant": "constructive",
-            "text": "Getaway Deal"
-          }
-        ],
-        "updated_checkin": null,
-        "class_is_estimated": 0,
-        "children_not_allowed": null,
-        "class": 5
+        }
       }
     }
   ],
-  "food_total": 15000.0,
-  "sights_total": 10000.0,
-  "hotel_total": 2135.25,
-  "total_spent": 27135.25,
+  "food_total": 54000.0,
+  "sights_total": 36000.0,
+  "hotel_total": 1795.5,
+  "total_spent": 91795.5,
   "daily_plan": [
     {
       "day": 1,
-      "date": "2025-05-10",
-      "city": "Kolkata"
+      "date": "2025-05-09",
+      "city": "Kerala"
     },
     {
       "day": 2,
-      "date": "2025-05-11",
-      "city": "Kolkata"
+      "date": "2025-05-10",
+      "city": "Kerala"
     },
     {
       "day": 3,
+      "date": "2025-05-11",
+      "city": "Kerala"
+    },
+    {
+      "day": 4,
       "date": "2025-05-12",
-      "city": "Kolkata"
+      "city": "Kerala"
+    },
+    {
+      "day": 5,
+      "date": "2025-05-13",
+      "city": "Kerala"
+    }
+  ],
+  "detailed_daily_plan": [
+    {
+      "day": 1,
+      "date": "2025-05-09",
+      "city": "Kerala",
+      "weather": "Clouds",
+      "activities": {
+        "morning": "Forest road view",
+        "afternoon": "Old Bhoothathankettu Dam",
+        "evening": "Bhoothathankettu Boating Deck"
+      },
+      "food_recommendations": [
+        {
+          "name": "THOMBRAKUDY RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "ARAFA RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "Emmanuel Hotel and Bakery",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 4.3
+        }
+      ],
+      "clothing_suggestion": "Standard casual wear",
+      "estimated_costs": {
+        "activities": 7200.0,
+        "food": 10800.0,
+        "accommodation": 18000.0
+      }
+    },
+    {
+      "day": 2,
+      "date": "2025-05-10",
+      "city": "Kerala",
+      "weather": "Clouds",
+      "activities": {
+        "morning": "Forest road view",
+        "afternoon": "Old Bhoothathankettu Dam",
+        "evening": "Bhoothathankettu Boating Deck"
+      },
+      "food_recommendations": [
+        {
+          "name": "THOMBRAKUDY RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "ARAFA RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "Emmanuel Hotel and Bakery",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 4.3
+        }
+      ],
+      "clothing_suggestion": "Standard casual wear",
+      "estimated_costs": {
+        "activities": 7200.0,
+        "food": 10800.0,
+        "accommodation": 18000.0
+      }
+    },
+    {
+      "day": 3,
+      "date": "2025-05-11",
+      "city": "Kerala",
+      "weather": "Clouds",
+      "activities": {
+        "morning": "Forest road view",
+        "afternoon": "Old Bhoothathankettu Dam",
+        "evening": "Bhoothathankettu Boating Deck"
+      },
+      "food_recommendations": [
+        {
+          "name": "THOMBRAKUDY RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "ARAFA RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "Emmanuel Hotel and Bakery",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 4.3
+        }
+      ],
+      "clothing_suggestion": "Standard casual wear",
+      "estimated_costs": {
+        "activities": 7200.0,
+        "food": 10800.0,
+        "accommodation": 18000.0
+      }
+    },
+    {
+      "day": 4,
+      "date": "2025-05-12",
+      "city": "Kerala",
+      "weather": "Rain",
+      "activities": {
+        "morning": "Leisurely Breakfast",
+        "afternoon": "Local Market Visit",
+        "evening": "Sunset Cruise"
+      },
+      "food_recommendations": [
+        {
+          "name": "THOMBRAKUDY RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "ARAFA RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "Emmanuel Hotel and Bakery",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 4.3
+        }
+      ],
+      "clothing_suggestion": "Waterproof jacket, umbrella, and waterproof shoes",
+      "estimated_costs": {
+        "activities": 7200.0,
+        "food": 10800.0,
+        "accommodation": 18000.0
+      }
+    },
+    {
+      "day": 5,
+      "date": "2025-05-13",
+      "city": "Kerala",
+      "weather": "Clouds",
+      "activities": {
+        "morning": "Forest road view",
+        "afternoon": "Old Bhoothathankettu Dam",
+        "evening": "Bhoothathankettu Boating Deck"
+      },
+      "food_recommendations": [
+        {
+          "name": "THOMBRAKUDY RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "ARAFA RESTAURANT",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 5
+        },
+        {
+          "name": "Emmanuel Hotel and Bakery",
+          "type": "restaurant | food | point_of_interest | establishment",
+          "rating": 4.3
+        }
+      ],
+      "clothing_suggestion": "Standard casual wear",
+      "estimated_costs": {
+        "activities": 7200.0,
+        "food": 10800.0,
+        "accommodation": 18000.0
+      }
+    }
+  ],
+  "weather_forecast": [
+    {
+      "date": "2025-05-09",
+      "condition": "clouds"
+    },
+    {
+      "date": "2025-05-10",
+      "condition": "clouds"
+    },
+    {
+      "date": "2025-05-11",
+      "condition": "clouds"
+    },
+    {
+      "date": "2025-05-12",
+      "condition": "rain"
+    },
+    {
+      "date": "2025-05-13",
+      "condition": "clouds"
     }
   ]
 }

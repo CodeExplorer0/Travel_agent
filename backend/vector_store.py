@@ -3,14 +3,12 @@ import json
 from pinecone import Pinecone, ServerlessSpec
 from dotenv import load_dotenv
 from data.reddit_scraper import scrape_relevant_data
-
 import google.generativeai as genai
 
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# Gemini embedding model name (latest as of May 2025)
-GEMINI_EMBED_MODEL = "models/embedding-001"  # or use "models/gemini-embedding-exp-03-07" if available
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_EMBED_MODEL = "models/embedding-001"  # or "models/gemini-embedding-exp-03-07"
 
 # Initialize Gemini client
 genai.configure(api_key=GEMINI_API_KEY)
@@ -19,13 +17,15 @@ client = genai
 # Pinecone setup
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
 index_name = "travel-recs"
+
 if index_name not in pc.list_indexes().names():
     pc.create_index(
         name=index_name,
-        dimension=768,  # Gemini embeddings are 768-dim for "embedding-001"
+        dimension=768,
         metric="cosine",
         spec=ServerlessSpec(cloud="aws", region="us-east-1")
     )
+
 index = pc.Index(index_name)
 
 def get_gemini_embedding(text):
@@ -34,7 +34,7 @@ def get_gemini_embedding(text):
         model=GEMINI_EMBED_MODEL,
         content=text
     )
-    # REST API returns dict with 'embedding'
+
     if "embedding" in result:
         return result["embedding"]
     elif hasattr(result, "embedding"):
@@ -87,7 +87,14 @@ def store_itinerary(itinerary):
         index.upsert([{
             "id": f"itinerary-{hash(text)}",
             "values": emb,
-            "metadata": {"itinerary": itinerary}
+            "metadata": {
+                "destination": itinerary.get("destination", ""),
+                "days": itinerary.get("duration_days", 0),
+                "budget": itinerary.get("total_budget", 0),
+                "start_date": itinerary.get("start_date", ""),
+                "end_date": itinerary.get("end_date", ""),
+                "itinerary_json": text
+            }
         }])
     except Exception as e:
         print(f"Error storing itinerary: {e}")
