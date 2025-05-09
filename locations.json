@@ -1,0 +1,129 @@
+{
+  "destination": {
+    "name": "Bihar",
+    "latitude": 25.999031,
+    "longitude": 85.2722472
+  },
+  "locations": [
+    {
+      "name": "DEHLI MOMO POINT",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Mainka Kumari",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "\u0915\u0943\u0937\u094d\u0923\u093e \u0928\u0902\u0926\u0928 \u092d\u093e\u0930\u0924\u0940",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Abhay Singh",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Suraj kumar",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Deepak Nasta Dukan",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Dipak kumar",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "\u0928\u0928\u094d\u0926 \u091c\u0940 \u092b\u093e\u0938\u094d\u091f \u092b\u0942\u0921 \u0935\u093e\u0932\u093e",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Jama Masjid Madhulta",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Shahjahan Ali",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Garg Mor",
+      "type": "attraction",
+      "latitude": 25.9683934,
+      "longitude": 85.2384084
+    },
+    {
+      "name": "Kapildev kumar",
+      "type": "attraction",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Hasim Alam",
+      "type": "attraction",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Rajnish yadav",
+      "type": "attraction",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Sagar sahani",
+      "type": "attraction",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Jama Masjid,Baishakhi Hata",
+      "type": "attraction",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Suraiya begam",
+      "type": "attraction",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "SHANKAR CHOWK",
+      "type": "attraction",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "St. Chitranjan Bhagat Mishrauliya Jagdish",
+      "type": "attraction",
+      "latitude": 25.9925848,
+      "longitude": 85.2761274
+    },
+    {
+      "name": "Sunil Singh Balaur",
+      "type": "attraction",
+      "latitude": 25.999031,
+      "longitude": 85.29931669999999
+    }
+  ]
+}

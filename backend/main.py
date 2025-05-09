@@ -5,67 +5,74 @@ import os
 from datetime import datetime, timedelta
 import re
 import concurrent.futures
+import google.generativeai as genai
+import googlemaps
 
 from utils.weather_api import get_clothing_suggestion, geocode_place, get_5_day_forecast, get_weather_condition
 from utils.places_recommendation import get_recommendations, plot_combined_map
 from utils.stays_api import fetch_hotels_by_coordinates
-from data.reddit_scraper import scrape_relevant_data
+from utils.maps_api import get_lat_lng_from_place
+# from data.reddit_scraper import scrape_relevant_data  # Commented out scraping
 from vector_store import store_itinerary
 from iternary_generator import group_days_by_city, allocate_budget, validate_total_spend, generate_itinerary_text
 
 # Load .env variables
 load_dotenv()
 
-OPENAI_API_URL = "https://open-ai21.p.rapidapi.com/conversationllama"
-HEADERS = {
-    "x-rapidapi-key": os.getenv("OPENAI_API_KEY"),
-    "x-rapidapi-host": "open-ai21.p.rapidapi.com",
-    "Content-Type": "application/json"
-}
+# Configure Gemini API
+GEMINI_API_KEY = os.getenv("GEMINI_CHAT_API_KEY")
+GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+
+# List available models
+for m in genai.list_models():
+    print(f"Model: {m.name}")
 
 def parse_user_input(prompt):
-    from prompts.system_prompt import system_prompt
-    from prompts.weather_rules import weather_rules
-    payload = {
-        "messages": [
-            {
-                "role": "system",
-                "content": f"{system_prompt}\n{weather_rules}\nRespond ONLY with a valid JSON object. Do not include any text or explanation before or after the JSON. Output JSON with: destination, days, budget, interests, travel_style, start_date, end_date, number_of_people, reason_of_visit"
-            },
-            {
-                "role": "user",
-                "content": prompt
-            }
-        ],
-        "web_access": True
-    }
+    # First try to parse as direct JSON input
     try:
-        response = requests.post(OPENAI_API_URL, json=payload, headers=HEADERS)
-        result = response.json()
-        if 'result' in result:
-            llm_output = result['result']
-        elif 'choices' in result and 'message' in result['choices'][0]:
-            llm_output = result['choices'][0]['message']['content']
-        elif 'message' in result:
-            llm_output = result['message']
-        else:
-            print("No valid key found in LLM response.")
-            return None
-        print(f"LLM Output: {llm_output}")  # Print the LLM output here
+        return json.loads(prompt)
+    except json.JSONDecodeError:
+        # If not JSON, treat as natural language and process with Gemini
+        from prompts.system_prompt import system_prompt
+        from prompts.weather_rules import weather_rules
+        
+        # Prepare the prompt
+        full_prompt = f"{system_prompt}\n{weather_rules}\nRespond ONLY with a valid JSON object. Do not include any text or explanation before or after the JSON. Output JSON with: destination, days, budget, interests, travel_style, start_date, end_date, number_of_people, reason_of_visit\n\nUser request: {prompt}"
+        
+        # Prepare the request payload
+        payload = {
+            "contents": [{
+                "parts": [{"text": full_prompt}]
+            }]
+        }
+        
         try:
-            return json.loads(llm_output)
-        except Exception:
-            match = re.search(r'\{.*\}', llm_output, re.DOTALL)
-            if match:
-                try:
-                    return json.loads(match.group(0))
-                except Exception as e2:
-                    print(f"Regex JSON parse error: {e2}")
-            print("Failed to extract valid JSON from LLM output.")
+            # Make the API request
+            response = requests.post(GEMINI_API_URL, json=payload)
+            result = response.json()
+            
+            if 'candidates' in result and len(result['candidates']) > 0:
+                llm_output = result['candidates'][0]['content']['parts'][0]['text']
+            else:
+                print("No valid response from Gemini API")
+                return None
+                
+            print(f"LLM Output: {llm_output}")  # Print the LLM output here
+            
+            try:
+                return json.loads(llm_output)
+            except Exception:
+                match = re.search(r'\{.*\}', llm_output, re.DOTALL)
+                if match:
+                    try:
+                        return json.loads(match.group(0))
+                    except Exception as e2:
+                        print(f"Regex JSON parse error: {e2}")
+                print("Failed to extract valid JSON from LLM output.")
+                return None
+        except Exception as e:
+            print(f"API Error: {str(e)}")
             return None
-    except Exception as e:
-        print(f"API Error: {str(e)}")
-        return None
 
 def cross_question_missing_fields(user_input):
     questions = {
@@ -75,6 +82,24 @@ def cross_question_missing_fields(user_input):
         "number_of_people": "How many people are travelling? ",
         "reason_of_visit": "What is the reason for your visit (e.g., leisure, business, honeymoon, family, etc.)? "
     }
+    
+    # Ensure we have valid dates
+    if "start_date" not in user_input or user_input["start_date"] == "To be determined":
+        # Default to next week if no date provided
+        default_start = (datetime.now() + timedelta(days=7)).strftime("%Y-%m-%d")
+        value = input(f"Enter start date (YYYY-MM-DD) [default: {default_start}]: ")
+        user_input["start_date"] = value if value else default_start
+    
+    # Calculate end date based on days
+    if "days" in user_input:
+        try:
+            days = int(user_input["days"])
+            start = datetime.strptime(user_input["start_date"], "%Y-%m-%d")
+            user_input["end_date"] = (start + timedelta(days=days-1)).strftime("%Y-%m-%d")
+        except Exception:
+            user_input["end_date"] = user_input["start_date"]
+    
+    # Ask for other missing fields
     for field, question in questions.items():
         if field not in user_input or not user_input[field]:
             value = input(question)
@@ -84,13 +109,7 @@ def cross_question_missing_fields(user_input):
                 except Exception:
                     pass
             user_input[field] = value
-    if "end_date" not in user_input or not user_input["end_date"]:
-        try:
-            days = int(user_input.get("days", 1))
-            start = datetime.strptime(user_input["start_date"], "%Y-%m-%d")
-            user_input["end_date"] = (start + timedelta(days=days)).strftime("%Y-%m-%d")
-        except Exception:
-            user_input["end_date"] = ""
+            
     return user_input
 
 def generate_daily_activities(city, date, places, weather_condition, interests):
@@ -107,174 +126,454 @@ def generate_daily_activities(city, date, places, weather_condition, interests):
     # Select 3-4 main activities
     selected = sorted(filtered_places, key=lambda x: x['score'], reverse=True)[:4]
     return {
-        "morning": selected[0]['name'] if len(selected) > 0 else "Leisurely Breakfast",
-        "afternoon": selected[1]['name'] if len(selected) > 1 else "Local Market Visit",
-        "evening": selected[2]['name'] if len(selected) > 2 else "Sunset Cruise"
+        "morning": {"name": selected[0]['name'] if len(selected) > 0 else "Leisurely Breakfast", "location": selected[0].get('vicinity', city) if len(selected) > 0 else city},
+        "afternoon": {"name": selected[1]['name'] if len(selected) > 1 else "Local Market Visit", "location": selected[1].get('vicinity', city) if len(selected) > 1 else city},
+        "evening": {"name": selected[2]['name'] if len(selected) > 2 else "Sunset Cruise", "location": selected[2].get('vicinity', city) if len(selected) > 2 else city}
     }
 
-def generate_full_itinerary(prompt):
+def extract_coordinates_from_itinerary(itinerary_json):
+    coordinates_data = {
+        'accommodations': [],
+        'restaurants': [],
+        'attractions': []
+    }
+    for day, plan in itinerary_json.get('itinerary', {}).items():
+        # Extract accommodation coordinates
+        if 'accommodation' in plan:
+            acc = plan['accommodation']
+            if 'name' in acc:
+                lat, lng = get_lat_lng_from_place(acc['name'])
+                if lat and lng:
+                    coordinates_data['accommodations'].append({
+                        'name': acc['name'],
+                        'latitude': lat,
+                        'longitude': lng,
+                        'address': acc.get('address', '')
+                    })
+        # Extract food/restaurant coordinates
+        if 'food' in plan:
+            for food_item in plan['food']:
+                if 'name' in food_item:
+                    lat, lng = get_lat_lng_from_place(food_item['name'])
+                    if lat and lng:
+                        coordinates_data['restaurants'].append({
+                            'name': food_item['name'],
+                            'latitude': lat,
+                            'longitude': lng,
+                            'address': food_item.get('address', '')
+                        })
+        # Extract activity/attraction coordinates
+        for activity in plan.get('activities', []):
+            if 'name' in activity:
+                lat, lng = get_lat_lng_from_place(activity['name'])
+                if lat and lng:
+                    coordinates_data['attractions'].append({
+                        'name': activity['name'],
+                        'latitude': lat,
+                        'longitude': lng,
+                        'address': activity.get('address', '')
+                    })
+    return coordinates_data
+
+def generate_full_itinerary(user_input):
     try:
-        user_input = parse_user_input(prompt)
-        if not user_input:
-            return {"error": "Failed to parse input"}
-
-        user_input = cross_question_missing_fields(user_input)
-
-        # Step 2: Extract keywords and scrape relevant Reddit posts in parallel with other tasks
-        keywords = [user_input["destination"]] + user_input.get("interests", [])
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            future_scrape = executor.submit(scrape_relevant_data, keywords)
-            future_weather = executor.submit(geocode_place, user_input["destination"])
-            weather_data = future_weather.result()  # Blocking call to get weather data
-            future_scrape.result()  # Wait for Reddit scraping to complete
-
-        # Weather data processing
-        lat, lon = weather_data
-        weather_forecast = get_5_day_forecast(lat, lon)
-
-        # Step 3: Get all recommended places for the destination (moved up)
-        all_places = []
-        places, lat, lon = get_recommendations(user_input["destination"])
-        all_places.extend(places)
-
-        # Step 4: Daily plan
-        itinerary_days = []
-        start_date = user_input["start_date"]
-        days = int(user_input["days"])
-        for i in range(days):
-            day_date = (datetime.strptime(start_date, "%Y-%m-%d") + timedelta(days=i)).strftime("%Y-%m-%d")
-            itinerary_days.append({"day": i+1, "date": day_date, "city": user_input["destination"]})
-
-        # Step 4a: Generate detailed daily plans
-        budget_alloc = allocate_budget(user_input["budget"], days)
-        per_day_food = budget_alloc["food_per_day"]
-        per_day_sights = budget_alloc["sights_per_day"]
-
-        detailed_days = []
-        for day in itinerary_days:
-            date_str = day['date']
-            weather_condition = get_weather_condition(weather_forecast, date_str)
-            # Get activities
-            daily_activities = generate_daily_activities(
-                user_input["destination"],
-                date_str,
-                all_places,
-                weather_condition,
-                user_input.get("interests", [])
-            )
-            # Get food recommendations
-            food_options = get_recommendations(user_input["destination"], "restaurant")[0][:3]
-            detailed_days.append({
-                **day,
-                "weather": weather_condition.capitalize(),
-                "activities": daily_activities,
-                "food_recommendations": [{
-                    "name": f.get('name'),
-                    "type": " | ".join(f.get('types', [])),
-                    "rating": f.get('rating')
-                } for f in food_options],
-                "clothing_suggestion": get_clothing_suggestion(weather_condition),
-                "estimated_costs": {
-                    "activities": per_day_sights,
-                    "food": per_day_food,
-                    "accommodation": budget_alloc["hotel_per_day"]
+        print("\n🚀 Starting itinerary generation...")
+        
+        # Create a full itinerary object matching the provided structure
+        full_itinerary = {
+            "tripData": {
+                "destination": user_input.get("destination"),
+                "startDate": user_input.get("start_date"),
+                "endDate": user_input.get("end_date"),
+                "duration": user_input.get("days"),
+                "currency": {
+                    "name": "Indian Rupee (₹)",
+                    "conversionRate": 1.0  # Already in INR
+                },
+                "weather": user_input.get("weather_considerations", ""),
+                "language": "Hindi, English",
+                "emergencyContact": "112",
+                "electricalOutlet": "Type C, 230V",
+                "transportation": ["Auto-rickshaw", "Taxi", "Bus", "Metro"],
+                "cost": {
+                    "transportation": {"inr": 0},
+                    "accommodation": {"inr": 0},
+                    "food": {"inr": 0},
+                    "activities": {"inr": 0},
+                    "miscellaneous": {"inr": 0},
+                    "total": {"inr": user_input.get("budget", 0)}
                 }
-            })
-
-        # Step 5: Group by city
-        city_segments = group_days_by_city(itinerary_days)
-
-        # Step 6: Budget allocation (already done above)
-
-        per_night_budget = budget_alloc["hotel_per_day"]
-
-        # Step 7: Hotels
-        hotels = []
-        for segment in city_segments:
-            city = segment["city"]
-            checkin = segment["checkin"]
-            checkout = segment["checkout"]
-            lat, lng = geocode_place(city)
-            nights = (datetime.strptime(checkout, "%Y-%m-%d") - datetime.strptime(checkin, "%Y-%m-%d")).days
-            max_price = int(per_night_budget * nights)
-            hotels_data = fetch_hotels_by_coordinates(lat, lng, max_price, checkin, checkout)
-            hotel_list = hotels_data.get("data", {}).get("result", [])
-            if hotel_list:
-                best = sorted(hotel_list, key=lambda h: h.get("composite_price_breakdown", {}).get("gross_amount_hotel_currency", {}).get("value", 1e9))[0]
-                hotels.append({
-                    "city": city,
-                    "checkin": checkin,
-                    "checkout": checkout,
-                    "hotel": best
-                })
-
-        # Step 8: Places map
-        all_hotels_for_map = []
-        for seg in city_segments:
-            places, lat, lon = get_recommendations(seg["city"])
-            all_places.extend(places)
-            for h in hotels:
-                if h["city"] == seg["city"]:
-                    hotel_info = h["hotel"]
-                    hotel_info["latitude"] = hotel_info.get("latitude") or lat
-                    hotel_info["longitude"] = hotel_info.get("longitude") or lon
-                    all_hotels_for_map.append(hotel_info)
-            plot_combined_map(all_places, all_hotels_for_map, lat, lon)
-
-        # Step 9: Cost estimates
-        food_sum = per_day_food * days
-        sights_sum = per_day_sights * days
-        hotel_sum = sum(h["hotel"].get("composite_price_breakdown", {}).get("gross_amount_hotel_currency", {}).get("value", 0) for h in hotels)
-
-        # Step 10: Validate budget
-        if not validate_total_spend(user_input["budget"], hotel_sum, food_sum, sights_sum):
-            return {"error": "Itinerary exceeds your specified budget. Please increase budget or reduce trip length."}
-
-        # Step 11: Build itinerary
-        itinerary = {
-            "destination": user_input["destination"],
-            "duration_days": days,
-            "total_budget": user_input["budget"],
-            "interests": user_input.get("interests", []),
-            "number_of_people": user_input.get("number_of_people", 1),
-            "reason_of_visit": user_input.get("reason_of_visit", ""),
-            "start_date": user_input.get("start_date"),
-            "end_date": user_input.get("end_date"),
-            "city_segments": city_segments,
-            "hotels": hotels,
-            "food_total": food_sum,
-            "sights_total": sights_sum,
-            "hotel_total": hotel_sum,
-            "total_spent": hotel_sum + food_sum + sights_sum,
-            "daily_plan": itinerary_days,
-            "detailed_daily_plan": detailed_days,
-            "weather_forecast": [{
-                "date": (datetime.strptime(user_input["start_date"], "%Y-%m-%d") + timedelta(days=i)).strftime("%Y-%m-%d"),
-                "condition": get_weather_condition(weather_forecast, (datetime.strptime(user_input["start_date"], "%Y-%m-%d") + timedelta(days=i)).strftime("%Y-%m-%d"))
-            } for i in range(days)]
+            },
+            "itineraryDays": []
         }
-
-        # Step 12: Store itinerary
-        store_itinerary(itinerary)
-        return itinerary
-
+        
+        # Get coordinates for destination
+        print("\n🌍 Getting coordinates for destination...")
+        lat, lng = get_lat_lng_from_place(user_input["destination"])
+        if not lat or not lng:
+            raise ValueError(f"Could not get coordinates for {user_input['destination']}")
+        print(f"📍 Destination coordinates: {lat}, {lng}")
+        
+        # Process each day's activities
+        itinerary = user_input.get('itinerary', {})
+        for day_num, plan in itinerary.items():
+            day_data = {
+                "day": int(day_num.split('_')[1]) if '_' in day_num else int(day_num),
+                "title": f"Day {day_num.split('_')[1] if '_' in day_num else day_num}",
+                "transport": {
+                    "type": "Auto-rickshaw",
+                    "details": "Local transport",
+                    "time": "09:00",
+                    "cost": "₹200-300"
+                },
+                "accommodation": {
+                    "name": user_input.get('accommodation', {}).get('recommendations', [{}])[0].get('name', 'Hotel to be booked'),
+                    "checkIn": "14:00",
+                    "checkOut": "11:00",
+                    "price": "₹2000-3000/night",
+                    "location": "City Center"
+                },
+                "activities": [],
+                "food": [],
+                "tips": plan.get('weather_considerations', "Stay hydrated and carry water. Wear comfortable walking shoes.")
+            }
+            
+            # Process activities
+            for activity in plan.get('activities', []):
+                if "name" in activity:
+                    activity_lat, activity_lng = get_lat_lng_from_place(activity["name"])
+                    activity_data = {
+                        "name": activity["name"],
+                        "time": activity.get("duration", "2-3 hours"),
+                        "indoor": activity.get("indoor", False),
+                        "location": activity.get("location", ""),
+                        "coordinates": {
+                            "latitude": activity_lat,
+                            "longitude": activity_lng
+                        } if activity_lat and activity_lng else None,
+                        "description": activity.get("description", ""),
+                        "estimated_cost": activity.get("estimated_cost", 0)
+                    }
+                    day_data["activities"].append(activity_data)
+            
+            # Process food recommendations
+            for food in plan.get('food', []):
+                if "name" in food:
+                    food_lat, food_lng = get_lat_lng_from_place(food["name"])
+                    food_data = {
+                        "name": food["name"],
+                        "cuisine": food.get("cuisine", "Local"),
+                        "mealType": "Lunch/Dinner",
+                        "price": "₹₹",
+                        "location": food.get("location", ""),
+                        "coordinates": {
+                            "latitude": food_lat,
+                            "longitude": food_lng
+                        } if food_lat and food_lng else None,
+                        "description": food.get("description", ""),
+                        "estimated_cost": food.get("estimated_cost", 0)
+                    }
+                    day_data["food"].append(food_data)
+            
+            full_itinerary["itineraryDays"].append(day_data)
+        
+        # Calculate total costs
+        total_transport = 0
+        total_accommodation = 0
+        total_food = 0
+        total_activities = 0
+        
+        for day in full_itinerary["itineraryDays"]:
+            # Sum up activity costs
+            for activity in day["activities"]:
+                if isinstance(activity.get("estimated_cost"), (int, float)):
+                    total_activities += activity["estimated_cost"]
+            
+            # Sum up food costs
+            for food in day["food"]:
+                if isinstance(food.get("estimated_cost"), (int, float)):
+                    total_food += food["estimated_cost"]
+        
+        # Update cost breakdown
+        full_itinerary["tripData"]["cost"].update({
+            "transportation": {"inr": 2000},  # Estimated daily transport
+            "accommodation": {"inr": 4000},   # 2 nights at ₹2000
+            "food": {"inr": total_food},
+            "activities": {"inr": total_activities},
+            "miscellaneous": {"inr": 5000},   # Buffer
+            "total": {"inr": user_input.get("budget", 0)}
+        })
+        
+        # Save the final itinerary
+        print("\n💾 Saving final full itinerary...")
+        with open('final_full_itinerary.json', 'w', encoding='utf-8') as f:
+            json.dump(full_itinerary, f, indent=2, ensure_ascii=False)
+            
+        # Generate map with coordinates
+        print("\n🗺️ Generating map...")
+        coordinates_data = {
+            'accommodations': [],
+            'restaurants': [],
+            'attractions': []
+        }
+        
+        for day in full_itinerary["itineraryDays"]:
+            # Add accommodation coordinates
+            if day["accommodation"].get("coordinates"):
+                coordinates_data['accommodations'].append({
+                    'name': day["accommodation"]["name"],
+                    'latitude': day["accommodation"]["coordinates"]["latitude"],
+                    'longitude': day["accommodation"]["coordinates"]["longitude"]
+                })
+            
+            # Add activity coordinates
+            for activity in day["activities"]:
+                if activity.get("coordinates"):
+                    coordinates_data['attractions'].append({
+                        'name': activity["name"],
+                        'latitude': activity["coordinates"]["latitude"],
+                        'longitude': activity["coordinates"]["longitude"]
+                    })
+            
+            # Add food coordinates
+            for food in day["food"]:
+                if food.get("coordinates"):
+                    coordinates_data['restaurants'].append({
+                        'name': food["name"],
+                        'latitude': food["coordinates"]["latitude"],
+                        'longitude': food["coordinates"]["longitude"]
+                    })
+        
+        # Save coordinates data
+        with open('coordinates.json', 'w', encoding='utf-8') as f:
+            json.dump(coordinates_data, f, indent=2, ensure_ascii=False)
+        
+        # Generate map
+        generate_map(coordinates_data)
+        
+        # Create chatbot interface
+        create_chatbot_interface(user_input)
+        
+        print("\n✅ Itinerary generation complete!")
+        print("✅ Final full itinerary saved to final_full_itinerary.json")
+        print("🗺️ Map saved to travel_map.html")
+        print("📍 Coordinates saved to coordinates.json")
+        print("💬 Chatbot interface saved to chatbot.txt")
+        
+        return True
+        
     except Exception as e:
-        return {"error": str(e)}
+        print(f"\n❌ Error: {str(e)}")
+        import traceback
+        print(f"Stack trace: {traceback.format_exc()}")
+        return False
+
+def create_chatbot_interface(user_input):
+    try:
+        chatbot_text = f"""🤖 Travel Assistant Chat
+
+👋 Hello! I'm your travel assistant. Let me help you plan your trip to {user_input['destination']}.
+
+📅 Trip Details:
+- Duration: {user_input['days']} days
+- Dates: {user_input['start_date']} to {user_input['end_date']}
+- Budget: ₹{user_input['budget']}
+- Travelers: {user_input['number_of_people']} people
+- Purpose: {user_input.get('reason_of_visit', 'Leisure')}
+
+🎯 Top Attractions:
+{chr(10).join([f"- {p.get('name', '')} (Rating: {p.get('rating', 0)}/5)" for p in user_input.get('itinerary', {}).get('attractions', [])[:5]])}
+
+🏨 Top Accommodation Recommendations:
+{chr(10).join([f"- {h.get('name', '')} (Rating: {h.get('rating', 0)}/5, Price: ₹{h.get('price', 0)})" for h in user_input.get('itinerary', {}).get('accommodations', [])[:5]])}
+
+🍽️ Top Restaurant Recommendations:
+{chr(10).join([f"- {r.get('name', '')} (Rating: {r.get('rating', 0)}/5)" for r in user_input.get('itinerary', {}).get('restaurants', [])[:5]])}
+
+❓ How can I help you further? You can ask me about:
+- Weather conditions
+- Transportation options
+- Local customs and culture
+- Specific attraction details
+- Budget adjustments
+- Or any other travel-related questions!
+
+Just type your question below:
+"""
+        with open("chatbot.txt", "w", encoding="utf-8") as f:
+            f.write(chatbot_text)
+    except Exception as e:
+        print(f"❌ Error creating chatbot interface: {str(e)}")
+
+def generate_map(coordinates_data):
+    try:
+        import folium
+        
+        # Create a map centered on the first attraction
+        center_lat = None
+        center_lng = None
+        for category in coordinates_data:
+            if coordinates_data[category]:
+                center_lat = coordinates_data[category][0]['latitude']
+                center_lng = coordinates_data[category][0]['longitude']
+                break
+                
+        if not center_lat or not center_lng:
+            raise ValueError("No valid coordinates found for map center")
+            
+        m = folium.Map(location=[center_lat, center_lng], zoom_start=12)
+        
+        # Add markers for each category
+        colors = {
+            'accommodations': 'blue',
+            'restaurants': 'red',
+            'attractions': 'green'
+        }
+        
+        for category, places in coordinates_data.items():
+            for place in places:
+                if not all(key in place for key in ['latitude', 'longitude', 'name']):
+                    continue
+                    
+                popup_text = f"""
+                <b>{place['name']}</b><br>
+                Rating: {place.get('rating', 'N/A')}<br>
+                {place.get('address', '')}
+                """
+                
+                folium.Marker(
+                    location=[place['latitude'], place['longitude']],
+                    popup=folium.Popup(popup_text, max_width=300),
+                    icon=folium.Icon(color=colors.get(category, 'gray'))
+                ).add_to(m)
+                
+        # Save the map
+        m.save('travel_map.html')
+        
+    except Exception as e:
+        print(f"❌ Error generating map: {str(e)}")
+
+def create_human_readable_itinerary(user_input):
+    try:
+        # Get trip details from the input
+        trip_details = user_input.get('trip_details', {})
+        destination = trip_details.get('destination', 'Unknown Destination')
+        days = trip_details.get('days', 0)
+        start_date = trip_details.get('start_date', '')
+        end_date = trip_details.get('end_date', '')
+        budget = trip_details.get('budget', 0)
+        reason = trip_details.get('reason_of_visit', 'Tourism')
+        interests = trip_details.get('interests', [])
+        
+        itinerary_text = f"""# {destination} Itinerary ({days} Days)
+**Trip Dates:** {start_date} to {end_date}
+**Budget:** ₹{budget}
+**Reason:** {reason}
+**Interests:** {', '.join(interests)}
+
+"""
+        # Add daily plans
+        daily_plans = user_input.get('daily_plans', {})
+        for day, plan in daily_plans.items():
+            day_num = day.split('_')[1] if '_' in day else day
+            itinerary_text += f"\n## Day {day_num}\n"
+            itinerary_text += f"**Date:** {plan.get('date', '')}\n"
+            itinerary_text += f"**Weather:** {plan.get('weather', '')}\n\n"
+            
+            # Add activities
+            itinerary_text += "### Activities:\n"
+            for activity in plan.get('activities', []):
+                itinerary_text += f"#### {activity.get('name', '')}\n"
+                itinerary_text += f"- Type: {activity.get('type', '')}\n"
+                itinerary_text += f"- Duration: {activity.get('duration', '')}\n"
+                itinerary_text += f"- Description: {activity.get('description', '')}\n"
+                if activity.get('notes'):
+                    itinerary_text += f"- Notes: {activity.get('notes')}\n"
+                itinerary_text += "\n"
+            
+            # Add food recommendations
+            if plan.get('food'):
+                itinerary_text += "### Food Recommendations:\n"
+                for food in plan['food']:
+                    itinerary_text += f"- {food.get('name', '')}\n"
+                    itinerary_text += f"  Type: {food.get('type', '')}\n"
+                    itinerary_text += f"  Description: {food.get('description', '')}\n\n"
+            
+            # Add accommodation
+            if plan.get('accommodation'):
+                acc = plan['accommodation']
+                itinerary_text += "### Accommodation:\n"
+                itinerary_text += f"- {acc.get('name', '')}\n"
+                if acc.get('suggestions'):
+                    itinerary_text += "Suggested Hotels:\n"
+                    for hotel in acc['suggestions']:
+                        itinerary_text += f"  - {hotel}\n"
+                itinerary_text += "\n"
+            
+            # Add weather notes if available
+            if user_input.get('weather_notes'):
+                itinerary_text += f"**Weather Notes:** {user_input['weather_notes']}\n\n"
+        
+        # Write to file
+        with open("itinerary.txt", "w", encoding="utf-8") as f:
+            f.write(itinerary_text)
+            
+    except Exception as e:
+        print(f"❌ Error creating human-readable itinerary: {str(e)}")
+        import traceback
+        print(f"Stack trace: {traceback.format_exc()}")
+
+def get_place_photos(place_name):
+    """Get photos for a place using Google Places API"""
+    try:
+        # Initialize Google Places API client
+        places_client = googlemaps.Client(key=os.getenv('GOOGLE_MAPS_API_KEY'))
+        
+        # Search for the place
+        places_result = places_client.places(place_name)
+        
+        if places_result['results']:
+            place_id = places_result['results'][0]['place_id']
+            
+            # Get place details including photo
+            place_details = places_client.place(place_id, fields=['photo'])
+            
+            photos = []
+            if 'result' in place_details and 'photos' in place_details['result']:
+                for photo in place_details['result']['photos'][:3]:  # Get up to 3 photos
+                    photo_reference = photo['photo_reference']
+                    photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference={photo_reference}&key={os.getenv('GOOGLE_MAPS_API_KEY')}"
+                    photos.append(photo_url)
+            
+            return photos
+    except Exception as e:
+        print(f"Error getting photos for {place_name}: {str(e)}")
+    
+    return []
 
 if __name__ == "__main__":
-    prompt = input("Enter your travel request: ")
-    result = generate_full_itinerary(prompt)
-    with open("itinerary.json", "w") as f:
-        json.dump(result, f, indent=2)
-    print("✅ Itinerary saved to itinerary.json")
-    print("🗺️ Map saved to travel_map.html")
-    # ---- TEXT OUTPUT ----
-    # If the itinerary was generated successfully, print a readable version
-    if "error" not in result:
-        text_itinerary = generate_itinerary_text(result)
-        with open("itinerary.txt", "w", encoding="utf-8") as tf:
-            tf.write(text_itinerary)
-        print("\n📄 Human-readable itinerary saved to itinerary.txt\n")
-        print(text_itinerary)  # Optionally print to console
+    # Get user input
+    user_prompt = input("Enter your travel request: ")
+    
+    # Parse the input
+    parsed_input = parse_user_input(user_prompt)
+    
+    if parsed_input:
+        # Cross question for any missing fields
+        complete_input = cross_question_missing_fields(parsed_input)
+        
+        try:
+            # Generate the itinerary
+            success = generate_full_itinerary(complete_input)
+            
+            if not success:
+                print("\n❌ Failed to generate itinerary. Please try again.")
+            else:
+                # Save the complete itinerary
+                with open('itinerary.json', 'w', encoding='utf-8') as f:
+                    json.dump(complete_input, f, indent=2, ensure_ascii=False)
+                print("\n✨ Successfully generated your travel itinerary!")
+        except Exception as e:
+            print(f"\n❌ Error: {str(e)}")
     else:
-        print("Error:", result["error"])
+        print("\n❌ Failed to parse your request. Please try again with more details.")

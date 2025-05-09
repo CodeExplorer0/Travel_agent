@@ -1,89 +1,65 @@
-# Kerala Itinerary (5 Days)
-**Trip Dates:** 2025-05-09 to 2025-05-13
-**Budget:** ₹180,000
-**Reason:** honeymoon
-**Interests:** romance, relaxation, nature
+# Jaipur Itinerary (2 Days)
+**Trip Dates:** 2024-05-12 to 2024-05-13
+**Budget:** ₹25000
+**Reason:** Leisure
+**Interests:** History, Culture, Food, Shopping
 
-## Day 1: 2025-05-09 (Clouds)
-**City:** Kerala
-**Clothing Suggestion:** Standard casual wear
 
-### Activities:
-- **Morning:** Forest road view
-- **Afternoon:** Old Bhoothathankettu Dam
-- **Evening:** Bhoothathankettu Boating Deck
-
-### Food Recommendations:
-- THOMBRAKUDY RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- ARAFA RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- Emmanuel Hotel and Bakery (restaurant | food | point_of_interest | establishment) ⭐4.3
-
-**Estimated Daily Cost:** ₹36,000
-
-## Day 2: 2025-05-10 (Clouds)
-**City:** Kerala
-**Clothing Suggestion:** Standard casual wear
+## Day 1
+**Date:** 2024-05-12
+**Weather:** Extremely Hot (Expected)
 
 ### Activities:
-- **Morning:** Forest road view
-- **Afternoon:** Old Bhoothathankettu Dam
-- **Evening:** Bhoothathankettu Boating Deck
+#### City Palace
+- Type: Historical Site
+- Duration: 3-4 hours
+- Description: Explore the City Palace, a complex of courtyards, gardens, and buildings. It showcases a blend of Rajasthani and Mughal architecture. Opt for a guided tour to learn about the history and significance of the palace. Due to the extreme heat, consider visiting early in the morning or late in the afternoon.
+- Notes: Indoor/partially shaded areas available to escape the heat.
 
-### Food Recommendations:
-- THOMBRAKUDY RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- ARAFA RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- Emmanuel Hotel and Bakery (restaurant | food | point_of_interest | establishment) ⭐4.3
+#### Hawa Mahal (Palace of Winds)
+- Type: Historical Site
+- Duration: 1-2 hours
+- Description: Visit Hawa Mahal, known for its unique facade with numerous small windows. Take photos from the outside or explore the inside for views of the city. The breeze through the windows offers some relief from the heat.
+- Notes: Best viewed from outside. Consider visiting during early morning hours.
 
-**Estimated Daily Cost:** ₹36,000
+#### Bapu Bazaar
+- Type: Shopping
+- Duration: 2-3 hours
+- Description: Enjoy local shopping at Bapu Bazaar, known for textiles, handicrafts, and souvenirs. Bargain for the best prices. Stay hydrated and take breaks in shaded areas or cafes.
+- Notes: Try to shop during the evening hours after sunset.
 
-## Day 3: 2025-05-11 (Clouds)
-**City:** Kerala
-**Clothing Suggestion:** Standard casual wear
+#### Dinner at Spice Court
+- Type: Food
+- Duration: 
+- Description: Enjoy a delicious Rajasthani dinner at Spice Court. They offer both vegetarian and non-vegetarian options. The restaurant provides a comfortable, air-conditioned environment.
 
-### Activities:
-- **Morning:** Forest road view
-- **Afternoon:** Old Bhoothathankettu Dam
-- **Evening:** Bhoothathankettu Boating Deck
 
-### Food Recommendations:
-- THOMBRAKUDY RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- ARAFA RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- Emmanuel Hotel and Bakery (restaurant | food | point_of_interest | establishment) ⭐4.3
-
-**Estimated Daily Cost:** ₹36,000
-
-## Day 4: 2025-05-12 (Rain)
-**City:** Kerala
-**Clothing Suggestion:** Waterproof jacket, umbrella, and waterproof shoes
+## Day 2
+**Date:** 2024-05-13
+**Weather:** Extremely Hot (Expected)
 
 ### Activities:
-- **Morning:** Leisurely Breakfast
-- **Afternoon:** Local Market Visit
-- **Evening:** Sunset Cruise
+#### Amber Fort
+- Type: Historical Site
+- Duration: 3-4 hours
+- Description: Visit Amber Fort, a UNESCO World Heritage Site. Enjoy an elephant ride (if ethical concerns are addressed and the animals are well-treated), or take a jeep to the top. Explore the palace complex and enjoy the panoramic views. Go early morning to avoid the heat and crowds.
+- Notes: Consider pre-booking tickets and transportation to save time.
 
-### Food Recommendations:
-- THOMBRAKUDY RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- ARAFA RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- Emmanuel Hotel and Bakery (restaurant | food | point_of_interest | establishment) ⭐4.3
+#### Jal Mahal (Water Palace)
+- Type: Sightseeing
+- Duration: 30 minutes - 1 hour
+- Description: Stop by Jal Mahal for a photo opportunity. This palace is located in the middle of Man Sagar Lake. You can view it from the lakeside. The view is especially beautiful during sunset.
+- Notes: This is primarily an outdoor activity, so limit exposure to the sun. Go during morning hours
 
-**Estimated Daily Cost:** ₹36,000
+#### Albert Hall Museum
+- Type: Museum
+- Duration: 2-3 hours
+- Description: Visit Albert Hall Museum, the oldest museum in Rajasthan. It houses a rich collection of artifacts and artworks. This is a great option to escape the afternoon heat.
+- Notes: Indoor activity in a temperature-controlled environment.
 
-## Day 5: 2025-05-13 (Clouds)
-**City:** Kerala
-**Clothing Suggestion:** Standard casual wear
+#### Dinner at Chokhi Dhani (Optional)
+- Type: Food/Cultural Experience
+- Duration: 
+- Description: If interested in a cultural experience, consider visiting Chokhi Dhani, a Rajasthani village-themed resort. Enjoy traditional Rajasthani food and cultural performances (additional cost). Check online for reviews and consider the potential for large crowds.
+- Notes: Check for evening timings to avoid the heat.
 
-### Activities:
-- **Morning:** Forest road view
-- **Afternoon:** Old Bhoothathankettu Dam
-- **Evening:** Bhoothathankettu Boating Deck
-
-### Food Recommendations:
-- THOMBRAKUDY RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- ARAFA RESTAURANT (restaurant | food | point_of_interest | establishment) ⭐5
-- Emmanuel Hotel and Bakery (restaurant | food | point_of_interest | establishment) ⭐4.3
-
-**Estimated Daily Cost:** ₹36,000
-
----
-**Total Estimated Spend:** ₹91,795
-**Hotel Total:** ₹1,795 | **Food Total:** ₹54,000 | **Sightseeing Total:** ₹36,000

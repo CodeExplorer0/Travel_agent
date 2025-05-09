@@ -1,0 +1,29 @@
+🤖 Travel Assistant Chat
+
+👋 Hello! I'm your travel assistant. Let me help you plan your trip to Jaipur.
+
+📅 Trip Details:
+- Duration: 2 days
+- Dates: 2024-05-12 to 2024-05-13
+- Budget: ₹50000
+- Travelers: 2 people
+- Purpose: Honeymoon
+
+🎯 Top Attractions:
+
+
+🏨 Top Accommodation Recommendations:
+
+
+🍽️ Top Restaurant Recommendations:
+
+
+❓ How can I help you further? You can ask me about:
+- Weather conditions
+- Transportation options
+- Local customs and culture
+- Specific attraction details
+- Budget adjustments
+- Or any other travel-related questions!
+
+Just type your question below:

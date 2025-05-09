@@ -175,3 +175,5 @@ cython_debug/
 
 #Ignore environment variables files
 backend/.env
+
+Safarbot/

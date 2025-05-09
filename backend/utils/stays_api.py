@@ -6,6 +6,7 @@ import requests
 import googlemaps
 from math import radians, cos, sin, asin, sqrt
 from dotenv import load_dotenv
+import json
 
 # Load environment variables
 load_dotenv()
@@ -45,22 +46,114 @@ def haversine(lat1, lon1, lat2, lon2):
     a = sin(dlat / 2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2)**2
     return R * 2 * asin(sqrt(a))
 
-def fetch_hotels_by_coordinates(lat, lng, max_price, checkin_date, checkout_date):
+def fetch_hotels_by_coordinates(lat, lng, max_price, check_in, check_out):
     try:
-        url = "https://booking-com15.p.rapidapi.com/api/v1/hotels/searchHotelsByCoordinates"
-        query = {
-            "latitude": str(lat),
+        # Validate dates
+        if not check_in or not check_out:
+            from datetime import datetime, timedelta
+            check_in = datetime.now().strftime("%Y-%m-%d")
+            check_out = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
+            print(f"⚠️ Using default dates: {check_in} to {check_out}")
+
+        print(f"🔍 Searching for hotels near coordinates: {lat}, {lng}")
+        print(f"💰 Max price: {max_price}")
+        print(f"📅 Check-in: {check_in}, Check-out: {check_out}")
+
+        url = "https://booking-com.p.rapidapi.com/v1/hotels/search-by-coordinates"
+        querystring = {
+            "units": "metric",
+            "room_number": "1",
+            "checkout_date": check_out,
+            "checkin_date": check_in,
+            "adults_number": "2",
+            "order_by": "popularity",
+            "filter_by_currency": "INR",
+            "locale": "en-us",
             "longitude": str(lng),
-            "arrival_date": checkin_date,
-            "departure_date": checkout_date,
-            "currency_code": "INR",
-            "max_total_price": str(max_price)
+            "latitude": str(lat),
+            "page_number": "0",
+            "categories_filter_ids": "class::2,class::4,free_cancellation::1",
+            "include_adjacency": "true"
         }
-        response = requests.get(url, headers=HEADERS, params=query)
-        return response.json() if response.status_code == 200 else {}
+
+        headers = {
+            "X-RapidAPI-Key": os.getenv('RAPIDAPI_KEY'),
+            "X-RapidAPI-Host": "booking-com.p.rapidapi.com"
+        }
+
+        print("🌐 Making API request to Booking.com...")
+        response = requests.get(url, headers=headers, params=querystring)
+        print(f"📡 API Response Status: {response.status_code}")
+        
+        if response.status_code != 200:
+            print(f"❌ API request failed with status {response.status_code}")
+            return []
+
+        data = response.json()
+        print(f"📊 Raw API Response: {json.dumps(data, indent=2)}")
+
+        if not data.get('result'):
+            print("❌ No hotels found in the response")
+            return []
+
+        hotels = []
+        for hotel in data['result']:
+            try:
+                # Skip if essential data is missing
+                if not all(key in hotel for key in ['hotel_name', 'min_total_price', 'latitude', 'longitude']):
+                    continue
+
+                # Validate coordinates
+                hotel_lat = float(hotel['latitude'])
+                hotel_lng = float(hotel['longitude'])
+                if not (-90 <= hotel_lat <= 90) or not (-180 <= hotel_lng <= 180):
+                    continue
+
+                # Calculate distance from center
+                distance = haversine(lat, lng, hotel_lat, hotel_lng)
+                if distance > 10:  # Skip if more than 10km away
+                    continue
+
+                # Check price
+                price = float(hotel['min_total_price'])
+                if price > max_price * 1.2:  # Allow 20% price buffer
+                    continue
+
+                # Get additional details
+                hotel_obj = {
+                    'name': hotel['hotel_name'],
+                    'price': price,
+                    'rating': float(hotel.get('review_score', 0)),
+                    'reviews': int(hotel.get('review_nr', 0)),
+                    'latitude': hotel_lat,
+                    'longitude': hotel_lng,
+                    'distance': distance,
+                    'address': hotel.get('address', ''),
+                    'description': hotel.get('description', ''),
+                    'accommodation_type': hotel.get('accommodation_type_name', 'Hotel'),
+                    'photos': [photo.get('url_max', '') for photo in hotel.get('photos', [])[:3]]
+                }
+
+                # Calculate score based on rating, reviews, and price
+                hotel_obj['score'] = (
+                    (hotel_obj['rating'] * 0.4) +
+                    (min(hotel_obj['reviews'], 100) / 100 * 0.2) +
+                    ((1 - (price / max_price)) * 0.4)
+                )
+
+                hotels.append(hotel_obj)
+
+            except Exception as e:
+                print(f"❌ Error processing hotel {hotel.get('hotel_name', 'Unknown')}: {str(e)}")
+                continue
+
+        # Sort by score and return top 10
+        hotels.sort(key=lambda x: x['score'], reverse=True)
+        return hotels[:10]
+
     except Exception as e:
-        print(f"❌ Error fetching hotels: {str(e)}")
-        return {}
+        print(f"❌ Error in fetch_hotels_by_coordinates: {str(e)}")
+        return []
 
 def fetch_hotel_review_scores(hotel_id):
     try:

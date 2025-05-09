@@ -1,0 +1,203 @@
+{
+  "tripData": {
+    "destination": "Jaipur",
+    "startDate": "2024-05-12",
+    "endDate": "2024-05-13",
+    "duration": 2,
+    "currency": {
+      "name": "Indian Rupee (₹)",
+      "conversionRate": 1.0
+    },
+    "weather": "",
+    "language": "Hindi, English",
+    "emergencyContact": "112",
+    "electricalOutlet": "Type C, 230V",
+    "transportation": [
+      "Auto-rickshaw",
+      "Taxi",
+      "Bus",
+      "Metro"
+    ],
+    "cost": {
+      "transportation": {
+        "inr": 2000
+      },
+      "accommodation": {
+        "inr": 4000
+      },
+      "food": {
+        "inr": 0
+      },
+      "activities": {
+        "inr": 0
+      },
+      "miscellaneous": {
+        "inr": 5000
+      },
+      "total": {
+        "inr": 50000
+      }
+    }
+  },
+  "itineraryDays": [
+    {
+      "day": 1,
+      "title": "Day 1",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Amber Fort",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9854865,
+            "longitude": 75.8513454
+          },
+          "description": "Explore the magnificent Amber Fort, a UNESCO World Heritage Site. Enjoy an elephant ride (optional, early morning to avoid heat) up to the fort or a jeep ride. (2-3 hours)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Panna Meena ka Kund",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9912309,
+            "longitude": 75.8512851
+          },
+          "description": "Visit the beautiful stepwell, a great place to take photographs and soak in the rich heritage.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "City Palace",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9257943,
+            "longitude": 75.8236714
+          },
+          "description": "Visit the City Palace, the residence of the Maharaja of Jaipur. Explore the museum and courtyards. (2-3 hours)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Hawa Mahal",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9240458,
+            "longitude": 75.8267144
+          },
+          "description": "See the iconic Hawa Mahal (Palace of Winds) from the outside. Take photos and enjoy the view. Consider visiting the museum inside. (1 hour)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Dinner at 1135 AD (Amber Fort)",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9868113,
+            "longitude": 75.8505696
+          },
+          "description": "Enjoy a romantic dinner at 1135 AD inside Amber Fort for a royal dining experience.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 2,
+      "title": "Day 2",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Jantar Mantar",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 28.6270547,
+            "longitude": 77.21662669999999
+          },
+          "description": "Visit Jantar Mantar, an astronomical observatory and a UNESCO World Heritage Site. (1-2 hours)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Albert Hall Museum",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9115849,
+            "longitude": 75.81941200000001
+          },
+          "description": "Explore the Albert Hall Museum, the oldest museum in Rajasthan. (2-3 hours)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Shopping at Bapu Bazaar/Johari Bazaar",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9165975,
+            "longitude": 75.8222331
+          },
+          "description": "Shop for souvenirs, textiles, jewelry, and handicrafts at Bapu Bazaar or Johari Bazaar. (2-3 hours)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Romantic Spa Treatment",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": null,
+          "description": "Enjoy a couples spa treatment at a luxury hotel or spa for relaxation.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Dinner at Spice Court",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 26.9108279,
+            "longitude": 75.7889568
+          },
+          "description": "Have dinner at Spice Court, known for its authentic Rajasthani cuisine.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    }
+  ]
+}

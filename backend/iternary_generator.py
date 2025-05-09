@@ -46,9 +46,9 @@ def generate_itinerary_text(itinerary):
     """
     Generate a human-readable itinerary from the detailed_daily_plan.
     """
-    text = f"# {itinerary['destination']} Itinerary ({itinerary['duration_days']} Days)\n"
+    text = f"# {itinerary['destination']} Itinerary ({itinerary['days']} Days)\n"
     text += f"**Trip Dates:** {itinerary['start_date']} to {itinerary['end_date']}\n"
-    text += f"**Budget:** ₹{itinerary['total_budget']:,}\n"
+    text += f"**Budget:** ₹{itinerary['budget']:,}\n"
     text += f"**Reason:** {itinerary.get('reason_of_visit','')}\n"
     text += f"**Interests:** {', '.join(itinerary.get('interests', []))}\n\n"
 

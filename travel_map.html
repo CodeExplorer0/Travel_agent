@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e8f55208145e907b5d2a533f88752076 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e8f55208145e907b5d2a533f88752076" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e8f55208145e907b5d2a533f88752076 = L.map(
+                "map_e8f55208145e907b5d2a533f88752076",
+                {
+                    center: [26.929339, 75.8281983],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3c2d4860e1ca0455ad3d055b231fbab = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b3c2d4860e1ca0455ad3d055b231fbab.addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var marker_d59265ceef8d385b9f5094614cededb2 = L.marker(
+                [26.929339, 75.8281983],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_fbd54c334d256677ddb2d4c59bf399bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dc9d909303a2f347c6c514364ccd242 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0086cc433469eb9487d0dd6e6b38b8d3 = $(`<div id="html_0086cc433469eb9487d0dd6e6b38b8d3" style="width: 100.0%; height: 100.0%;">                 <b>Zostel Jaipur</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_4dc9d909303a2f347c6c514364ccd242.setContent(html_0086cc433469eb9487d0dd6e6b38b8d3);
+            
+        
+
+        marker_d59265ceef8d385b9f5094614cededb2.bindPopup(popup_4dc9d909303a2f347c6c514364ccd242)
+        ;
+
+        
+    
+    
+                marker_d59265ceef8d385b9f5094614cededb2.setIcon(icon_fbd54c334d256677ddb2d4c59bf399bb);
+            
+    
+            var marker_e491a11f14be53e49fc104b529f692d7 = L.marker(
+                [26.929339, 75.8281983],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_984f1d59d99d1835c74f00480c188c63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78bc239f34d6da7cf228bf373e956797 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc1b89c00e4edbcd4b20283b4a7a4194 = $(`<div id="html_cc1b89c00e4edbcd4b20283b4a7a4194" style="width: 100.0%; height: 100.0%;">                 <b>Zostel Jaipur</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_78bc239f34d6da7cf228bf373e956797.setContent(html_cc1b89c00e4edbcd4b20283b4a7a4194);
+            
+        
+
+        marker_e491a11f14be53e49fc104b529f692d7.bindPopup(popup_78bc239f34d6da7cf228bf373e956797)
+        ;
+
+        
+    
+    
+                marker_e491a11f14be53e49fc104b529f692d7.setIcon(icon_984f1d59d99d1835c74f00480c188c63);
+            
+    
+            var marker_bb7d44111f4da369d13d6d9cae4ad51c = L.marker(
+                [26.9196187, 75.8256378],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_c16c0df7e4a33c758ee06dc4ec83f1a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6e69d8bac7c77c11c97b0afed6cb560d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_887e620ad582a7e7cc3b1ad2096c448c = $(`<div id="html_887e620ad582a7e7cc3b1ad2096c448c" style="width: 100.0%; height: 100.0%;">                 <b>Laxmi Misthan Bhandar (LMB)</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_6e69d8bac7c77c11c97b0afed6cb560d.setContent(html_887e620ad582a7e7cc3b1ad2096c448c);
+            
+        
+
+        marker_bb7d44111f4da369d13d6d9cae4ad51c.bindPopup(popup_6e69d8bac7c77c11c97b0afed6cb560d)
+        ;
+
+        
+    
+    
+                marker_bb7d44111f4da369d13d6d9cae4ad51c.setIcon(icon_c16c0df7e4a33c758ee06dc4ec83f1a7);
+            
+    
+            var marker_057d9a157a523fc94bc2f5c607854e66 = L.marker(
+                [26.9212614, 75.7967221],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_20269dbe772dac1594e08758278b9502 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb1f6ab88bda44461897b699c66addb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f86b2e46a9fbc2436d90a76f23ea823a = $(`<div id="html_f86b2e46a9fbc2436d90a76f23ea823a" style="width: 100.0%; height: 100.0%;">                 <b>Rawat Misthan Bhandar</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_eb1f6ab88bda44461897b699c66addb1.setContent(html_f86b2e46a9fbc2436d90a76f23ea823a);
+            
+        
+
+        marker_057d9a157a523fc94bc2f5c607854e66.bindPopup(popup_eb1f6ab88bda44461897b699c66addb1)
+        ;
+
+        
+    
+    
+                marker_057d9a157a523fc94bc2f5c607854e66.setIcon(icon_20269dbe772dac1594e08758278b9502);
+            
+    
+            var marker_087d1d6f6becf66718c6e6a16c68ad91 = L.marker(
+                [26.9055179, 75.8111115],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_a391fa34349eb3e8059d69bcc01c94d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b417db8d49450f6c82cd94b77227f756 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abd034e951c6e546cdf97dae11583381 = $(`<div id="html_abd034e951c6e546cdf97dae11583381" style="width: 100.0%; height: 100.0%;">                 <b>Tapri Central</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_b417db8d49450f6c82cd94b77227f756.setContent(html_abd034e951c6e546cdf97dae11583381);
+            
+        
+
+        marker_087d1d6f6becf66718c6e6a16c68ad91.bindPopup(popup_b417db8d49450f6c82cd94b77227f756)
+        ;
+
+        
+    
+    
+                marker_087d1d6f6becf66718c6e6a16c68ad91.setIcon(icon_a391fa34349eb3e8059d69bcc01c94d3);
+            
+    
+            var marker_8f6b474f19398f8bc276bc58dc6bb049 = L.marker(
+                [26.9257943, 75.8236714],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_e593e15cbb7ea0191fd2462df373ed01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87d0040ac5f8223f360d57e3fc773380 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e50866aecdca09b2aae9f00b33c9af2f = $(`<div id="html_e50866aecdca09b2aae9f00b33c9af2f" style="width: 100.0%; height: 100.0%;">                 <b>City Palace</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_87d0040ac5f8223f360d57e3fc773380.setContent(html_e50866aecdca09b2aae9f00b33c9af2f);
+            
+        
+
+        marker_8f6b474f19398f8bc276bc58dc6bb049.bindPopup(popup_87d0040ac5f8223f360d57e3fc773380)
+        ;
+
+        
+    
+    
+                marker_8f6b474f19398f8bc276bc58dc6bb049.setIcon(icon_e593e15cbb7ea0191fd2462df373ed01);
+            
+    
+            var marker_288e78de5382aa843bba926a67da6853 = L.marker(
+                [26.9240458, 75.8267144],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_6d6bf353fbe189626ee39a1ffbb2a4bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5aeb1e4e9af917cc4cca5092dadb708 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0ab165a5ad482fc10c0a8a0230ccbff6 = $(`<div id="html_0ab165a5ad482fc10c0a8a0230ccbff6" style="width: 100.0%; height: 100.0%;">                 <b>Hawa Mahal</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_b5aeb1e4e9af917cc4cca5092dadb708.setContent(html_0ab165a5ad482fc10c0a8a0230ccbff6);
+            
+        
+
+        marker_288e78de5382aa843bba926a67da6853.bindPopup(popup_b5aeb1e4e9af917cc4cca5092dadb708)
+        ;
+
+        
+    
+    
+                marker_288e78de5382aa843bba926a67da6853.setIcon(icon_6d6bf353fbe189626ee39a1ffbb2a4bc);
+            
+    
+            var marker_a39e2765fcb4d952773e87b22375e355 = L.marker(
+                [26.9165975, 75.8222331],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_b3c4a5887cfd3bbf9858c75fb30c8872 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f49d0b8bcb82e95d37cb732ab064ff09 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11f841bf4891ff2849ee39900b365fbc = $(`<div id="html_11f841bf4891ff2849ee39900b365fbc" style="width: 100.0%; height: 100.0%;">                 <b>Shopping at Bapu Bazaar</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_f49d0b8bcb82e95d37cb732ab064ff09.setContent(html_11f841bf4891ff2849ee39900b365fbc);
+            
+        
+
+        marker_a39e2765fcb4d952773e87b22375e355.bindPopup(popup_f49d0b8bcb82e95d37cb732ab064ff09)
+        ;
+
+        
+    
+    
+                marker_a39e2765fcb4d952773e87b22375e355.setIcon(icon_b3c4a5887cfd3bbf9858c75fb30c8872);
+            
+    
+            var marker_699e5c4e2fb3c35590367dc6cb33049c = L.marker(
+                [26.9854865, 75.8513454],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_2144f2ad7b90477519b4372d1683af89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a776a40ae0dd5ae5a2a2f9f499771029 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea143ecf394ab1e99af72b562d825dbf = $(`<div id="html_ea143ecf394ab1e99af72b562d825dbf" style="width: 100.0%; height: 100.0%;">                 <b>Amer Fort</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_a776a40ae0dd5ae5a2a2f9f499771029.setContent(html_ea143ecf394ab1e99af72b562d825dbf);
+            
+        
+
+        marker_699e5c4e2fb3c35590367dc6cb33049c.bindPopup(popup_a776a40ae0dd5ae5a2a2f9f499771029)
+        ;
+
+        
+    
+    
+                marker_699e5c4e2fb3c35590367dc6cb33049c.setIcon(icon_2144f2ad7b90477519b4372d1683af89);
+            
+    
+            var marker_9a8c5ee04a0fe54b252efa69ab33d48e = L.marker(
+                [26.9816052, 75.8447917],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_7f34d0801afcda1a15f88852d3b97828 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30c5b59186407338ec8ae01a2f7844a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3efa2e0af6fff849e177ee74fd133aff = $(`<div id="html_3efa2e0af6fff849e177ee74fd133aff" style="width: 100.0%; height: 100.0%;">                 <b>Jaigarh Fort</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_30c5b59186407338ec8ae01a2f7844a7.setContent(html_3efa2e0af6fff849e177ee74fd133aff);
+            
+        
+
+        marker_9a8c5ee04a0fe54b252efa69ab33d48e.bindPopup(popup_30c5b59186407338ec8ae01a2f7844a7)
+        ;
+
+        
+    
+    
+                marker_9a8c5ee04a0fe54b252efa69ab33d48e.setIcon(icon_7f34d0801afcda1a15f88852d3b97828);
+            
+    
+            var marker_e56649931b76d08c65ccd14dfdeba5d2 = L.marker(
+                [26.9115849, 75.81941200000001],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_9f4c3920a15bd3b2cf3f6a32b191fc72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_137f3968f0ac62d30971cb6010ea6757 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3ee933c255a310b78cd7aef39d79313 = $(`<div id="html_b3ee933c255a310b78cd7aef39d79313" style="width: 100.0%; height: 100.0%;">                 <b>Albert Hall Museum</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_137f3968f0ac62d30971cb6010ea6757.setContent(html_b3ee933c255a310b78cd7aef39d79313);
+            
+        
+
+        marker_e56649931b76d08c65ccd14dfdeba5d2.bindPopup(popup_137f3968f0ac62d30971cb6010ea6757)
+        ;
+
+        
+    
+    
+                marker_e56649931b76d08c65ccd14dfdeba5d2.setIcon(icon_9f4c3920a15bd3b2cf3f6a32b191fc72);
+            
+    
+            var marker_3cf2309d762bbdc3dd622198666c0bc6 = L.marker(
+                [26.917196, 75.8582521],
+                {
+}
+            ).addTo(map_e8f55208145e907b5d2a533f88752076);
+        
+    
+            var icon_04fe37b96474ae715815bf14384f2dea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89c7ef6f527320ef6c5e20186b895864 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_57cb1f28fbf9b15c111c9ec733708486 = $(`<div id="html_57cb1f28fbf9b15c111c9ec733708486" style="width: 100.0%; height: 100.0%;">                 <b>Galtaji Temple (Monkey Temple)</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_89c7ef6f527320ef6c5e20186b895864.setContent(html_57cb1f28fbf9b15c111c9ec733708486);
+            
+        
+
+        marker_3cf2309d762bbdc3dd622198666c0bc6.bindPopup(popup_89c7ef6f527320ef6c5e20186b895864)
+        ;
+
+        
+    
+    
+                marker_3cf2309d762bbdc3dd622198666c0bc6.setIcon(icon_04fe37b96474ae715815bf14384f2dea);
+            
+</script>
+</html>

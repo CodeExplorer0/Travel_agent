@@ -1,0 +1,586 @@
+{
+  "trip_details": {
+    "destination": "Jaipur",
+    "days": 2,
+    "budget": 20000,
+    "start_date": "12th May",
+    "end_date": "12th May",
+    "number_of_people": 2,
+    "reason_of_visit": "leisure",
+    "interests": [],
+    "travel_style": "leisure"
+  },
+  "daily_plans": {
+    "day_1": {
+      "date": "12th May",
+      "weather": "Extremely hot",
+      "activities": [
+        {
+          "name": "City Palace",
+          "description": "Visit the City Palace, a beautiful blend of Mughal and Rajasthani architecture. Explore the museums and courtyards.",
+          "type": "indoor",
+          "duration": "2-3 hours",
+          "estimated_cost": 700,
+          "notes": "Due to the extreme heat, stay hydrated and wear light clothing. The City Palace offers shaded areas."
+        },
+        {
+          "name": "Jantar Mantar",
+          "description": "Explore the astronomical observatory, a UNESCO World Heritage Site.",
+          "type": "outdoor",
+          "duration": "1-2 hours",
+          "estimated_cost": 200,
+          "notes": "Visit early in the morning or late in the afternoon to avoid the peak heat."
+        },
+        {
+          "name": "Hawa Mahal",
+          "description": "See the iconic Palace of Winds. Take photos from the outside or go inside to experience the architecture.",
+          "type": "indoor/outdoor",
+          "duration": "1 hour",
+          "estimated_cost": 200,
+          "notes": "Best viewed from outside or early morning when the temperature is relatively lower."
+        }
+      ],
+      "food": [
+        {
+          "name": "Laxmi Misthan Bhandar (LMB)",
+          "description": "Enjoy traditional Rajasthani cuisine in a comfortable, air-conditioned environment.",
+          "type": "vegetarian",
+          "estimated_cost": 800,
+          "notes": "Try the Dal Baati Churma and Ghevar."
+        },
+        {
+          "name": "Rawat Misthan Bhandar",
+          "description": "Enjoy pyaz ki kachori",
+          "type": "vegetarian",
+          "estimated_cost": 300,
+          "notes": "Try their famous pyaz ki kachori"
+        }
+      ]
+    },
+    "day_2": {
+      "date": "13th May",
+      "weather": "Extremely hot",
+      "activities": [
+        {
+          "name": "Amber Fort",
+          "description": "Visit Amber Fort, a UNESCO World Heritage Site. Explore the palaces, temples, and gardens.",
+          "type": "indoor/outdoor",
+          "duration": "3-4 hours",
+          "estimated_cost": 700,
+          "notes": "Opt for an early morning visit to avoid the heat. Consider taking an air-conditioned taxi or car. Elephant ride is optional. The fort has many shaded areas and AC halls."
+        },
+        {
+          "name": "Jal Mahal",
+          "description": "Take photos of the Water Palace from the lakeside. No entry to the palace.",
+          "type": "outdoor",
+          "duration": "30 mins - 1 hour",
+          "estimated_cost": 0,
+          "notes": "Quick stop. Best visited in the evening when the temperature is cooler."
+        },
+        {
+          "name": "Albert Hall Museum",
+          "description": "Visit the oldest museum of the state of Rajasthan",
+          "type": "indoor",
+          "duration": "2 hours",
+          "estimated_cost": 300,
+          "notes": "Enjoy the collections of artifacts"
+        }
+      ],
+      "food": [
+        {
+          "name": "Suvarna Mahal at Rambagh Palace",
+          "description": "Enjoy a luxurious dining experience with authentic Indian cuisine.",
+          "type": "non-vegetarian options available",
+          "estimated_cost": 4000,
+          "notes": "Prior booking is recommended. It's a pricier option but offers a royal experience."
+        },
+        {
+          "name": "Spice Court",
+          "description": "Multi-cuisine restaurant with rooftop dining",
+          "type": "non-vegetarian options available",
+          "estimated_cost": 1000,
+          "notes": "Good Ambience"
+        }
+      ]
+    }
+  },
+  "places_data": {
+    "attractions": [
+      {
+        "name": "Le Tour De India",
+        "address": "14-B, near Mirza Ismail Road, Panch Batti, Jayanti Market, New Colony, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.917842,
+        "longitude": 75.811987,
+        "rating": 5,
+        "reviews": 5,
+        "category": "Attraction",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNSeTbcHzDcRZnWuLYOeBPPWRcJL32msBzhQdeERdx_WLOrOUG683FljAuSrhxdZ8q9U-PprVGqX9VaxMYdptwOFHvrYrzRdieYcYeXijLXvXotyhecJjcAeDkVO5Lndn7FIV4sViafhp-y9b00jyNvoF-0JEtlcl2ypJZQEqJBXxouyUo5Ox-9DalEWwC8eYeOc9Ycp1JcqsH6ZEHLfaEh2ez6wbkwVsBM9bL-hXFmp2-xChotI50xUy_K20lgzT2l2Frrd0XKeWRas7cHbGTbInFdxbhGD0Pm0zYfS_DVzwdJGCIzc7F_-Fu8lAbXZbYgY78UbBNY",
+          "AXQCQNR-DRSo5HF9dNnflMn90oOaACbS4mYbCTQxAGwFN25N9I7z8ZJ9w6EUQ50zZhBuhimYngvy3Rrp8BA6FK65Gimp02C7o5E-jZmHZSVZdmEQHR0Rf6Z6OpAD65-MjRlTLrOWAkuJpQpUpRAoeLMmnQKHZY6tK3QRrXr4HvQh8BNzfigbN--AUkrHxx6YKWRDEPzjNVYh1cRMi1mO6A7D1uC9jZGXT7-C9fKdx-sHz0oEP3SOZgyjU-GvKFVP4fEXLX3bEOcDlGG5GOQ6K6U44Ss832cHaB6FRXgTISe3ol4xMBet7IgNN3SyZBB2d_51OWLu4VtiAxybzrQZWPmUmhvZpdXdxbmOYs2Ogj9ZKG0rapQktp0qIWuH-Wbnz7Qj-Ip6PitzE3Ezsnp7i1QgjywFwyiWiJPyvi36gPWCXFOIOk5NAafJbeYAGtWAGKYSpjqrcMSr15GboyjVfOikdw4Z5wn9e7ZyaLviUuaRhdGRe7eX3XE5zo9Gaq2VdWLmtem4_hkfKDBMXHs3Ht99S0cZpj7D3xZneSGYCNoUf0UgKrGBW8DHiW97X3bHfHfnuvCyJ8GAeGcjpjx5fUtHKbnxhZXDTPlGexNekwxSAvklxFW0kUgIGOCMSPE6rJv_tL8vtg",
+          "AXQCQNRveKJhbTZZp4qET8Odjvm54sc3jFw_6H4eXHTp67BU_LQGubyglhj2FM37BcKC7jtlpJwlco0KgDxurXTYSJ9N_pWpenMC0bzVwpr6N81unhRIq-MDzkZUmHwjiwuExP17TnAWcb0YM3wGG9SXztGVzUd4hfkadVASdOEORY6Z0bYUaDR8bTazbr0BUGmnBI7sFOKp-7E6z2eP1Y4lO_c7yprrdcMqPfmTyFEzihbXmd4BtwdxeBLQWDX4qI7rFlZIGuwLPrNDZZfXwCbAXL9z7jVB8GJucfaQ0QTYvmamXIqbA9aQHkjWCZ1taqWO5iPkfovTHlAJwUEr9yuaPhqux7oH0k0rxPCpC3bLSbDs_1xznWkemnzX3VXkDKSQ1XYDZA18xVifj5U-7cArLlQdUAFAYk3kEKgx1eY7l82G4n924q63thOPVKKHc68SRgsbeEFHouh8xjuuC8Ilya4sB0LWoZF5dt1MIQuIOSsfgurK2RxWdV6favsaMZpRp9Wff3U3xuZ7E_8HFe7I0_UTl3YLm4UHeD8y4yJGQACTienJXm0echiS4DCe0UdNjgK0fH73C450QGKuRBI2EvKUdT8KeqTKAWzd90HbvbTyQ2FopRlhdLuTTcLua8BMjg9SDA"
+        ],
+        "score": 3.515
+      },
+      {
+        "name": "Jitesh Arts",
+        "address": "303, Lal Ji Sand Ka Rasta, nawal book depot, Jain Mandir Papliyan, Chaura Rasta, Tripolia Bazar, Modikhana, Jaipur, Rajasthan 302003, India",
+        "latitude": 26.9225833,
+        "longitude": 75.82133429999999,
+        "rating": 5,
+        "reviews": 5,
+        "category": "Museum",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNRbBN7JPsKmAUpIQeAdlMWzk-PGTLmpUtGxNqQknm9LVnRwLODy9W1EEWfs5Qqz0LltG90VFRbL-kHbW_LBUlssEacpn-RzAP8Otxm6AMV-Oz-JT4P_Kga-FxGA1MhVkaLb3whGKy3u9QQC8ZfJnOXQmb0DS7qEhs8NylCALtUjXMCK9ZP9dd9lnSdxse4zoQwnw4jT8jrLDE_ReCGXBE2rAjPbakzHqjFubMW3Dw3ez4asM7sCGKZo001bIW3qWTrjsBCfjKzLQDkCik6Ih9qyTLGfwQgcYrejVWczedWEwFEvX_CIlvoZlDvJgLPfOs344vv9qug",
+          "AXQCQNTP8MiORBL1Beeq4tCVzL2XOPBFRXql_dtxoPJO1n28ZTyXfZ6WttF_lNPRbOCG99J97OyNU3OkBv6tLRFEyprXnOliOxYc_ivNn5Ishjm94y8SVQdMId8B4BubP3VuvwsKnTNYqCJKO3bmnH9wY8C7d1d2FRJGwbdmUeAlyfMl6taI0GyT-y9IYoZLAV39cn6TWLIpzvIOLHXFdBRp1oU-7Q1vtwgednFQb1DG7P_PNX3r8oICQvJHXDLyohZ54QCXnEiBa6O2OMHU_jJ2NctxwmnFrUaeYfqLIC1UQQen2cjD-LHEHNF_P3METHiLbtSDpzJP3iE",
+          "AXQCQNRxxDGC8ldLjfdqwYSYSTf8qg9VC6JwqFDuEpXqsmviHWQZpOO6uS_qrDA99pOksuWlqIb3TtyEOPaVeaa_mTpazJf0Flxqj_TAVJLRi4ICMVQFUlhLV43yDqJ9DQ1LUvKxsz8UmrBxXrQ0vmCpbJl7y5khc3l27Vs4r0YQEzp8Sa3jMA1N4VjYnCcsiv5RqyVNqPuLeIyHIn7-V3bycdglEB_3LJiJ_TP-eDbNlkipf_vvBprCTQeg2mWiIOAU5a1dXdFKIP90fqJr15jJqO0P303IxLaoCs5gUlyFbB7D467zIJOiDJw23VUDGufldC05cjtKgE8"
+        ],
+        "score": 3.515
+      },
+      {
+        "name": "Calvary Bible Church",
+        "address": "WQ6J+2JP Metro Station, Elevated Ajmer Rd, Jai Ambey Colony, Civil Lines, Jaipur, Rajasthan 302006, India",
+        "latitude": 26.910097,
+        "longitude": 75.7815778,
+        "rating": 5,
+        "reviews": 5,
+        "category": "Religious",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNRnEZ5JAvmqYfWQhWrIC7FEbFchgcToEJcHE7U_b0yBov5Ko92s3M8QJ3--vfX33SONOBuNzEZybSfEeW__vSerYXadeD-axW4WB01zc3BFBuPbQsW0gDefLx25SduLsuTD5Wh0-ySV36ONEZUjqo4kZ0Yk6-IA2Z2k2RBnrEAelrEkOBKWzGgSRzNJCjG33YRm4MdjAokGcK9dMFdtr3rxGyiwRsLmFObBDbkWT_V8B6-PYnlk90JpZN9ykHpfJGGlsXmbYUC-FXUJXa1EmJrG7YI4bHK8SiaTGhSVAEO_CBOJ3wYqsPDX1LmTKAt8-eCSuoYK9S-payKxZcjiv30aqS1iG__CXaBXn7q5CNoABud7667qDpfpBoUIPsAiCsdXuLlbnGUohesjwMukhVDjNLNCJg9jGEJnqpfpx9efYqkzZQQUYPudsdbCRMgnq9WnWXl6M1b4DlQDbL1Gi8vmDuYS1hrxWP2KLhQC5RJGyAQtboVppWBQqhXbaoyeD2Q4mEdlWPlWQVzENDWXE9-jTg2AArmCPV33rUMhZPuiI2PUYeP27K-ZqPKGui8P6vhDGDr-rO-A_pymF6RPcl2HKmUNtTmuPUOIDxmphu3cEazF-57v8i-2xiz0spWepYinGWJu",
+          "AXQCQNSpNLTa3Rlw9CXF42OlkHDLTgEtlOpCLzTc6Hlx8yuB7CfOvJf6lNb9SloMHymi2gY_X89ENTSzT0N7VDTpaVL2qidG9GFilHFcXvHdlbNVK9Nc-AmOv3IW49RcMyBVAv_-iR8_ST4nEyoK476Xj6z4vSVZQWpjEN89i2AJd_jeTOi1-Y18D9sghlz27lduelpAXQAipNVGRxgMiHEk605gxMUtmlzwtVurdn_SXgfO_X4Au9GeZCwtpjFSpRWaqCxUNnpHm-8I8Y2QJYrZTumzhB2RyoddbvAzHobp17-CadUHrFZdoj-98u14hNQzRbmIWgD8VoSFPnhvKmmmNSnhzTuVa-G3WwSmX0bZCPhILTvlKSNDKULgEkOhKxSVQqyQN6t8an30eRM3-TD7n2Uv940K_ekLiQrRKbiWA8tNKhys9Y1mQT0_qBf8yzPEwy-ug8PDRJZpEV3xyrOXNqsuCQ9CSfplhTnHmbtDZuTQa6GDs5WS1Ni2DGr73BFwTDFHC0_h5LNuDoDB3PqQkwB_dTRQK6LXMmREYE7vH7qkODg7jU8mtxZKNHa1U3uQOLWexcJ0-2WlkqLOa3GgeTxS6HJPFKm5gxhlaNRaURBaTYrvHqgoJBYOhDYV2jh3",
+          "AXQCQNS4VWOcvdFN5PrYoKemnrWOlot1KMq-ESXuwRS726ZcKx1fhcsLDfNDeHPF3QxX_WEb5_gEVCW01lQ8bfUyaR1zVP1vzvp7typI533QFxDDCyEp1s8ASSLKBXG56m88K1DXCDEfto0CStrDx2gboJAv_wUflL2Z6InzpUMH_0TiCNh3jDh7ts2Y-Pgi7io0wzBZi0z0p7MRUK7RTFx2UfbJNlZEQECi7bZ6hyn3w-UEitBvwa7ie0CwgYdKA7IzagNv05q_hNy3cCfORKuQG9kpl2EGkBiOMr1Z_bQz_xN7mK9xvRzljSovA6mtkaQ5yF7zaLodQPwa2ShdS3Ktq_dqBXoxpTSX8OwvM0cASbRhAEKpf4hI2Qlozfzpzc1RShSXFq4a49wkK4mGLPHgDpsGhMDQ5V_WEDKOrv2Ul4gPhyEcRUM--_HFidkc0GZqQvuy1uaRMQ-ErFflJPJt82sCIp9o3eE_h54yCBY4al9DW2qI_PzWpH06IpyJgURG33Fv-Ypgz47l9qFUSmRGdqYACLYJIsXRGY05myQkbmsZ2Z6_94JDABEjRp5A2LF57Lviy2h-tF1TKXcPbuu4-WUfTVuiGPMFWoEyFasoFLjKt13kfv1MI61eiSFqa7Et"
+        ],
+        "score": 3.515
+      },
+      {
+        "name": "Dominion Life Ministries",
+        "address": "P23, Devi Niketan Compound, Ajmer Rd, Panch Batti, Mission Compound, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.9129945,
+        "longitude": 75.7945927,
+        "rating": 5,
+        "reviews": 5,
+        "category": "Religious",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNTofI0x5jhPqxjogrpzHUIfVqS6_WpE-1MVSGjR1LUh-hn9EBMXZXJIEML8gS_m0vJsKUnTy9PQx4A9guj6gRLccp_IxrRjJG8clVQZzGJGJzU-2s-kJhIkn7MK7txxcxlU9dntYldbeKSV6iQFiJmSWAwX0OJ3r_9dt91RksTZkEKTz3tywSsxjIakLVXyNBIG4P3ENgzfwjaS5zDkv50c4X_dbg2S2jZzdMvZ6W3F7HEonEo4G-LPnuzqg2JLlQEuBDkCDn5H0wr5E-ZKIsQ5rApVfkHIHcWvvkuWVGYjTckLg8eml8Fz-Ze5T2-ggwPtpcbaQGg",
+          "AXQCQNT6GTrzF7bQPuhx9ukMkKP__4m8dFEblS8iDA91YNsOx0wY-vuUbtGUW8gAiNyth2iu73Ixeuj7BeC5rEsUEitiWS8Cy--y7t3CF4zDQe0jW1j4X4wPGVyr-7OcXrTR0ZGzcPzVtBNkAWbtSLrP35_CbBpNEHVVZwUYGIXQmBfWtPs-jYCl-nzFVYlA5QSHz5m_5_sjqyA8yXUTV35_R0zVJRmrUB1bG1BWHvQVTJftKBT0rwdc94b3H5DPm3NlbxoCmCh2Mvo7mAHkQHF0XS3oEI7YekdQ0dNTck_BrB3AhsKJJn1uZDOJ0u6CsasUTGSSJFHo8c8",
+          "AXQCQNQ511vwkjMRRQO-bdL1hXj5dpWZ08r-S1r-9MpHogyIsES2BJi17byfbdGutz53P_87aoo-wREqEQerDePkvXxcDkmnRhsch-aDk2kyEFs9QIOWUP1lKalMi7E6wki63_WWLQ2dQudq35BgxUYmxm7u9etWFDhnbY8Ldah2zkr0VXyUBjppyhA2ahJ34N5o64OtBBGzrhqEZ6QtHD1tvSf8BRFMPPmeFNhYUFqjutat9koQgdAfp291nQQDTVOfbXgHYnzBZo3Pv8-Dkun0DQUCudhN5AjKUgxm8PkuMriIw_alEDNGEGBzbvqqy7ka9gxG7Z2Jx68"
+        ],
+        "score": 3.515
+      },
+      {
+        "name": "Traffic Park",
+        "address": "Shastri Nagar, Jaipur, Rajasthan 302016, India",
+        "latitude": 26.9415122,
+        "longitude": 75.7979953,
+        "rating": 5,
+        "reviews": 5,
+        "category": "Park",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNSfHaOAOfMcIOBmWGN4rc925xc5DNqIBQiNytEWvImc6I6u8FHVfStp_LpY2F8kbiOMcNv-rf6LtI6ZJsacn9eYOKN4VhTLfMoPJwaAZSS1-2YGoUUQV2Y98vEcXOVgx4aMiDgJ7P_67s1EzK2crApg60Pfc2i6bjTRMlejEc9IT5I_70xJdazFTT6AQS8GFVYi4m9Di8JDTM41awQSqif-P_DQ9kCtQHwG18pSOv3mSXemOKllMhzzfv3ONBP8uG0iHQKZ8z4f0HsAsSzdJxSa1Ts_b-p_N8WLFSp4FLbyTm77eXpQiBkjsPuCGqs2wvO8ERmi0rI",
+          "AXQCQNS-B-AaIgwXpOp20hb2qLPJCQ7aGxBV3VddoniJLSfuqJtxnGvq9TxTnSyRjf24aXetYO6kRcPUszIMLn51VXTD4VgJv4XAGAA7_6wIBxZYg5tdZKQfOC1oNhgPSq8av5mm19uSkRJQ-t1bM7N_wKx2vbKQQ3zPhqUVa9sZcdaIN-q9MDtY5vbH1weo1GyXGn128imNhiiRpQsLhjMkYNrUIP-V3LKjF9iTfGIQ-t1ET_lrJn68MtvU0R57Iu9I5wCFCDO1KlOwMINPpM9tFoEQNhcHxE3W-x9oeRfOuEsdBrBvbdVzNu2A36UD3G341AiOPeWsQAA",
+          "AXQCQNQ_1i3n6LUWI-2Iv8Yepj8xFFKcUdyMUB6ATSS7ZmDS9qy_UYDSxMC3kWnylCQ9rEVrPB6XJc5HfcRHj99es8ZKUI2iEJfQ1wIhWkWM0g3ouIFl4wOBd1Y-J-WKQzFjaWWJ7hwNcabI8r9c_gEU7r_JPnTqCNzlTt_INhul1023UqWyj5gvA_U6tF5Q_SAcrT_hDo8usotdvasR6EJHCoKWrCA_P4iaLSan6bsIKwiORf4Tzm04JAsgUWmn2B6anXhByHwGw9B2wmwMwFUNQ_Dx0wcTYQSHlZ1BCsunqdPiF-8GcXQqscblj4yweujuff_Q99NvYfU"
+        ],
+        "score": 3.515
+      },
+      {
+        "name": "Jaipur Moorti Mahal",
+        "address": "B-3, Gopalpura Bypass Rd, Devi Chiranjivi Colony, Surya Nagar, Gopal Pura Mode, Jaipur, Rajasthan 302015, India",
+        "latitude": 26.875945,
+        "longitude": 75.77863219999999,
+        "rating": 5,
+        "reviews": 4,
+        "category": "Museum",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNR5PQ2-KB3SwYGZOwyfN_GVxSUZyBHd2DbsA_o8sz9NVxB1OVv1D_Q4ifVmKhSjWKNkaPtF2PwuXHnnFmrsfloVi5ff7NnD-J90S4qUl0cMHE0Aly5ApdTETF4N2hYDCUJAC4_CSJSuDq1nPagPAZB1lLxy1A4jkJZfN9FqGYqQAuODnm9AE-dRHhUkFyVENFZi0EzqYd_lGc-ne5sNHSPAb7zXmviDx19NuUMZw-WmetqWnHtm81mLbgRAscQp5ut0nzmvfY59wKvTzCTLEwHMZg9ZLfN1JEkcmkHakPxS-T5sMO5HFDBq5_XCRNwlv274Yai4HFw",
+          "AXQCQNRvwyWesehkaShkbH0K1r5tNUPk2lklHQ7fCahSn51--X9T56ZZaQmR9WI-fNTAZYhijONzWZFlDG2zekc01C31HiQnN_Yt3q9nyFhh_axyLwjQ9olHjNHAd9QndKrqK9kBCgTJ7IOcGxaovNO_cg8TSNDyRZF73MoFezeSNpgYcuqMcEfL0b0DH4TTVsPj4JiHNYNwSuZ5KRd3mNr8vdXn_V0SfWRFNi2JGDA3sBZpOyNCbedbRQ2Ftzw95PSLNniAzYa9f0yjVBx1lp13Tre0u8tA0Vxwxt8f_7dYMeltDvVFr07k_vkiOIEZQ_0R__fYajJBXm2VWsC0o1qK_IEa8cYoAf3thFEkqw_5_XpM_2e11lmM14D8zTeik2fKdyb4jHni6YIEonsCf5euKFt_txP8riS8TjX-K1NP4Xkxa3uoZIV0jwWnrqo204SQpf-ji8zs06lBr0pyxcoi_tvMM72vOK2KQoYCM8GPHvWTfKy67XyAyoiQCpYn9WzhZYygiYyFdf8mlsP74xSVPyzC_Cox1BVfQl4KZ0ym9t5z00zXLprbHZeCDXxXvTehjlSHsLEe9BTBi0dX5Jqqs_FITtX-xxRh9gpaxHwbc5h2MCPnN9CmA1odfnbWkLicDa26mA",
+          "AXQCQNQoj-LVTisc_S6t4jDDISamOuGqnmBpJMOofk8BZqNVpwv3Wb1UHJ1a3aS9Fwp8ToRwVxgT0YgtV2GcLbTPECX2EQkM7_rOHycbpYs-LCQFIZLC1YxTyQOs7e_rD1OS_YRHn6fInTfKpsSf7CUauuoQfSfEBjhqHae_jjlknrouaAbkzhMq3RurhwDt16H5T1X1zl7qaA9PIADAihw_5kHTtSaPvcqpLF9OYkeOJldTfdEbYzTlfNy0Nh_eP1Mt5reEKTlEYTKY3rrxJWGr6fnEN5AyqN-SjccIr3pMRNnsQZLXaBnOOOLwiE5WHYW4p014nwEXEnQ"
+        ],
+        "score": 3.512
+      },
+      {
+        "name": "SUPRIYA ARTS",
+        "address": "2454 Ganga Mata Ki Gali, Khanjane Walon ka Rasta, 3rd Crossing, Chandpole Bazar, Chandpole, Pink City, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.9226198,
+        "longitude": 75.8123806,
+        "rating": 5,
+        "reviews": 4,
+        "category": "Museum",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNTeB9WTChiso2iEK-LDyKFYlahRRsIy3MKq1AiqMZjpGYi_8_zM76u5ws9AwPwd7LgyWir7atzWTcwoF34GmxtyA7Xy9a85Bh-hMxsgAS37QMGj0-kyOXcajXg1vp-0J7rucEwp-I69ZPxxBCZrwNvRgy2BQPs3NG9EtzzXIFqhhsQAwrbFilQSRD3e5EFFNfM0JO1Qyi7_EYvVm7e1oOUVuT9KWaH0RmIpShSremV-5lVztXoWXXR9eqn-YlqChDWgy8Piocom_YpAV36R-RpWfXz5E4TYvjA8iMbRh_vVA3JMsWdfRE8o5P9NxPYHCxWbyhOXuTI",
+          "AXQCQNRn4i6vHprPDULeu-hjk9U5AMxzeeUs6nPNl3XzRkW9fEWcC96muwuPPRRWf2PwUalu1HgqBLAgBsFmWdmYEbhhcd0wknWc_YzRqbwe1plEV_4iZyeQsXgMXLfr7euObXmjtZGqsq5XqBP87OfMpXFXRTtTri7n71jHQrqigcaeyJ7eZHT8h28Hsu5VYBrVfkh5Tj6HJxW8J-iMcC8XkXSiZc5wCtUirCHG7AAA-wN6TlkZZ84_JPu_AD7beE97eIML8WC4UzkYjj4H8-e_eDe10qjwNJSx_ihMOKi4Gl1fK7SfJ08WAgZWITgT4Rb1Ts2iMoBfwqI",
+          "AXQCQNTF9h38tdGh3bh_y8VZlTTx0tci21QcaUh2gPsZmdeHbDEH8X8O9wnHVmcUPlXslug2r2mtAO8cJ0f411UCr9s9g4vBJErxJgYsypgulNYL7-rUMzj4x5oZKark5b7Sx_G7hReOBkuhT2spZDezAWZfLhWLiOAfpReGPyXr8kwLok4sFFfC8gARoNeMUPiBVjD1liFP4YW1s8xJYE4UuiGqvQ93Sb3bQn7vR0Kk0hED3qI16dE03SE1G0DwsdsA2t3Gme7rvOCgtOxuLNgmG0GJTQU9r7edotHXdscSGz868VSkAoUp-Qndg6HDhF2eQfU7GkrbyWs"
+        ],
+        "score": 3.512
+      },
+      {
+        "name": "Rajasthan Environment and Energy Conservation Centre",
+        "address": "sundaram apartment, 82 park, Aditya Vihar Rd, Girnar Colony, Girnar Colony South, Vaishali Nagar, Jaipur, Rajasthan 302021, India",
+        "latitude": 26.90540319999999,
+        "longitude": 75.7437726,
+        "rating": 5,
+        "reviews": 4,
+        "category": "Park",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNTQL-zOnUnyXmJAA4fI-1Wzi3SXEBJq8iEBfJPjFYS66Wpm8ZwaHIhvkva2PnKFD0EVpn2gjdSNBAerdoJEdKeJ9E22GMgiSa9o7ZL1r1LY6D_NsC-meNqeFqD6pl0KkNFkz5VqN3h8Zl956vnDEbyc4MG_CkAi1xjxgbIrE8TmtBKOREOQ8rFM2MLFIon7ZXa3RhsmDX0EIRCiyup8Q_Sk_0gW7lILmg1frUHs6PlCoI12S3dDUJ_fgHlqpFPrlIGjLwVcHja2zCOQfjTHhgGFs_qwvL6-hXqo13PX-_3DOuwKqY-om4ZF_fCniRr6EFkhbF4AzRHkEPfGxi09lX_raIpaXukwM07K1UL6wcS4qGJftpzsGdRtuIMyb0Wsg64J-A5KlVWUEw0jew-1nZ5CwsjMHnXKL7ZWIyYmAWSiVGYJppAw2mQDFaOQHTEvie273UUyk8hkp_G5xXjv3E_xg9ZLNlHDy-3Ej5r-bYRmtZHo7xKCV6xmUBpI1maYkr9tK2EPTWRft7168uVY4ykx4zbABRX4yjFJPrHVi81YCyLuDpKi9a7ljKrrUF8LJozBOWJcyUbjs9MyTGr98I8eMFlIP2cBCXdvBDI45Xl0-BKR6D19RFifFTkZPvZPVQREpA",
+          "AXQCQNQkfbdtgaVVimJoP2v6ZeCVWedvK29BmGiXnnZSJEhnOgRTZkCFHHIS8gtBXes7Pq272Xfqk7kOijsITL3V8Eirv1KDGCG-v0OLhgJiy_uGpTfUDiS9lPw3OA9nVODOEeoYx6Zpuwh519dto-PY6BwGk1VWqXWbVjnBj3Jk6OB2gj-zPlx2DL7dMIdxaLPCCyhdJEvkvTQ6FSZUHmsydXohuzj--4w1Z3zQeGIbFYzkQbzRepA_ay04tjJWi7shrSoY3Jp2atbBjl5cmm3D0LQFVt6qvHwWwCCV2m-3Gk3szPZhVnRyNLLv5qEMivOZDZSfmHSLtYM",
+          "AXQCQNRoziHR8BL9SHHd7rwgSCiK7BnitYegzDJ3vgHd9hnnlBpcfMs3v0HOgw5Ch_UX3vhYAUBOqoiAZFeeaLW9mR2yeqvLqGgNIhGG1DdHc0d2NouktfNOr4YC6nCHtJkz7I9IkQNgpTfWaDD2wWRQfAS_M1IgNxror-vpuaia20boG_VTNLiz105S1OZAhI4nQb-r_fv0f9zYq0cPPpK7CaEFZywjoUZbHMWuMssUtt9Y0VZ0c9JkyxGLrJpL6-7cnC5zb953vpAJX39M-lXkt_GZO6-vOQ2kU5b5W_bDH2IM9toSWvlsuDRhF_UrSeblDDPiRi1v"
+        ],
+        "score": 3.512
+      },
+      {
+        "name": "Armaan Holidays & Events",
+        "address": "CF/S-4, 1st Floor, Tonk Road, Nehru Place, Lalkothi, Jaipur, Rajasthan 302015, India",
+        "latitude": 26.8842228,
+        "longitude": 75.80062509999999,
+        "rating": 5,
+        "reviews": 3,
+        "category": "Attraction",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNR-KMRW7b8RymMNuHyHgBvIoKSYb5VGDayWKYyUKdmg5gJxEIS4vFyFJzj9WZUm5PYGkqJMRL1UHOl0X0qdq7iuTyIOJ-bYHpzZAM7j6k48fOhTBCJrMgu1FR-RFH7D5HAZ694ezX_omi1JNwI2j6yIOOS8s7i1uXmOYgxRebiGeT17zonQfCvVXKX2oNEXYZ0xkqtI8Jj2qxx-LSFynLybCE2quUm6J0qRYsT66Mv_ARCWY1lCnn1WfKKjzuUQHwDId89M0i8RXzwp291okrtBmrPwgX9B5y46FogxVMjpHDpWt1M1Ev4oJcPj6sU7cbNnYddbKQlKaKp55iSYTAj2KWKbzxvCQF1cCmb0WpHNqzpb1XSrB_9T7p25ybtRBKNSVj884pLpZ7UNqRqEUJMAcEPnOvp62Fo9dK303AsRP1U-1_kCxQxdJYylqXVNyxkl6Q4EzntYmiKOMiw69-HtthRikTv9k7ZJe0RUElnP4OF9w7Gde6eYhw75DZNcRyeal0qtAS5SrdjJK4JP8vgy4kK4z5ThNrlMPSupFjHnAkibxOd-s1gceUvqUbr5djn2BTOozs9ggex56AN1yfYt3kBS_IFEPNvr2mAfB6eQxPtv3MQxPsf9BbS_xsisR_WdRA",
+          "AXQCQNQM7poa26d5KsvBDL0PmsRdevcx-yR1-nhodRXVoTwmLQ5X_L2Ztfs_qXWo5XiPU-oJz2YAJSjIoof9GoD3cH7RK36VFgeCb1VC2yluRPB52t0ekepvGhz4ji43-E48THj5_wUOuSDSQkubJQOtANv-Z0mYYBImtQrgRhyiqL_zXe5QkXpkj3RkMP8N2IhrqrqFMcKGEGambXvht6Px-4tn6oAF7bFVfVomaW6rK61NubsxeFeMyEv1_MJ_DgTR-6iYUZ0b12ATfUB0JIODhyKFtwg3RuQ0zxRs9QgZN482_ZPE7852tul5pvr2n-U_uf4gWLNTyxcjFQ41FnwZt7ZzCIEJJK_XOGESQ4Ba-VJYxI-3rtDmTHIG3066ejLTxUXI_bBA_Sxt8N1igk14l8JMp8uesaSWOg7plOqRn0GlF2p33ZOkx7HmijcU0G9aVtcM-5cqPWC4W1QIBDO91JynbXh9YRDudOpXq7KEfh1bs1B5Mlrk1fOOAcnq16ZmudDIQSnMnLq4T0eQNy7_dh6IY6_DmgxzCMor3YDy9kgqveM7k-I8mEiBYizbM289MB4nACjiPtHbyD52koAt1q5GWNVQtRvTAShRSNR5ZyRoKJwxzzvT9U9Otd2exzR2",
+          "AXQCQNQ0y8fEGZ9ipC-2Cr2EXS10Oohy693nOZQGGJu8OJtVjzUuxsi80s2Fe1c0vrFn72qHnoOCuhHH9rbvCpln4LFAi3nJdOG-KwiPhUcN-Qm6JwYv4CKuUJ0-Pzcy2_ClHfVpkB81oBUCpmzNtWjcwYPTDmk-uW1JpNRiiCNw0kq0sWBgpLz4V6Nh6GiT6K6QKBFsNlmoZ9QLGDIq2m_RDp2cxwC2b5Qr7Fpu8elWpQRnAszRap6-a8MxKd2lwjm-guzcQXFypZx_VXenzHafkokN70XWSlLmT0w7JqjbBB10OyazhPgzXY1mQ10VjyOYlFTk_Mh-yKJJ-aRZEBgW3DFxPV7CHqRWwk9mOO-DG-cSmqk46t4v3qbK50MJwERUMBBh-SG1ONOEW69kZU6FuFGeu5nXooc3M_w3abGsbJi_56boFcivLwm3P98UwEUnREMGHQq7nv9m3iDN1ZpWhR4cT9wjOvYt1FTUJsqRY2QYczIQlSdYQ4HR0WRi2-qIX9GN0Wa5RPBRqeFZaKBCbpadusonjrcQftCadR52kB6h1-g0a3wURy9la3S70uyq1dN2uj8Tykts66nBihiA3UJvQ1KyCrWNYf1x7q-sVtNw6GVvfaGfDMVcrxfWkA_QvjmBYQ"
+        ],
+        "score": 3.509
+      },
+      {
+        "name": "Jaipur Moorti Emporium",
+        "address": "2nd, Khejron Ka Rasta, Chandpole Bazar, Chandpole, Indira Bazar, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.921934,
+        "longitude": 75.813846,
+        "rating": 5,
+        "reviews": 2,
+        "category": "Museum",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNSC-uMGI2Z2t45VTjgre_ocjX67y6_14RHv45DeMgLxnf7ciAvrioQ6lItPmXBR49I9NGNpEzOfr8EW9PtEiQmoSs69z2jABmO2ixaW3XmAUHSfjkaSoD8T5wRESu06KkY03fuqqH7ggKKWVDUFU-futoZGZ-4mynIxG8Ws8kiUHVayLaBgkxgNmikLq7PEH_bHd_dVgfLL9_3hgPbSFZzz1YBj4oncKrI-luK9kPHfAJwtzrtkGtL8jjHKyZ7c64tFSOrpnChhSrDIgMQFBU44UNjX22o1aoMHGjMZ_mHVSsjBl4XjM6sDBYk_yf0stxCZTBPN0Gw",
+          "AXQCQNQ-qqVopMrnxWue2ogVuQCLUXJyEEBLkYGRO1atywFF17Uz3BcD0G1iFqwNTB5pgTy70MchkzqunDVb3UeItSJi3F0EY8XeJYFxBMmCodDIe-nIDLA7QbDNEA_Uf1IE95QTqzGl0OgKeEi2FSpzG77hiK4AgR01q_Sge6NS-DymzL5X0LpeN2Ngp7XGOLdZNvTvvuhLYHPZq6cWXxTgw2W_fIzNbfrf0FjpTXuwY8AjvOM_1eyp6oP-6jHx6EOtcIa1CF7eRn0SqVyuraJD_jhcxVw47NOyKunjwN8pk78GhdK9u5VGObFiCE5c4fcsDQD-fFYwDBU",
+          "AXQCQNQyUJvwmRSmxWAOWrrWZpLJ0z0qUqO7Ft4t59RWexWO1q9XWglEg1vDMuAtyY24BUmwvq_a81hIb3O1flkLd2FRnv8rmGF91T4KZpW1bt2POCe1Hwi3im6c7HPrcYZnTCc_F5GBdopUBwNUV9f0yxVFB7udOw-aqVB7Sh0VhXl4C09uWiK1-PRuGMNIyS8Brz6za93nKqrdm7w39EuEAKt04U7ZYSbf128W-iAss30nbGORVSEgawQxYv1mmiExoCw66nNIS1QaiPnGgsL51_xf1AsDPBNV3tY_dpogq79W5q33eNngwYtc6L6YvegBh-Or1hUy44Q"
+        ],
+        "score": 3.506
+      },
+      {
+        "name": "Mohammed zaheeruddin Babar Azam",
+        "address": "7, Mysore House/Achrol House Colony, Madrampur, Civil Lines, Jaipur, Rajasthan 302006, India",
+        "latitude": 26.9124393,
+        "longitude": 75.790264,
+        "rating": 5,
+        "reviews": 2,
+        "category": "Museum",
+        "city": "Jaipur",
+        "photos": [],
+        "score": 3.506
+      },
+      {
+        "name": "Ajmer",
+        "address": "WQ8X+FF6, Ajmer Rd, Panch Batti, Patel Colony, Hathroi, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.916156,
+        "longitude": 75.7986529,
+        "rating": 5,
+        "reviews": 2,
+        "category": "Religious",
+        "city": "Jaipur",
+        "photos": [],
+        "score": 3.506
+      },
+      {
+        "name": "MASJID ABU BAKR (R.A)",
+        "address": "586, Ganpati Nagar, Jaipur, Rajasthan 302006, India",
+        "latitude": 26.9137757,
+        "longitude": 75.7836432,
+        "rating": 5,
+        "reviews": 2,
+        "category": "Religious",
+        "city": "Jaipur",
+        "photos": [],
+        "score": 3.506
+      },
+      {
+        "name": "Chandra Prakash Moorti Art",
+        "address": "1809, khajane walo ka rasta , 4th crossing, C.P Bazar, Chandpole Bazar, Chandpole, Jalupura, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.9216304,
+        "longitude": 75.8131823,
+        "rating": 5,
+        "reviews": 1,
+        "category": "Museum",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNSlKAU4_8n3VyjEWfXcYCQ5gSJZ-vTyVotjaCXE69ArJWlRPEXWQsZYESuYTtMRx8peDAfnYM7g8nzbyHShyjJGvp48hBZSzD-8zMqpPLDFZZVU4s7Xr4EGRwg-cxPmjjGRUag_UFQiqr8tKdl7LtWprloAQ6fkBcXbaBBghSdn4iHEU22ZsaYA4qO2zyYk4rLfuZfwYegyP3WSk2nZ9WHCy6fGHeFDPj8Ta-f0Fzmngm5aB-i39yBo0-U0cVetcLdcSNPunzwHw-2ZRwKg4ilNBPnqENQZJSEcWOQGwfMOLeNFk0a2GDEBhxktxJcYpl9UIBO6opQ",
+          "AXQCQNTl3PdNlmd8lwKdoR-EQNe78Z_ZzCIDW1nKwHw-AdUvD5I7GcASKAXkPqWX5wmR-6ogSpxjPL-6Y_YWogHCY3AoJfmKxLzAZsqFxRkgXSKmGauV1mWUt96G1fGUpAQoToHFjESTw9xRruo08fTxJq8fCudv_p70UbRn8MuDtlCgNMuWjpTSy8Y0Stfj1UEpT79DMjQ5toMOhbXVe1qfefsSH1_lCPpsxwTetyEz5815WPpCSu3Bl-59vAR7pjbkZz55qAC7lgfLyeN-OOxaPh7aLW81-bkKSZT2yEZUyPRWQHa9KmNdGrjigh5oMV2kQPW_iTVH-UDPxcxbEm9DLv82dEQaUd0kKi0wrs49JcY4LitrFNwmBMfhgbBKVj67d6uvF9GrQkVn74IwrDSP_-_XGejNdmFbtrLuX3stdgEU0YteUPliRVmO6B0dEkfAszMnKzLFd3S7T_Gxvx3eoI81DgR3_sCmNZ6hLzjX9dqG-l3lRoQJ_083dYKyYYZI1jQ7RY4XA-zPa49w0aI0AUvRfbzv_WqFH6KnuA9v9sCfG4fByLXl9191EXhsjxWjkgE7jO4gjWMMWaE7Qo5Q6-2Du0uHwO3xs03gvH5T4ViFbIHCl7sE_Br2i_Pf3wxVGePZGdPm",
+          "AXQCQNQNZr7q_3BjG5U_MF34s5ezZsppffOTWbTaiiF4QbaFc2OOgOXUsH_9J3yunbj0ZY3V07BRwksjEE5XyevZtM27zNU_RAC0B3vWvx52JlbNRuZAQ9_Kxn_PFD4uQcl_pJruPQztg23LEUHU8j7MBSPkwr4vwg95AnLDDkaTi_gw_o04QKvSEgLkvRgGuh3CyyEtS95mFEXzg6JqCKifffD0Dglv-h5df2nUiJaqMQ8w0hhD5bHtoXeE2kpIgezzsWNN7nnQQl1KMsidMNL_qJgj2gIksEDycR9kD2n_rd1hJ9TBeuIspR6SOEf9Vdv1sgRMsDGZql4tsVqbKWD7TN_tTyzz7AYDu59bNiaY7oxSxLP-5bcPvXQbgNTsaB3pwmD6MXOWqZIjJOqEYsGckolyxXPIgkoNwDgWkJwpGp2xdSkjte6UgNAG3lohHYkkVLv-ugnL8CV4bmSkU7BfTcU3EWOfEp1DmhYJFN2zgv1iG_rj06lvStbyD_bjtBBuNrtic0Ufu5g3P-ogTy_OTX03VivfTh97gm7AAFgdQmwvF6G9CzorYe1v8EUh6t5FfoALx7smwRHke3Suhax0c7a0hcwuMiFkhlSt8MO-ODe6-6z6n3tqJoKK-i9oNXDy"
+        ],
+        "score": 3.503
+      },
+      {
+        "name": "Sujata Collections",
+        "address": "G2, Gokul Krishna Appt-1, Aaditya Vihar, Schme no. 8,, Gandhi Path, Vaishali Nagar, Aditya Vihar, Scheme Number 8, Girnar Colony South, Sanjay Nagar, Jaipur, Rajasthan 302021, India",
+        "latitude": 26.9040157,
+        "longitude": 75.7440811,
+        "rating": 5,
+        "reviews": 1,
+        "category": "Museum",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNS3F_MqzLHcnEhTXT9zLh15LkyAY_rHrSh9-skO8oxwu0QbKJYqcGgwfykqcV3KYMY9M1XfhJ6WfW_8csu_O-MUOdlIJ51Feo1sV4IurTALcRjtqdR6RGqORklz1FMREYi_ouzG1_5ugjeEYdLOD8u9xJhuyXKnO3xQH9ZLwSWdqyPIE2ygF7623S-gJPDtuQioV_bBNs-AActkV_InqGnymg2gMfIyLqIZtemZRk6oLaVPCNj7iZnMJaKq_kMNFLa0TGUqkC-WBGOc8cJ5ikWo-Jixqu-LlVoXf6MgRLXjXtmbcXEj9iDotoZeU8-OuuTBujgT1Eo",
+          "AXQCQNQ9GRj2wO-_usqqRMZZ6ro5WbIxxjReHYw8ByaD2-BbX0BjZzm3-yRCXuIWc-tXDymN24YTdnyHHHPZZflb06qTJ5WozzmMTJWEYpnJkMYrpVmf1MHhhnmrqocye7tLypPI1FwlTlybyF9nT4i7kFY5ve-O1qWCs9kXHRGJiJ8vsSFdp4yydwd4C1015qePDj9-8k2F-v715OGH_fcTsrzjIjY98P0IeNZJ3ctwJb5qPcjLAw2gZj0PP33zxK6TX-W1O9YXBRGPrKfHYe4PrJ6480E3YuD4yNHG72_03zBOftFGyZOHbl7Ucfa4N9ZmlVAUbRsNN7Y",
+          "AXQCQNRhyXaAd20vhaSoMU8KWUwkKc95oVnJnKz1Op3pSuwOaxGGGj_omfaKCkF4Wh24eguxCQQhwTAwR-S-zVIEAjZEYolv1d54Id8jxa5JvgRDvcOsM2ryzJGjIHSAG_VjiMW4IHEdPftbQSDP45f3UYSUBCZRjVVAtTV7I_jZ6PaxmTYbZCsSh5rdxBz8mR0dcaC3smB9ePm-jWnx9IqGZINl_1AK_fy1eLU4kQ2epfwQIMVe6rTcbU0mRNo6SNYdc1hVdbJRjGS7IkW4pfcZ6UrNV0MGYjJpgvjV4SP7TKZnThr-GQ9KPhUSOOb06K1jyWTfKxo3ZH4"
+        ],
+        "score": 3.503
+      }
+    ],
+    "hotels": [],
+    "restaurants": [
+      {
+        "name": "Hotel Rajasthan Palace",
+        "address": "Rajasthan Palace Hotel, 3, Peelwa Garden, Moti Doongari Road, Anand Puri, Bees Dukan, Adarsh Nagar, Jaipur, Rajasthan 302004, India",
+        "latitude": 26.9008788,
+        "longitude": 75.82113609999999,
+        "rating": 4.7,
+        "reviews": 5,
+        "category": "Park",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNRgu8rnXd-HTSz3bB5oNfKE4YIbb2fxDvIwHRuR4Zjx__Ui6X1x7s7dE0c7GBLEgzeY8AvcInEYsl0FLIHBC4UJDOEKUl3dvDm0gCIyFlKMzDGTBQ0QY_-jEUZrC8_otuSEn80ZEoa6SF3fI_AL51m6C6AHb2cBIPldUtYJX865BBCgo0KxDiPX2N38Yt_j-0G49BzhcmeIOJVWZQ7QjeeZFtvOV_EStHaVoSGDcIKrMgnj2IRftsi4EJDyVlfUxzJNLxQWIUVMNIxFM5DGzxDD6VZ3svxjtaVFHd_tHx0ZgKUM5WlwyPCKcuesDI8q_QHVgn04htQ",
+          "AXQCQNSpe1gbQ4KcmQcHlaC-_iMTh8GtC1wwJOD98EUdM8MTeXigrFLZ1VKzm7Ro_hMQr4kHAgYXKYY_XqVlyoSoPKtVjFwTkBbevZDZTj8bodt2LT6Tlmi_ArGb-ec3n2SZYPogL2DCkKDAVris7ANvfQvvFX6srLR3BAstV40jxnKjbsEmi_15i_-a6gJl38BL4weuTozHh_vhpKCEep_DVgk7W0aqoygNPkdnDspfdww6kMXeDAvqvkSVnT25qyNaRKYt3srcXKFyt-OnnnSpQ34p74hLaaymPjHxf3kvOxj1eylZm-wfUwKa5ETnS4U-72VpR5ZRfIM",
+          "AXQCQNRad_oR6IXcEmrggJpLfnyvmY0jyO8iETwadlf6f-ZnM7wVEn5IB9Hrqkkrl9F67Gapt2dYeILKGqzXaNoiW3vArX92sP4NuL0sYf2q3RNcZRQyY8D9VIJRL2BNCz5ZxWtMZDsbM9-PmwI5FlROV6EQBnHjbqsoVXq5bpqyTi7VuWtXFeidR2qO_kWlugQt2P2TX89p_40m4qLV7fbdZq2VgnHTjJPdZG-4Cxo6SC6wx9uRC4IXypsnWk47Hf3c-Q51o4yxjgYd9tcdnhKtAfD9eEwAaykma3LrnObjaOb9yHotMqktxHX3RX0F7OyrchpxMH3pmh4JubARO8JQYqM9Jc5XzAEKCoak-6VS__Pk3A7hqrwDy-2hqwgIo2OX2XpXknAh8YrKABFFRBO7gIstBTqcAhXPq4BJtNgbbuIIG61cWW9x2pb-k3hL0hS2WIKF8KPG0cqC7FXkgiV-gz0L-twO5-mE7NnibtH0VRY5qmFzLIqk8R2W9kE7cfo16PyUiQvzQ7MOB8YWRj4Lic11cEV9w13vOo86Tpl3nuS80J4efDmgkojdW24nypDp25yik31kQrpDs-bBiFldZq_nx9Ki5Ttl5X3o51zHwmLpDmmMbSrpbuiI4Foy9bri"
+        ],
+        "score": 3.305
+      },
+      {
+        "name": "Anuraag Villa Hotel & Restaurant",
+        "address": "D-249, Devi Marg, Bani Park, Jaipur, Rajasthan 302016, India",
+        "latitude": 26.9272302,
+        "longitude": 75.7892074,
+        "rating": 4.5,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNQUhdhKM__dCUuxyonpu4vEz5tuaj_oyXVifKz6_fVxYY7WVXh1vap36uNT_g7evLu50WbqFqCggW1iudBz8PxUU4oswGx7cCVjYIoP0lSbqG-7eCKI4qu5fFWzA1Oq9rEELiVHbPlOFdvQAJSOYkvG6NzcJUchfXkUQUlyLHM3OT9ymKtn-GmPVShIQ-2cj4yfROwoC3bMUMOEV3iIr3qBsEVdXufSrBBMqGhj_1dhLDRgP-Ssi1Yn97s8xeGBgLGTzOy2VKCUY3KDLJ0g4ldpEAJwawV0OKciVx0i3LFCysJeYpkecnJaNsq1pIyiyT13MgNC_pk",
+          "AXQCQNQZDufji3D4oMiYcKOqnfniTbGtcN1URRkMqNHxD2N24ZtVam2UbaShDMg64sKMQTku8-1nAT_uhGT1Tsl7ReTK9zgVTb9hX2KCXiB-CPFGJXzmkwy9j3zLV-BsyZUgPwpZIE2lS0Irr-sYSsDCpA5btIgCw4YW6we8Gizu-R5k02q3PtgFC4hep5JjuL_wFDwa1z8hMX1dVGlQsIVOU9vXXzfBnxTzfQ7UpIfvNYmMP66smp1L468qi3Vs9RpKZhSxyvnjbUH3e8BMjgTMtxzY1OKKlpnlsAMvfzXAEYTUUZsZ_7gwgoWLPmd5P424m6GEphxK7hg",
+          "AXQCQNSfIeWHaiMWgiTSRCGMC_BRTQW3pNLBLIOxd0BQLHPsNW1S4B6vdQVO8KIIyCieuhEY0GL5yUMpG53pSnOFoJybXojaoXqX5tYeQ5gusjm0Boirwi23xf5X4foEmWZCSHkoT3ZGkBcSabNSpfMhFhGf7DOUZzic-2AFtVnBb2A75wKi2tiqEHSx2GMlIlE94NCVz-R6p_82DpmHFLZFUSlYXnVDJ1kUNqCmfzC88eZUHAl3u5uygGvVokd_3B18SWbtGTLkCXKWRRnUuxTi4u22GbfM-DqFY8rU3vbLn5SQJ1otP3L79nZlMtkxsTqgYo3tZqkb4mQ"
+        ],
+        "score": 3.165
+      },
+      {
+        "name": "Tara Niwas",
+        "address": "B-22/B, Shiv Marg, Bani Park, near Chandni Crafts, Kanti Nagar, Bani Park, Jaipur, Rajasthan 302016, India",
+        "latitude": 26.9268953,
+        "longitude": 75.7949737,
+        "rating": 4.5,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNRjp2kPjmnziE3JFqwbFhm6bWmg5jCqJ9PpYFXM0s979oNinyL1Zc7jzOpB6t8Vh8D09OY9uv38_Snx4JkamyNayyD1pnmMjS9hadXo2youEMqWu1NShpOjruZr0jFDSCbl9GPlVoYMK8ihhjAa5YnKFcKcszhwvqNLbtLFZ7YiRL0UKJ7ylhL045rqHmZ-h5zbJWITqcMagUr0yxDqcOmuSXfO8UjAchFwwZTHSrO9y1C8-L05QUQvvIusj7icmjODkf2YzPR0Ugi9DkmfBoxOun6VoFO3_dfGOqyGSkoDlNzuaSE2yWFX2gftM06BrTDhfau571E",
+          "AXQCQNR_KSnZbzwfSm31mYurtHOllyf3lNsK-K2O1iMd0UiMwlRQ_8n204eOkuizE73lzOiJvgc-akhbwvQJET-Dr0Ln1WpXxo3wXs9TTnoSRyGk_ud534R5dubHYR33jHhnsWcYvCluXprOmGscfiw3x64ygxmmxBExAWtIrAUWXGmDJGNFK1pmSY0n_GgatcT1_AzN2H8IOmhwO4Isa3IZ05MEpQOe7pq_aAPxRGl-XImGwqSWuG2f1tepIyogUKTMbzQFe7yUAYVlJTUc4jBoCiw5BLgVPQkTtAEylA3JgDUkNfr9o4GcnBHFxKhfnbKfQGDSjYSFku0",
+          "AXQCQNS1uuLtaUE5uvzkeAZCoO8H-h0jJ7uTRa7o--vzkS5_Ad6LmrU6Lc9tydwLcg3kF7WRvJClbnCQyH2YfNK-Sc8_okQyJfP_7zw4tIQ4mdQgR4nh3zWNxXqnHKu5JeE33B4bUQ7cn1I_yeweCN7pGDGVxR_L-SmHPuF_Fr2ItnjaYbposOltxSFnOclbEP1CvY1xEKfFDACOTrlWInzu-gguoQziX_fcnC22FXiwOZ7cevciFCAcnDN9OCtzpeGv31J1Wf6c89RENwCkN3ZlIOLSAgr-7sJMjpF0CrZqvReXwCxT06JO_JjKYcdg1dgh-v0zL5NFDaM"
+        ],
+        "score": 3.165
+      },
+      {
+        "name": "Mahal Khandela - A Heritage Hotel and Spa",
+        "address": "D, 219B, Bhaskar Marg, Sindhi Colony, Bani Park, Jaipur, Rajasthan 302016, India",
+        "latitude": 26.9319,
+        "longitude": 75.78847800000001,
+        "rating": 4.4,
+        "reviews": 5,
+        "category": "Restaurant",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNTcs5pN-MlLTf5riTZf-zwu4rC6k0Qm-tnFPOhugJ7Ak62ksEUs5WSRDF-eDW7Q4TZYvuiskNCyLaVjUedzILiYAIDoYoFgsjFxt9BChaOuzWhAJQnEzKv8oXz2XRtGfIyThLwVURA3YY1So6jWyWoiupPIBC9_iV_VyO1Ne-aAUFHeFZowmzL2pF4LNV0DMRRVE5b_L0LDVQmZq5GYMHAm6TMeZKbJM3Zw90KNeaWj2WKOnOMHMKns6MqrwI6-9O0fEW4-H3MlE37NtPTWatvpVrAtzXqY_4xVkWlPAxNcCstvJV0qTkpzoMryqst6EDDnU6WvIrY",
+          "AXQCQNSh6CwiNAkn54JDxqnyuScRL9PDm6mAre40ndcdIa2MWVCA25h8k0VKcHCwjDvOW2xWcRiqQzPkZq-Hbn4_wEEvOh1BOodT2ykGwCMzH5YznkKpTT9gIwYYVE93HOcEeL76LZeQiks-ehShff0nQGrImyISF8dzW54toj1lS_jb6q4S4Wmv54TAD_77jkord0idlSXqzQzZK2IynNE5FickElspg9XfJOAV596OZVOv_pM2Kz2f76u5WR7I_om0XFR1YOsg1FzUqajSaxbsWJtO3wls7tZUU-yhAr_-di3HHjMyds3Zzvy-KzTXAgt669OXxzRLcIA",
+          "AXQCQNTje_ufB5XI_WgQWzN5Wszq0o_m0bjV5IBdpu7eRdtH5RC3oKjpx0wkyjhNReUAReyz_fXmiqEEc4_YwlOrmtfDGmS4Z14pqvm1F8fbTxIXyRbIF3ecHLKCtQuUAjUf6Rl2t_mG6Rg21qoJ-br7JpsYxxdG_V2Xtaw8tJ61CwiYX-1Zq7ahBTZSzjPkWSa6GtqQGm4kCt1w3EQk5c56OXOPncAi8aQVFqom--TjJaofJMLilGqg164aMz0Gs8V2HpU12_qZEc2YL9plUGckkz_tJJ9-fkAJNBDdTuttAqLPukCVOMyivbwebQFTTNItKMCdqnqoQ4qs8fVcEmy_kQHcP3-FfQmoiqyRNJSwxrBK869GjCAfJ2XRctFPJEC9LJFoFZ15Dj39r2OaLfgwQODhYSgXCTLL2ZHsTiOCaNWPlIM4p2balr0GANHzQbC-JTuYWoI41V26qsZHeEd7ZVFKLRONAN-sBi-J_mLZy5Tb3nkjcJ6L-MDw1UKUEKUc1PIXfZ3CrycsEYlvC6HCsVWBWZx6y9o-HamW1FngQ_Fd33JT-lSz6hlerDH3ElexwD9t__fTo1guYnSwktz_uw8Suk1wOJiUIINZbmKIS3c77mdELw8B-LlYQUK03q_o3aooSA"
+        ],
+        "score": 3.095
+      },
+      {
+        "name": "Hotel Sarang Palace - Boutique Stays & Candlelight Dining",
+        "address": "A- 40, Subhash Nagar Rd, Near Peetal Factory, Subash Nagar, Shastri Nagar, Jaipur, Rajasthan 302016, India",
+        "latitude": 26.9374249,
+        "longitude": 75.79620349999999,
+        "rating": 4.4,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNS2_lFdDTSJlLwViexdC3FcKwgGkc1AWSbbgqJwX2aa4yNkJ8JRrc_pT9AXxbMTdH6TJZzkHn4xHuK513Xm8_X2BMIdos8qv4druZvKu1HX5kfAmHTD4LkQuahInIBOhyQfIo_13-toi8-rMUPvBNWYZO-85PO-EY88py_Xg7Uru_QRuBdbTcJm8N__DjvvqMgL-OyMUw_unEdgFGukdw7PkHxdbysWfWVpwXfsSOu3k5gmrDVqC5rtNrl8JsPGto5yTSHD4vOXeoe_qUTuYwF46iVswyrXnGNBONWQuxyV7FTvZa_dKU3e6UAm3FdMdjcOwL05_cY",
+          "AXQCQNRch5V7YagXnLA-8M3Oo1lNBYayJOcTJIPXxr-VqgVr01S8MbPiA6oOmkcTV0g6FhQxgsS5Mwf3cQW5dYEeT2JrwrdanRnYSCRFG-bAEyfIw8cuBzshlgHdL1ap_EgUgAEU7v6VqYU1i8-ES9x6nh7NM9XB9SzoNmZv6Tr-cZ4Bf1BVrLiwbMBeHxsNklAfZMkEQ9-gmip0aZ3hgr312qPXGWGll1Y5-r81J_SieqMAqfcpoU_zQnjs53xr0Q-2hfU3AKFqQFwRSzzmxALXw55p1MSXPcSo8zRmYo2Bm2VsxorzmXF4Zct8WPptVGjfI8bH5DzMr4E",
+          "AXQCQNS8vueN_cBSZbmqqV6M8S3GQGxFP9rvgtMOSwf_hwXzVHRwSFwijSOuyYwAkETiiy4mxP6sJpynzi-En58Rfia_XfHhgtyeGzxU4a4GK-ZTvcKjBPwXX-fgfwTPom40833hfxItV7DlYs4dwvYnDRKiPQimtbhMzHZAag3D5_Rvr25KK2gCgctA96bOG5KBphhnTwuWaA3IFvZ-gi8LulY2zb8512WmqUTp8Dq7NT-HdYTivMyT3Qhhcgp3vl3Cc5-E6TUVd_o55vO47qWQ8DF2Hfk4j1KbtNc9LtioJgzccAQyfcODXRxdLVvkGVWnuTdD0vnPCQo"
+        ],
+        "score": 3.095
+      },
+      {
+        "name": "Lemon Tree Premier, Jaipur",
+        "address": "Nirwan Marg, behind Inox Cinema, Sindhi Colony, Bani Park, Jaipur, Rajasthan 302016, India",
+        "latitude": 26.9351975,
+        "longitude": 75.7915031,
+        "rating": 4.3,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNT-GhoHsp2Xfi357yST8_DndfNxuG-wFkWjEhyV-u2rNqY4KlCeaxiTEEos67FuqyjyUpCkeJIWOaEvbrPN9HB0mxxOdnkZQOe7A3VU-ZiFudCUJTbmQtEbu_OJwT4o4e0sx8XBXGvu2HlZCLtZEywMIBnyb_YKAQ1_i2hZZnSBwCW3ZisiRZ-zL_-7AOjxfB_s0n78S-iKs_XVcBBF5_0aGo3KvqrLk_UBV7UR2JXU8p1_BwXReS6ku0eNvqUohtSgg7aNGFsDdm4kf6Cq3R7noLw08YM0WVFw3xH_nsThzJDQhhBFcXmQiZrTqodR_ZGmSENVWFw",
+          "AXQCQNQp38b8z8SiYb_MxmZ2oHKkfNyt51yjZ7ou4y-tYoFm3tTd1Ep2sabAQV97sKpLqwigZByTDhc7GbxbbN7QYVJ15UjI3OaOqbdkthR7UAeMrl8B6pxMzBRgEZ5q9b85qoud8MWp2Ds76J2SZ2AJHC6F5f2aI3rCt_X0bEjnZI4jxn5VB8XOJWM3KrEe2Hr2eto_ph3-rUd7YE7b7KGaqrxDigu0UZrXHI9q2O9gqhO5EBhxdsqP0cXFYEJ3QpQ6arXxCZ1Ml-LNLRIeVVAcVmbCRbtZFooscxBxC2wKzpRz5BIEegilCrkXFlxHPSMPjOaVZgDRDgA",
+          "AXQCQNRonxFHHcVhoe2VRQvYNymwZmGcPw5331Z-3wo4EaUGn9Jfu8t2XBY0YZF0BO5-C5JIQ5mclZqWmPfOlPtamHuj3jke2jIBh80eo3if-CNYMrbZXR5PywmvRi0yXiyA4iQnJzOm5g62ajQy3Hx7S4QrSaHNtCmOHL3oQYRaK_vMURKlvvnisp7Gs-jwthZst70pDI5Rs-h1lE2zZdi-t3TzDlC91LvKLmDrHEwYZ4Jj8yBsm30TlyoNKysnr_i9tzGwvkNFFxy8zBlIRqEmfMPNJ9sC2k00Pwxx1I24z5hxwjEKRSC6ApcbfoeZb5ITSIVbUV9ddMnuPD9NHwGm_pkXUWDa3Ddp2YEoOqvzxI6bZremWfMzxxs3sQGSdYlvMXpXqQSeZ9d5nhDtr5M3DLytNjav4KFWHqe-uPgYF6u_e1nlDxoTQ9oWwk9rt2ATQsYX_Sh0kPjAVHvq3DnZ3kb_UyPPUKQzBnr1_CfL9_SK_kHQmaMaVVYZdN7DXR9pJHFt-lb27AiBLo6VRqzAZfSFgINt4i8FQTGvefOFbIy22zUlrg889ynJ4lGho7Rj2U0xqL7AYbeMHONRVmmnNTH78pDRaNm5OiDuf_jWTTw-H7DADDRbunxrAF-lN3sHVdN--w"
+        ],
+        "score": 3.025
+      },
+      {
+        "name": "Ratnawali - A Vegetarian Heritage Hotel",
+        "address": "B-12, Mirza Ismail Rd, near Panch Batti, Jayanti Market, New Colony, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.9178678,
+        "longitude": 75.8114788,
+        "rating": 4.3,
+        "reviews": 5,
+        "category": "Restaurant",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNS3xWd1Mzko7w4of2SDLvP_3DM2OIHbR14GYP3jrrcVdc2Nsulx_RFJcdeuZZTq1Wd2zQmFDrOHqVH8mbsY3Rrdi4kZ41WR8FYp9OKZmskLCpXZJJtU7ZKWspriLMSgeOStsDOY1eJ-y2jccxtf6Ft_lfNdqf5_kLvo28-QYEPaR0p1rhUT5rcn9kyFWTWeyPsDe1cWKpqmrpzA4ZW2PlNrlomc94Sc_JILT3EjFNTxqjb4gFMrcFWPTDcdrmWevLCABwUPwwdHbYwMJZfpJZEVWTk63O5LvTwdgoOqem0f9LR16urgKrhKRX2qdPdgv9MC1-XcyG4",
+          "AXQCQNT8zNfScAg0pHSFhSitaEdJnK4j-IA7DC1K86fXWJdQTKkQy7GuUK2TBBSdkdYqwnATKWpyWNFOAp8CedjuPDNPY51EhORE3oziCBDNn5SdAG85iWuXWL6fxTj81xYM96Bieek3ASpkg9Cg9T6-ptMTEU8cB3eAX5FRIn8WBwVZ1oVAMQHkZvTaM9SaastSN6YpEfFCNZIK0-5LvXDg-5umul-nfzTmsXpte7ia60MULoJbipQcTYJ-fY5QHrWBoorI0gTnzkKsBt1KaYz14XxOcwOkasQExGBdaKbFrm7KW70a3Qe6_2bdHlfit5rwyNxN4ZjpI90",
+          "AXQCQNRPz_QEX8_DAKwZ0Yvui6mGI-yI6zvaXY58yh_jpXwxGGpPoQtO30AwscTLWi9B38Z2nwBDdy_cFu16HuMRyB8--QJcaH1LsKKCJV_5CubPiZaolzVw0gGAl8usJBzS4SZoBQ2da-M9gHUgQQvVoIkqs9WgTM32lwsHqnfbOJA8l6Efj5r9-RYDok48UXB5LpXUjV5j6iQV8Zox3xE6iM4_HJxUUtyMFILZp31eUjU233ZJ7RRy4vfM7UYNolQxXUy6yqXmsjFufsr08ZDdi5KtDqbERiJ2YrNdK8zkuh91KkdI6pCQjJVbFT8A4_S3WxSW3_3qB2s"
+        ],
+        "score": 3.025
+      },
+      {
+        "name": "Jai Niwas Hotel",
+        "address": "3, Jalupura Scheme, Gopinath Marg, Mirza Ismail Rd, Jalupura, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.91939039999999,
+        "longitude": 75.80530329999999,
+        "rating": 4.3,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNS85BATnsU9LiJ6ySM6mA3ZM7z56IU18_WJ7piH_uBuBXDpoEPOJ_8EpJFbR4BKDQC5YBP1HrSlIY_4fx2u0yt1vJPZTniabejdzSlPR9drZ0I7xVa-S67_kWKdKHq3UjQhBJscisScqe4cCAeax0rK-WyIvCyZt-Ki19xMzR-OqoztVLFdOC5T97qEbGQ2BlP4EJii8UqVZ7w3nFpQyepU1D3IkzjzqY5fzYF2mZotTZYJXig106dl048dpuE3jNrQ-kJmD9Zdfg3jibDWRNsHI-nYXGJG_doFsS7uIBJO9fglvLGqyqFvV0A5xHcixRDfm6KeutY",
+          "AXQCQNRyLVqvdncLEvhD6ZeSfheXFnZq6tsn4n_N_RJulLUkl4vYZjn5VYJAc6MACWiylj9by5wKy87bGfU8mY1i6wrYoPRl0qDYE5MWv7qn3-0k94FUXJWrySprB9lB9zwrBatnuWi4IJFvKKOjwMab0_WQef_ZAMBqrgbDNpo-oPZXu1x4-Pl93lzwKlg8FczJF3kB0oMjO9Tw_3zzFORP-zggfBiHRf7uKCfUuZYyKu8wN1SSEKR5X6ZeMcQtbENy_tZx_3S29i4_EisWwzWa6JlnTHPfQb0EijwtnKQUw-OFVEbzUYyw3kcno3JJjdgMyuGifH0fuT-odsc_ROEJuiz2zGR6TMvHO_nvWI7Dv33pdEDeg1nRweG10WRu2C0WGhvP07eAkYatCJS0drR2tZaTQ0YKjMsKmMwcsH8xYZeZmIxwqtlSqYvRPb14hAMBuz4AQ8Ii_z8LGRgrq3c3QmPlgutsUdfqTJI3Wd73o6zXsTScuvUKyppJWfaq0mAqz0r6-exNPuffeWWdLnlhIUkNhHP95BdC-rygzHIj3Df3ChnBXpCevQqeLkE70P9LQMBIstmcT2RMfbm-qghW_qCYEESyTH_YeipHDtAWuXC_rtENQkaAN8OSQtl0zl2wlCnWQg",
+          "AXQCQNTnhszghu4_I9rsmxaCXS5dH9nyT_0fnpEo-wtbM7jk_8RpKmkBSvots7Ez2sUG-ArU1uuXl0YFPK7Rf2wkAvgntY_0ru6t9gkn8i5aorZ1yPOLKaKpUo9swsrw964eNKQIH_6i-unBJCZJSUPc8hbaSzaj1V9jPGWoGL6wmA4XiU6G95X-J4-3byjzpt91WTT3FZhpfWgrpvZtaMo2U6rauzznShikyltaHNyi-wQVUHbK-IW7p0Dwt-WNToK42Mni-a2XHDiYtg8vtR081xt9Q3TqE0DDtnh0cUiPNgt3OTgW6G7SLgKAwJrt5UKY05krm1-PEC8"
+        ],
+        "score": 3.025
+      },
+      {
+        "name": "Hotel Laxmi Niwas",
+        "address": "116, Metro Station, Near, New Sanganer Rd, Roop Vihar, Vivek Vihar, Sodala, Jaipur, Rajasthan 302019, India",
+        "latitude": 26.8883748,
+        "longitude": 75.7694113,
+        "rating": 4.3,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNR43akFOAqQYRNA7ZR5Svg7JIFuCDQ4vrkPqGGOT7fz1WEAdtOfoXHPmn3Y1rZ-m9Kd6_perYxzskJox5WICpkINd5lVXggCdgHSdTwUW8a7m7FSE6zDDn9XtufzFWsXVWsvsqvH-XrWgP7Cm0DyHJKUQRMvFM9RV671JRTvJ-kIIT8tjTLyh_E6GHpavKew2vPOSmvlneEFyLPqO34XIHvh-NBSEKns-dZiYxZzne1WP1tl0D67i-isAdAHrOvV7TN-ma6EYW1e8nPFynxv4P5OdoMeBO0haEQ7Ct_Rl-uMtOnJSHqMI9jUr-QJHnTqJuuAKm1Z68",
+          "AXQCQNS0hGtCGOKSzORAqivHoHldVwNTSHZxRgKwTJDXwZimIzBLanmaGq_YGAJNWFZyKnrCIiX5zaAPEIzTIKXBEGcasGWoGI5WYneGuQ8rgN4u7hEwtfJsGwFeA2A5ue5BRdD-k7AoPXazFnsCt3aVnzOBZLxOwbPlVZxGO-rTCOhg7Z_Hz8ylXtmBzWTV2oTKwtYwhgerHW_nZB4lkk8O9GvyteAZZ7--9DzcdUETtBnGAGBFEQlrmD86WtwtzLI8-QicabytYi-Odej1-nX-XVt8HOFyFZqxTCztrJ40FDJmCJ0U1Sjq-IAWVK-v8GlCBkYkQ6TjUJ0",
+          "AXQCQNQDlbX-JJcP-3E2VX85HuBFz9qwVNmmqDSnFDuAN0uxIuX4rNq34GxLBEmNNzqLd-eyiSfXjpI86m2jQw25V087qFxRgECtTwmevnnRLWyPvqm2eWPQ2Wt_uegk7MSFKipRGFb0a_ttyny888wLWzC6yumiXSGFw3DVE_lnmy7ChGkq7j70VU85PBJCfkcBpQy77wp0J6urEuEDGVav-1ly2Ttq4mDYHz4EI_LrWh5mPN6DC5_CvF5Rg8HMroolz2tnxKMQBs0evgNxiMih3ZPMurai_zTejbTygOxqxvREhev71fmwJI0IvgIquC2NmXqriFSkWvk"
+        ],
+        "score": 3.025
+      },
+      {
+        "name": "Lords Plaza Jaipur",
+        "address": "Suchna Kendra, Sawai Ram Singh Rd, near Jaipur, Dusadon Ka Bagh, Sangram Colony, Ashok Nagar, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.9089956,
+        "longitude": 75.8150872,
+        "rating": 4.2,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNRJfgFaMoBZxX7MU5C9gYvmBoXb5Yyug7DHpeHl07VcKMWNX91Ak8zQ9VFp3aVSiyz7G02vsqfQfn7VyIJmipU-g1R_5oubkpRm1j2Cr7qU3HFpls24Z9Q2O-Fh62X6ZT5b9Iwkt4K_MtTK-CkV6U-Z53LNveeWvxufTzZOKI1cXCxAS7kro0rKPbUFmZgwOSA_3HvIeNIt8_dNauMZqwau_4VDLA_lfZJU3tu0ZzsmkokyJm0w7v33atfJ1xSiNwjnQIdNePkLOGLzb_wu-5mevAtEVLHw1P2mWxNq6GR_-5yKTytEXNJd3qbUW-X9eUn2EMb82SU",
+          "AXQCQNS_7WSRCTAGaakM1hlVqWLodhcQCKrwIGJk8Cc1eXsGvTumhz7gjk-yzfF-3QjMf_TSMYRDnJQ7ovwKe2IYy0uUe03R6FvTdDiZAJUMqJjx_ogROuP793q-ZeG47_u8KhIMQF9bVNyuB2FBFJ1Pi6r4DCQKuh7VjRLog2TybUx2mww3RY6eytT88yv-uhPpw1jRCHlWnke6zostDpefazepPW2Q261jDN3VPouteWQjC-T5tAzFVzg4MZSbY-6kxRWitwFnQn6Alx0VQEOGklnNc6ukmXYkTnuk3Ynl6NJOi9B0gwIr1TmmfB7KK2W3tuqKhBkAxqzJKbI-BxxR0UlThnyS4-6S5lDDOmvA5lRhdImK_c7XskoHXdIN4T3F70gI6zvNWXjzYS53cWknb0dannPBEf4vrj3k1NY1QuVBrO-2dbOLqGN0LwbtFv_IaE4JmLbX5a71d2T3auP_cXq19p5AL04zeO9Q0u8ClK00nE6xXIXEeLbD6qLKG5y6PX5ld-zsAtma7RkHPFox26zfs8hfHYKQ2ALCxc7AnRCu9nRh-g8ew-Ty-TimacqKgGouhQG0NViBXicQc-F0Lt4HbGUObfSOuN7NJmFUWrKXtTWgaHnmbBrLHCzTjH0JZmRP65ot",
+          "AXQCQNTYI8TYPXBrTAs2eDZuK2ka-szTt5J4vkI5D45qg409_OjPCag-Z2uiim-Iif8Ozos5AoDdb6O1a14Zl5VuCxe_VQW4jEXajMcXQ-tRcUjZs9sqYQ9TTxrYyBlOyOihD-917Ku8hnvlK4ZrAmWMSiZtspFQ-pX8CInKL5K5p0nUCmdYHbeQWz5xd1ctjqE_qiXId_pxF46gtzJhrWNuUvGLwHFQUOoOEjFuPysDZ_09hp6jkfHP75UPasYr2FrCCMiUX9joxpAodxaXYr7QXzuai1oKZRsprvq5Z6oKvemOmKK-TnPkKav1U5ox63qXHHDzhaWqCHWZTv2GHJQghpGjCO7o4Bh63fUnIe_jJfczS2SjP9UUaLchJl_43JcprF4Zed1bcQ_IggdjG9COouMM-afQ4zFJ0TZk_M2gYyg1CZ54IJxYeXz9zRcVdM4P7bFF6drFugdM1qe_1mu2frZ-ioZMWHhMmovNQLrAKJgQXRkiDh8hB6INsxEhClMADmQuEyOhimv9H7QOggbV7Bb-hMczSY39jE-M9YB4A-q00VZkP48X9PYuwkmyQqufRSqfi-qaV47BW30kzgK11L9B5xFrQeOp-nJVH4RAnAtPJqeci6gzoke0EM7CWKWFfIvMqg"
+        ],
+        "score": 2.955
+      },
+      {
+        "name": "Hari Mahal Palace by Pachar Group",
+        "address": "Tirthraj, Jacob Road, Civil Lines, Madrampur, Civil Lines, Jaipur, Rajasthan 302006, India",
+        "latitude": 26.9106314,
+        "longitude": 75.7896055,
+        "rating": 4.2,
+        "reviews": 5,
+        "category": "Park",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNQquLQTHY8h0ZIx2vZlu1QwG8xSKwYyXFvd2Vo_w4Q5Slk6Hxrt_TWooNH3f47aVupGbac0DjDx7qFfZj6T39d11xUIniV1XHvVgo7prEWDS-NEWqXK-rf4gy9ARp3argmfWi9ne6M2LZFdHdFe0YqAtvZYOlW_OUc0oZzZ-7EHjjczQ43_gvg-PUluk17cjaAwyfEanqufesd8nOCN9hZ9oWxFIj6P9puX2J4A1y_89ydn4d6U0q1xntKS9E2_cQkjRK5RdorDc-zUsq73YjB2XSU4EeP8cuQs_5Vtd3suZGkZcr4n5PSerMG-3ZjiDW2-HUwpj2s",
+          "AXQCQNSzY-nS6TDbzcZQ6xXypdE_ty4sJu9pfkxkutBcvHmLBRzjTMcmXAXWX5d5ejyNtcBS-8VEOg-xzRsnWcmCmT7oLOcgxWRi_B6oCxQfmWtGHVNQerHrfc3ktvkKZ2q349swWl3GV9IgQfoni2DF8Upx6jdtQ50pMgwgd7Ha1g69mYNCWs2bufFr1dqpT-LunaChSZ1IALcqGaKtBUhFj_gey-Ji8Fsz1ojb0Z1nv1ky7csBiJaJ6WekQWbiXpIcIdGsGV5uAbqDa8xil_Am7zIkQt7OYuX6jsndaMyI5YHYpUf9vM205k6gILZCJ1x0tWNGa_Jry_g",
+          "AXQCQNQo5QcYbEe1ViXbIAm-gCkm05MBBKGMxSadJgnMZcZW16TcO1J2MoAEV07-ksnc5w9cqKlv5kS6SslIlCLUf8xiqbBDnQaBjau73ykMJuVDPkmuFZCCXQP_5CV5CGrM8jfl3IGuvDyOKsdCdFDZ3ZNKXSyq7ekp-xr1a-gwtZhr2XDekJmgi1PC3guGbdF86shxAzQprz-X-pXEVxr8GEIehTUa8wNQsGKr3yYQp_IN9V8_r6_U5dPzMMf6lniiaItrNCKTgB1H_x22VXeWALNOzd5nMN2aX3lBJWKoBSpQXSQQ6vXlFnpId8WtXE2J-NZLCfGMiGg"
+        ],
+        "score": 2.955
+      },
+      {
+        "name": "Hotel H R Palace",
+        "address": "D 157/A, Kabir Marg, Bani Park, Jaipur, Rajasthan 302016, India",
+        "latitude": 26.9252909,
+        "longitude": 75.7904205,
+        "rating": 4.1,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNTTtHixKj1mSPWOAXmlreK6dwrTlXVjleL5xHq8cufDHQZKDQIkE7exPsO6xpRWAlTW0jknB3uk0VT1-8I6AJ-v8lXThND3Q2H7NCU4-YjcXM5Apo2SDoiXxN6DVOYnzlVyeqQHa06PtVnAqIIasmLf3Qvw1CyMHjHqK0AY8Vya66f3jI77WxtigDiiyzKcYztv4g5T5Ejs03RyVR5dgnyrCD7Df6gCTTgdmtwKx4h8q2qvsjdbxPJitLfsIAYZEyJVC8AV1ZK-BTpF8U8XM4DG6W48KtcRKg3DNM6_cTwzmBqSMJsy6SDqaUD0k_2PwJ4379CksZ0",
+          "AXQCQNSTKp2G1Tbgz0tcO7BdauekWkVgeZtHiqDcx6pi4Z08pltb1hIUxYzWev2ftc0MHuPOrojE6E_tyWeTNwgYQir7NlJuh4xQNCu14VYGi9Hieh0DnRmzmZCh9n_rG2fks9F3yGEwt-kPTsBHJu1k_IdDwLwptWXc9WtJXiqFH-CduwhdNEOFXrrtC9wqu1dBDQzECrREKrnI-mmJpcnSBJ3p8EpS0dEr2MMc4skrp7_RyXmu3mECNe_FrmbE-hKP-p-gfPxgP5cHUgBesLx3O6ZRjs22RMSzzktH1FJb1b8y9eMgnSa_yJJ_mpcCs1yhM0DxRHV9Pis",
+          "AXQCQNQMpjmsKQoHlLdRPZmAcnU-ZHl8vnDGGa0EDWqoSoNYQ5crD59ry4Uab9BoLOumkB-Jn91cIjEOZT4ZpwIdSc5_gucEFP-PvbknMRrJXNGstReB9YIU5Y8IUWsDvWTdQpNzDpkONdcIHSCIuzVhDeHf6FojV8eUJGvnsjymv2I_3bMd0Des7NG11Jr78TwYxFQ-3y6QYOeriaWnQq6njqBbDOvI1tttKhew8at44rQmBLMmX2_4pCHuALydSGOz2FgxsNaoN_ECfGshg0WS4qhiAVyJ7Tmo7pTft4lrLh57WaHVvVP49POr2-0bRVbm8p7TPcN0mLU"
+        ],
+        "score": 2.885
+      },
+      {
+        "name": "Libra Lords Inn Jaipur",
+        "address": "A 7 and 15, Sikar Rd, opposite Bhawani Niketan School, Metal Colony, Ambabari, Vidyadhar Nagar, Jaipur, Rajasthan 302039, India",
+        "latitude": 26.9470017,
+        "longitude": 75.77352719999999,
+        "rating": 4,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNRAzpKDmjngrYdE0wIPKnpMx_w-02bGfyCAlvVJCGQFjAkJwFyf6WwRyVucHeKa5CRt4aSLEEkzy0HqFGF_Teld3kEp3IQOdGsQ0i-mGb5WDVs_9scdiDAwIj6_UGcMAyzilbG0o7HdRt4iVZpxoOTiptcGs36n3Ycpwpwzo4YDhhb7S4AZkrnKFYwq5k5rZY89LUtw7kf5laVYcB_WNSjNBm8conRZ_j1qKvO5-WQ4kueRZYpA9GDQ7HzpV0oREqQPwHCzUejhMuu-jNG0CpTJfhmSH89dBIhduihIUPRE6l53OP-Hizdd_I8eUJbg6QbsaFhryw0",
+          "AXQCQNR_nwO7cwIGDpm9nu7nQSX9DQxiJPqPerMQOQiN9R0gLf_t3xTmcvSPyyOjCCKnBYHKLlDoZIk6o7TZvMEIRjktX1INrcyd9OyDxKaEueuxrEXT4LmkIln7aEinYruE0Wi7x1sNr5GdSQA7t-Dqc4ApyAAi3OuIV0pHPo0ZHrkB4eH5piqucOPw3KcD_JIxegWdkbKQI1ZqaUa5qxtzngXRUEC-8Q3kV-iurS7JDr_uTGDBl9jM87RikU51qwlUP91nVKTp15lFOa_60_Tl95L5s7ZdTHunDEXX2bf_Qb8-a_a30QiWdBVk_Cx5SowxIxK_rTee92M",
+          "AXQCQNTmbsFAtwuAAt3CayxOm2ihB2P6E5QuGVapRSncAbEnIyyVoFXHy6Zt8ReGuGHlEB_Nv_JquwUrrtdygYy0IUbVHvR153AN7iqNdNc3RG10RsVpn89S6614-6MEeQkqRzwMF0eeELuEOyOtTFJvjjVWnAY6zcHcc6shLil4y2JjNKVMkID0QRplSdjKwWH1dfCIpP9kX5g_X12g0xXlpz7YFdUPXIfuOQeKbp6KsLfSU5SnRXi11wGOchmD781kCAGmnEH0RxxQWl-U6daZ1eDq0c6xy6FwD0bdK43z44EFy6qxW9Mj2QHiO95aVClSF-3RRJPECcVoZM8kaTbp78O63_eXyjsT1z9SKsxvHuoYVhaQssfXAF7vZ1YJg-y3BAChp-AHsj1bdSTMtdngTuhtNMZYt2l6b2uRxBRiXYq6jKJfUIPgmd3GD-_RvVPVrSXHpVr5sPWDBT_S4KQf1qLP0dE8WJ_Xs_HFLmQVmIMixF5C--q7XYyoNJL1phi4QwHBiKz5ycfQQmcH0m3iTBTj7aWrg2Pk7AUsj6rEwVOg7vPgSdqPZdKvmt1C4-jkw5z44_WPT3JxfMEquHc2jIOywwVvGiVqEhGvlww9NpLxRDTBzWHKb4Y-qhTkO-l3sBUTuw"
+        ],
+        "score": 2.815
+      },
+      {
+        "name": "Kailrugji - A City Centre Hotel",
+        "address": "22-C, Gopal Bari, Near Radisson City Centre Near Vidhayakpuri Police Station, Off, Mirza Ismail Rd, Hathroi, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.9168985,
+        "longitude": 75.7945525,
+        "rating": 4,
+        "reviews": 5,
+        "category": "Accommodation",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNRTuNx9F7HE0tMa0Y0vf7t-GN0vVG28m-DF78dU2vjoTnwNjyRGBxj3M3Vj5El_iFVILjzBK80WAk5JqHHL2Z0-TIY7bhwBxVg-NuTfnKteSgrj9B9vXswX6ExfSfgk7dDifGm5mE3jB7g291zSH3R1zZVfB5g2KLgmzIl6iB7WSzWoUQCvamflELrxVh2QDCSGxKVul1bgNmWwNXBCcWKj3693jrkVugtPMJTb7cVrJUEdS_0JOckkr-xl_6vBsbhT1YnS3FzFsf2OpVJNxLRVBZw7EmW2tZNWkzI4yasasXMDwS4yt4MeVlY11uvdXJm2V0lDMq3_OYsiFA8m3pKU3pe0QFk4QM41Uwp_xGHkWyAINFFFqGtO9spUFpgnLctLf0bEyT2OstHr2aPDhjw3G4BPcgDPYJCxnMNBc3QGgrSm1vKLTvKfIY-nAw0BfKMEY7_K7VQf2rp64Uft0_u3PQxQk_ZpgtMp5R_QbjcXq1mM8Zz4TiHQ21dI2gRrrvfHJwEMyx2Ll0w-2daKKyWtWRY11SfFBYXiQ-3cjO5NVBRX9VRdOGkA4NKSSoN12hMAH_F4SWX95ZElMX5mNo5CGM7GLCQOcpRZgAH78uFKyq8idbEFIwckqtUWA_ufiGCWo_HU",
+          "AXQCQNRqhejYdkMO8xK6Hdvfl2o6eQZMkTxB5Ynp__HmVzHfpiY72MIfWsUyvCDnAGNiFjhzkfROLrNO6Wmbrbqqj0eeT2cK_GPlVqXDxgHxfzPfMLiz1QsrsI7julEc6qd4nXyHZ7bNJN-tsLs-yA831iTM07jFNVnVMvptoSqzA90rt_aJDByfhnVo_Pr_xIY1fqOVOcGGONBHce6HcRBSQaDpGzlfBQF_n-zmdrSaU3IBQsmZcVcx3deP5KMm-VG6WQdNvHcejE7lPLRNu7ZWunIpv9zGJ3BcbZGcO9bfbgS9MR044JhsLZeihWiQfw-h2XZ3OLpmKT1hX4nI6iQphxhLJY0X-gpGEaHRrW_pvLEsV_KhEj5Bq2utAEL5cxaSEQ2vVHRA6sjkEnbNCbWYZJQf4GsPuYS_jSAZCR_4-EFtX2rTqc43aL92D0vSqMvrxvJ42-yzsslhQzx12QtYaVtq9u3LMeKTc_Jn4bzBR7JVp_SRGrRGYTSb1V0HrassBLlxwHcwv_ye-y89WZt8yy-EWjByPpiDR08ocUqHoDIrlOIZx4hTLf4Jy598K7LTWGYkOdmMCpco1dt5VW-sIa3pR2EFYJcQwsCy8EvIFUU8seNf2t4wwKT1hL3qzJVsQG2k7eod",
+          "AXQCQNSaAZ1QvxHPezVxng_nPNMHVXWpqtvG2n-j8cYv5L_C5oPE3drBoLtPMUJT28WjDHOCVi3ob8DrSTvkX7orbMLhuaN699O-EdfOoghRJQHQftWRBvjsb0NIS_SUj1SVAMrSKjGzXa7Nv_TAs79LgIwHmpwJSzvFePcr1ofCrBcgHaLmnNXDV3Hi8hxfUO3TXXFewUThMdrac0j6lXqdx8HogMpeqXlKMT1ni9v2MqAugSyE5--aUq_GXUGOgnmWdmSs_ATvjYEXhLfny7RzIm4IRu6s-UBoFCXIB2NUDRBuD1nEgn1RRjDab4AZFutDJyyCRBMp1cm4eg0LplK3fC-ma8BSI-mdh4JIya05tqd9iBBqc8yCTsAb5GiDYTDsw1a_mFlZ4msh-DX6JH3NItwXiBTFUAOGM4esMHKhjhm1WlyNQTs9OYlHFvAoY1uOsYXZm6kIKmWIfpOR1MlpUhu21Kq_qTSjtg0NZmEAtpR5oGnjzLd5_fSZzSCGfwKLhuUuxJPLNzB0XR7j-VwYFX0BT4NpQ1SMuRdd_dzfdXO1nSrCQwxK4bDneOWeGp0dYrFCDNKxIuaLBXBaCViKGD5gGN3O6JFQKpyrLDBFJ7U4ZyJjd_VIlNCqJ_CljGZzWfWlXQ_0"
+        ],
+        "score": 2.815
+      },
+      {
+        "name": "Comfort Inn Sapphire",
+        "address": "C, 5, Mirza Ismail Rd, near Panchbatti, Jayanti Market, New Colony, Jaipur, Rajasthan 302001, India",
+        "latitude": 26.9177032,
+        "longitude": 75.8111261,
+        "rating": 4,
+        "reviews": 5,
+        "category": "Restaurant",
+        "city": "Jaipur",
+        "photos": [
+          "AXQCQNS9nez0slQrst7ORt9-D9h10urxea3LT8k-_Le5toKYgvSTHlLV9bep66sCGYq1GNv3EQQHVguW_I-arQiWdhiDxZaAvXpkXG8qzsmPJRAE4zf3-byRgoiIPi6LeUt_gprrjWESCILT4rZ5C8yeMcINR7qLA7PIrhy3lnM_WmZNKm4Fb_DHI4J5KmKiV4S4zRg6h9_UfUq5Y2WIAtKkvQ2_pFQsfRgHCW-CLqsNPbgPKqmCRXSfd7msGUbQi8qhNdmHHttQJ981DY3ZwvMFseF-3_m1jtPpp1CMfbPraKGBfcCMePS8_JwY1V2GeOO9Fxzr_Zw_EEM",
+          "AXQCQNTGbb6dUjyK2yx0tIzojmu-CXG9xdIxKPiXtL1T4bzkRM03N8chy4WyaAuw2J_tTxJU1BRQx0nn7ra5sfkinm6DkK1WNRUdglphzSYQaJ9He3YUkaDQnGo0vkzhVGmNSzZv_YrBDieXlsa0r8x9m2Vc5ph1y-fkUbBVQ1SiMPdMcIP18u8jxWoHm6ubVpXdHjaCUAWdhUNKD_ot8VS8dFsSo3dEnGO3kVJgz3B3kImhg3vLYEjmAEbTbyCVY79f3IQjkZ2PaYAB2QNfW9JJ5dkqm6eDnHJQg2BoVU9CO5wPuuYjalXTWStFDqkaK8vL54x8wsVdFx_3IFN98DzVeYga5K-F7OtZZaFD2IGRdGj2CDV4UDAW3Gmj7uIt4FA_U11bGjoW4c7QIIBROoQ3SKpjpW08UXBfN_7in1uZxWmdo3zJQRc_0DiBx_HWQruzoQAW2ypDQr1lAn6qLB81RTt2yKHM-uecS-yr3IvYGpS4pQt1BmMKg0ppxCvsLiLcc8SRLgGGILSuYsu-6GySCCY331FIHUqo4yTrslbj4N6VzYfYCWPVpZUoot1hVgbXwvtgrV-8IYi23hSGeRhoi8FaAfuZKehuRpQDaIby5STx062A8H7HvmrNaZUmNqHpA2-yz46sJXJQKFidQvn4lg",
+          "AXQCQNTkGHhT5gS9LQUNKUIteZpvIw8sE24gCbnNEwmkyP0rW4eu0WlyGxWT46XJY4-6LVna6leZqmp0cjw7XCTuNBT1u3A1UDzgVANQRQzMbvHgMwGqMKbkDFjC0r31P7DNX7vLXtIuzqMJ2W_t08cLPSNULe1e8SEEx7rEIvhk-XWDVd0Rwhx6V7qeJzwU5BkBlIh-ZUWudgAhMPnFmBPXaQadiWgmTLh0vqgjGj38xMQFy4tpOaQao5OJcp2_gp2aS2s7MFLrHOXGkbnJLkVWKfGRdxegK5Bx8FEsH0zPSGxuSK37XZrC0BV7fXl8yrEZQarGi5FVFOcEBW07hzfeU0LD2DlWSuR9EQj0NsBjim29fu6qxNp_GwpcbRVie0QggSFKbpZF0JGIc3nmxmWtAj92iVrnS47k8Cq2m-UcAJXnO_Fh1W-Ns72W6o1PVrEdyHkzYaVyqL3P1x9AAlAUycndYC_cVmQOEJDa6t-hMFPa2ACQSoQ3e_xY8XtAtPcwg7MNI8HQwEIrB7q1s77E3pR4MuaaoqXsCD48RRMEBT_fFliiw4TgAIMEDO2WFw_pwhO0-Kz0_gmpQf1NO6-Wj5assd3ngt6PE1K8_WBNCK4KgH3qugDcy2Aft4NFuAmPymwojQ"
+        ],
+        "score": 2.815
+      }
+    ]
+  },
+  "budget_breakdown": {},
+  "weather_info": "",
+  "important_notes": "Travel during May can be very hot in Jaipur. It is advised to stay hydrated, wear light clothing, and plan activities during the cooler parts of the day (early morning or late afternoon/evening). Always check the weather forecast closer to your travel dates for the most accurate information.",
+  "local_events": ""
+}

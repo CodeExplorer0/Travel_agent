@@ -1,0 +1,21 @@
+{
+  "destination": {
+    "name": "Bihar, India",
+    "latitude": 25.9644427,
+    "longitude": 85.2722472
+  },
+  "locations": [
+    {
+      "name": "DEHLI MOMO POINT",
+      "type": "restaurant",
+      "latitude": 25.9644427,
+      "longitude": 85.2722472
+    },
+    {
+      "name": "Garg Mor",
+      "type": "attraction",
+      "latitude": 25.9683934,
+      "longitude": 85.2384084
+    }
+  ]
+}

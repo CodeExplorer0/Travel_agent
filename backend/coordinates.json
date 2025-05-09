@@ -1,0 +1,51 @@
+{
+  "accommodations": [],
+  "restaurants": [],
+  "attractions": [
+    {
+      "name": "Amber Fort",
+      "latitude": 26.9854865,
+      "longitude": 75.8513454
+    },
+    {
+      "name": "Panna Meena ka Kund",
+      "latitude": 26.9912309,
+      "longitude": 75.8512851
+    },
+    {
+      "name": "City Palace",
+      "latitude": 26.9257943,
+      "longitude": 75.8236714
+    },
+    {
+      "name": "Hawa Mahal",
+      "latitude": 26.9240458,
+      "longitude": 75.8267144
+    },
+    {
+      "name": "Dinner at 1135 AD (Amber Fort)",
+      "latitude": 26.9868113,
+      "longitude": 75.8505696
+    },
+    {
+      "name": "Jantar Mantar",
+      "latitude": 28.6270547,
+      "longitude": 77.21662669999999
+    },
+    {
+      "name": "Albert Hall Museum",
+      "latitude": 26.9115849,
+      "longitude": 75.81941200000001
+    },
+    {
+      "name": "Shopping at Bapu Bazaar/Johari Bazaar",
+      "latitude": 26.9165975,
+      "longitude": 75.8222331
+    },
+    {
+      "name": "Dinner at Spice Court",
+      "latitude": 26.9108279,
+      "longitude": 75.7889568
+    }
+  ]
+}

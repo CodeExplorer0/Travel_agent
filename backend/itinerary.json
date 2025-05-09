@@ -1,411 +1,143 @@
 {
-  "destination": "Kerala",
-  "duration_days": 5,
-  "total_budget": 180000,
+  "destination": "Jaipur",
+  "days": 2,
+  "budget": 50000,
   "interests": [
-    "romance",
-    "relaxation",
-    "nature"
+    "Sightseeing",
+    "Culture",
+    "Food",
+    "Shopping",
+    "Romantic Experiences"
   ],
+  "travel_style": "Leisure",
+  "start_date": "2024-05-12",
+  "end_date": "2024-05-13",
   "number_of_people": 2,
-  "reason_of_visit": "honeymoon",
-  "start_date": "2025-05-09",
-  "end_date": "2025-05-13",
-  "city_segments": [
-    {
-      "city": "Kerala",
-      "checkin": "2025-05-09",
-      "checkout": "2025-05-14"
+  "reason_of_visit": "Honeymoon",
+  "itinerary": {
+    "day_1": {
+      "date": "2024-05-12",
+      "weather": "Extremely Hot (May in Jaipur)",
+      "activities": [
+        {
+          "name": "Amber Fort",
+          "description": "Explore the magnificent Amber Fort, a UNESCO World Heritage Site. Enjoy an elephant ride (optional, early morning to avoid heat) up to the fort or a jeep ride. (2-3 hours)",
+          "type": "Sightseeing",
+          "indoor_outdoor": "Partially Outdoor (Fort is open but has indoor sections)",
+          "travel_time_to_next": "30 minutes"
+        },
+        {
+          "name": "Panna Meena ka Kund",
+          "description": "Visit the beautiful stepwell, a great place to take photographs and soak in the rich heritage.",
+          "type": "Sightseeing",
+          "indoor_outdoor": "Outdoor",
+          "travel_time_to_next": "10 minutes"
+        },
+        {
+          "name": "City Palace",
+          "description": "Visit the City Palace, the residence of the Maharaja of Jaipur. Explore the museum and courtyards. (2-3 hours)",
+          "type": "Culture",
+          "indoor_outdoor": "Partially Outdoor (Palace has indoor sections)",
+          "travel_time_to_next": "15 minutes"
+        },
+        {
+          "name": "Hawa Mahal",
+          "description": "See the iconic Hawa Mahal (Palace of Winds) from the outside. Take photos and enjoy the view. Consider visiting the museum inside. (1 hour)",
+          "type": "Sightseeing",
+          "indoor_outdoor": "Partially Indoor",
+          "notes": "Best viewed from the outside, but museum inside offers good views and is air-conditioned."
+        },
+        {
+          "name": "Dinner at 1135 AD (Amber Fort)",
+          "description": "Enjoy a romantic dinner at 1135 AD inside Amber Fort for a royal dining experience.",
+          "type": "Food",
+          "cuisine": "Indian, Rajasthani",
+          "dietary_options": "Vegetarian and Non-Vegetarian options available",
+          "indoor_outdoor": "Indoor (Air-conditioned)",
+          "notes": "Reservations highly recommended."
+        }
+      ]
+    },
+    "day_2": {
+      "date": "2024-05-13",
+      "weather": "Extremely Hot (May in Jaipur)",
+      "activities": [
+        {
+          "name": "Jantar Mantar",
+          "description": "Visit Jantar Mantar, an astronomical observatory and a UNESCO World Heritage Site. (1-2 hours)",
+          "type": "Culture",
+          "indoor_outdoor": "Outdoor",
+          "travel_time_to_next": "5 minutes"
+        },
+        {
+          "name": "Albert Hall Museum",
+          "description": "Explore the Albert Hall Museum, the oldest museum in Rajasthan. (2-3 hours)",
+          "type": "Culture",
+          "indoor_outdoor": "Indoor (Air-conditioned)",
+          "travel_time_to_next": "10 minutes"
+        },
+        {
+          "name": "Shopping at Bapu Bazaar/Johari Bazaar",
+          "description": "Shop for souvenirs, textiles, jewelry, and handicrafts at Bapu Bazaar or Johari Bazaar. (2-3 hours)",
+          "type": "Shopping",
+          "indoor_outdoor": "Partially Outdoor (Covered Market)",
+          "notes": "Bargaining is common. Try to go in the evenings when it is relatively cooler."
+        },
+        {
+          "name": "Romantic Spa Treatment",
+          "description": "Enjoy a couples spa treatment at a luxury hotel or spa for relaxation.",
+          "type": "Relaxation",
+          "indoor_outdoor": "Indoor (Air-conditioned)",
+          "notes": "Book in advance"
+        },
+        {
+          "name": "Dinner at Spice Court",
+          "description": "Have dinner at Spice Court, known for its authentic Rajasthani cuisine.",
+          "type": "Food",
+          "cuisine": "Indian, Rajasthani",
+          "dietary_options": "Vegetarian and Non-Vegetarian options available",
+          "indoor_outdoor": "Partially Outdoor (Open-air seating available)",
+          "notes": "Try the Laal Maas (if non-vegetarian) or Gatte ki Sabzi (vegetarian)."
+        }
+      ]
     }
-  ],
-  "hotels": [
-    {
-      "city": "Kerala",
-      "checkin": "2025-05-09",
-      "checkout": "2025-05-14",
-      "hotel": {
-        "hotel_id": 10650600,
-        "main_photo_id": 676883117,
-        "is_free_cancellable": 0,
-        "updated_checkin": null,
-        "review_score_word": "Fabulous",
-        "is_tpi_exclusive_property": 0,
-        "currencycode": "INR",
-        "preferred": 1,
-        "is_smart_deal": 0,
-        "has_free_parking": 1,
-        "bwallet": {
-          "hotel_eligibility": 0
-        },
-        "hotel_name_trans": "ASHRAMAM HEALTH RESORT",
-        "hotel_name": "ASHRAMAM HEALTH RESORT",
-        "review_nr": 46,
-        "block_ids": [
-          "1065060012_391484046_1_42_0"
-        ],
-        "min_total_price": 1795.5,
-        "timezone": "Asia/Kolkata",
-        "review_score": 8.7,
-        "class_is_estimated": 0,
-        "last_reservation_data": {
-          "last_reservation_ellapsed_months": 1
-        },
-        "class": 0,
-        "checkout": {
-          "until": "12:00",
-          "from": "11:00"
-        },
-        "is_genius_deal": 0,
-        "ufi": 900055555,
-        "updated_checkout": null,
-        "distances": [],
-        "preferred_plus": 1,
-        "type": "property_card",
-        "extended": 0,
-        "city_in_trans": "in Kattappana",
-        "id": "property_card_10650600",
-        "default_language": "xu",
-        "genius_discount_percentage": 0,
-        "unit_configuration_label": "<b>Bed in dormitory</b>: 1\u00a0bed",
-        "cant_book": null,
-        "checkin": {
-          "until": "12:00",
-          "from": "11:00"
-        },
-        "countrycode": "in",
-        "latitude": 9.7980157,
-        "soldout": 0,
-        "city": "idukki",
-        "hotel_include_breakfast": 0,
-        "accommodation_type": 206,
-        "children_not_allowed": null,
-        "hotel_has_vb_boost": 0,
-        "is_geo_rate": 1,
-        "badges": [],
-        "longitude": 77.0584847,
-        "main_photo_url": "https://cf.bstatic.com/xdata/images/hotel/square60/676883117.jpg?k=80d656ab9a678a3237fa28eb274b4eb9f93271b2d298173ea1292c8b508b81f7&o=",
-        "default_wishlist_name": "Kattappana",
-        "has_swimming_pool": 1,
-        "is_no_prepayment_block": 1,
-        "composite_price_breakdown": {
-          "items": [
-            {
-              "inclusion_type": "excluded",
-              "name": "Goods & services tax",
-              "item_amount": {
-                "value": 215.459995184094,
-                "amount_unrounded": "Rs.\u00a0215.46",
-                "amount_rounded": "Rs.\u00a0215",
-                "currency": "INR"
-              },
-              "base": {
-                "kind": "variable_amount",
-                "base_amount": 0
-              },
-              "details": null,
-              "kind": "charge"
-            }
-          ],
-          "included_taxes_and_charges_amount": {
-            "amount_rounded": "Rs.\u00a00",
-            "currency": "INR",
-            "value": 0,
-            "amount_unrounded": "Rs.\u00a00"
-          },
-          "has_long_stays_monthly_rate_price": 0,
-          "gross_amount_per_night": {
-            "currency": "INR",
-            "amount_rounded": "Rs.\u00a0359",
-            "value": 359.1,
-            "amount_unrounded": "Rs.\u00a0359.10"
-          },
-          "charges_details": {
-            "translated_copy": "",
-            "mode": "extra_charges",
-            "amount": {
-              "value": 215,
-              "currency": "INR"
-            }
-          },
-          "price_display_config": [
-            {
-              "key": "use_nightly_prices",
-              "value": 0
-            },
-            {
-              "value": 0,
-              "key": "use_nightly_as_dominant"
-            },
-            {
-              "key": "use_js_tracking",
-              "value": 1
-            }
-          ],
-          "all_inclusive_amount": {
-            "value": 2010.95999518409,
-            "amount_unrounded": "Rs.\u00a02,010.96",
-            "amount_rounded": "Rs.\u00a02,011",
-            "currency": "INR"
-          },
-          "all_inclusive_amount_hotel_currency": {
-            "currency": "INR",
-            "amount_rounded": "Rs.\u00a02,011",
-            "value": 2010.95999518409,
-            "amount_unrounded": "Rs.\u00a02,010.96"
-          },
-          "has_long_stays_weekly_rate_price": 0,
-          "benefits": [],
-          "gross_amount_hotel_currency": {
-            "amount_unrounded": "Rs.\u00a01,795.50",
-            "value": 1795.5,
-            "currency": "INR",
-            "amount_rounded": "Rs.\u00a01,796"
-          },
-          "net_amount": {
-            "value": 1795.5,
-            "amount_unrounded": "Rs.\u00a01,795.50",
-            "amount_rounded": "Rs.\u00a01,796",
-            "currency": "INR"
-          },
-          "gross_amount": {
-            "amount_rounded": "Rs.\u00a01,796",
-            "currency": "INR",
-            "amount_unrounded": "Rs.\u00a01,795.50",
-            "value": 1795.5
-          },
-          "excluded_amount": {
-            "value": 215.459995184094,
-            "amount_unrounded": "Rs.\u00a0215.46",
-            "amount_rounded": "Rs.\u00a0215",
-            "currency": "INR"
-          }
-        }
-      }
-    }
-  ],
-  "food_total": 54000.0,
-  "sights_total": 36000.0,
-  "hotel_total": 1795.5,
-  "total_spent": 91795.5,
-  "daily_plan": [
-    {
-      "day": 1,
-      "date": "2025-05-09",
-      "city": "Kerala"
-    },
-    {
-      "day": 2,
-      "date": "2025-05-10",
-      "city": "Kerala"
-    },
-    {
-      "day": 3,
-      "date": "2025-05-11",
-      "city": "Kerala"
-    },
-    {
-      "day": 4,
-      "date": "2025-05-12",
-      "city": "Kerala"
-    },
-    {
-      "day": 5,
-      "date": "2025-05-13",
-      "city": "Kerala"
-    }
-  ],
-  "detailed_daily_plan": [
-    {
-      "day": 1,
-      "date": "2025-05-09",
-      "city": "Kerala",
-      "weather": "Clouds",
-      "activities": {
-        "morning": "Forest road view",
-        "afternoon": "Old Bhoothathankettu Dam",
-        "evening": "Bhoothathankettu Boating Deck"
-      },
-      "food_recommendations": [
-        {
-          "name": "THOMBRAKUDY RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "ARAFA RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "Emmanuel Hotel and Bakery",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 4.3
-        }
-      ],
-      "clothing_suggestion": "Standard casual wear",
-      "estimated_costs": {
-        "activities": 7200.0,
-        "food": 10800.0,
-        "accommodation": 18000.0
-      }
-    },
-    {
-      "day": 2,
-      "date": "2025-05-10",
-      "city": "Kerala",
-      "weather": "Clouds",
-      "activities": {
-        "morning": "Forest road view",
-        "afternoon": "Old Bhoothathankettu Dam",
-        "evening": "Bhoothathankettu Boating Deck"
-      },
-      "food_recommendations": [
-        {
-          "name": "THOMBRAKUDY RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "ARAFA RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "Emmanuel Hotel and Bakery",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 4.3
-        }
-      ],
-      "clothing_suggestion": "Standard casual wear",
-      "estimated_costs": {
-        "activities": 7200.0,
-        "food": 10800.0,
-        "accommodation": 18000.0
-      }
-    },
-    {
-      "day": 3,
-      "date": "2025-05-11",
-      "city": "Kerala",
-      "weather": "Clouds",
-      "activities": {
-        "morning": "Forest road view",
-        "afternoon": "Old Bhoothathankettu Dam",
-        "evening": "Bhoothathankettu Boating Deck"
-      },
-      "food_recommendations": [
-        {
-          "name": "THOMBRAKUDY RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "ARAFA RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "Emmanuel Hotel and Bakery",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 4.3
-        }
-      ],
-      "clothing_suggestion": "Standard casual wear",
-      "estimated_costs": {
-        "activities": 7200.0,
-        "food": 10800.0,
-        "accommodation": 18000.0
-      }
-    },
-    {
-      "day": 4,
-      "date": "2025-05-12",
-      "city": "Kerala",
-      "weather": "Rain",
-      "activities": {
-        "morning": "Leisurely Breakfast",
-        "afternoon": "Local Market Visit",
-        "evening": "Sunset Cruise"
-      },
-      "food_recommendations": [
-        {
-          "name": "THOMBRAKUDY RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "ARAFA RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "Emmanuel Hotel and Bakery",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 4.3
-        }
-      ],
-      "clothing_suggestion": "Waterproof jacket, umbrella, and waterproof shoes",
-      "estimated_costs": {
-        "activities": 7200.0,
-        "food": 10800.0,
-        "accommodation": 18000.0
-      }
-    },
-    {
-      "day": 5,
-      "date": "2025-05-13",
-      "city": "Kerala",
-      "weather": "Clouds",
-      "activities": {
-        "morning": "Forest road view",
-        "afternoon": "Old Bhoothathankettu Dam",
-        "evening": "Bhoothathankettu Boating Deck"
-      },
-      "food_recommendations": [
-        {
-          "name": "THOMBRAKUDY RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "ARAFA RESTAURANT",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 5
-        },
-        {
-          "name": "Emmanuel Hotel and Bakery",
-          "type": "restaurant | food | point_of_interest | establishment",
-          "rating": 4.3
-        }
-      ],
-      "clothing_suggestion": "Standard casual wear",
-      "estimated_costs": {
-        "activities": 7200.0,
-        "food": 10800.0,
-        "accommodation": 18000.0
-      }
-    }
-  ],
-  "weather_forecast": [
-    {
-      "date": "2025-05-09",
-      "condition": "clouds"
-    },
-    {
-      "date": "2025-05-10",
-      "condition": "clouds"
-    },
-    {
-      "date": "2025-05-11",
-      "condition": "clouds"
-    },
-    {
-      "date": "2025-05-12",
-      "condition": "rain"
-    },
-    {
-      "date": "2025-05-13",
-      "condition": "clouds"
-    }
-  ]
+  },
+  "food_recommendations": {
+    "breakfast": [
+      "Laxmi Misthan Bhandar (LMB) for traditional breakfast",
+      "Tapri Central for a modern cafe experience"
+    ],
+    "lunch": [
+      "Peacock Rooftop Restaurant for ambiance",
+      "Rawat Mishthan Bhandar for local snacks"
+    ],
+    "dinner": [
+      "1135 AD (Amber Fort) for royal dining",
+      "Spice Court for authentic Rajasthani cuisine"
+    ],
+    "vegetarian_options": [
+      "Dal Baati Churma",
+      "Gatte ki Sabzi",
+      "Ker Sangri",
+      "Papad ki Sabzi"
+    ]
+  },
+  "accommodation_recommendations": {
+    "budget_hotels": [
+      "Umaid Bhawan - A Heritage Style Boutique Hotel",
+      "Shahpura House",
+      "Dera Rawatsar"
+    ],
+    "mid_range_hotels": [
+      "The Fern Residency Jaipur",
+      "Radisson Jaipur City Center"
+    ],
+    "luxury_hotels": [
+      "Rambagh Palace",
+      "The Oberoi Rajvilas"
+    ],
+    "notes": "Considering it's a honeymoon trip, a mid-range or luxury hotel with good reviews and romantic ambiance is recommended. Book in advance to get the best deals."
+  },
+  "weather_suggestion": "May in Jaipur is extremely hot. Stay hydrated, wear light cotton clothing, use sunscreen, and try to plan outdoor activities for early morning or late evening. Consider indoor activities during the hottest part of the day. Look for places with air conditioning.",
+  "notes": "Book accommodation and spa treatments in advance, especially considering it is a honeymoon trip."
 }
