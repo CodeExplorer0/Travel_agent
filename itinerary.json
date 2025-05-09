@@ -1,203 +1,115 @@
 {
-  "destination": "Jaipur",
+  "destination": "Japan",
   "days": 2,
-  "budget": 20000,
+  "budget": 200000,
   "interests": [],
   "travel_style": "leisure",
   "start_date": "12th May",
   "end_date": "12th May",
-  "number_of_people": 2,
+  "number_of_people": 3,
   "reason_of_visit": "leisure",
   "itinerary": {
     "day_1": {
-      "date": "12th May",
-      "weather": "extremely hot",
+      "date": "May 12th",
+      "city": "Tokyo (Likely Arrival Point)",
+      "weather_suggestion": "The weather in Tokyo during mid-May is generally pleasant, with average temperatures ranging from 15-25°C (59-77°F). Expect mostly sunny or partly cloudy skies. Pack light clothing with a light jacket or sweater for cooler evenings.",
       "activities": [
         {
-          "name": "City Palace",
-          "type": "historical site",
-          "description": "Visit the City Palace, a beautiful complex showcasing a blend of Rajasthani and Mughal architecture. Explore the museums within the palace.",
-          "duration": "3-4 hours",
-          "estimated_cost": "Rs. 700 per person",
-          "notes": "Best to visit early in the morning or late afternoon to avoid the midday heat. Indoor sections offer respite from the heat.",
-          "coordinates": {
-            "latitude": 26.9257943,
-            "longitude": 75.8236714
-          },
-          "photos": []
-        },
-        {
-          "name": "Hawa Mahal",
-          "type": "historical site",
-          "description": "See the iconic Hawa Mahal (Palace of Winds). Take photos from outside or explore the museum inside.",
-          "duration": "1-2 hours",
-          "estimated_cost": "Rs. 200 per person",
-          "notes": " Primarily an external viewing attraction, but the museum inside is small and provides a cooler environment.",
-          "coordinates": {
-            "latitude": 26.9240458,
-            "longitude": 75.8267144
-          },
-          "photos": []
-        },
-        {
-          "name": "Shopping at Bapu Bazaar",
-          "type": "shopping",
-          "description": "Explore Bapu Bazaar for traditional Rajasthani textiles, handicrafts, and jewelry. Bargaining is expected.",
+          "name": "Explore the Imperial Palace East Garden",
+          "type": "outdoor",
+          "description": "Visit the former site of Edo Castle, now a public park offering beautiful gardens and historical sites.",
           "duration": "2-3 hours",
-          "estimated_cost": "Varies based on purchases",
-          "notes": "Look for shaded areas and shops with air conditioning to escape the heat. Carry water.",
-          "coordinates": {
-            "latitude": 26.9165975,
-            "longitude": 75.8222331
-          },
-          "photos": []
+          "distance_to_next": "approx. 20 minutes by subway to Ginza"
         },
         {
-          "name": "Dinner at Chokhi Dhani (Optional)",
-          "type": "cultural experience/food",
-          "description": "Experience Rajasthani culture and cuisine at Chokhi Dhani, an ethnic village resort.",
+          "name": "Ginza District Exploration",
+          "type": "indoor/outdoor",
+          "description": "Wander through Ginza, known for its upscale shops, department stores, and art galleries. Enjoy window shopping or explore the Kabuki-za Theatre.",
           "duration": "3-4 hours",
-          "estimated_cost": "Rs. 1200-1500 per person",
-          "notes": " Mostly an open-air experience, so consider the heat. Evening visits are preferable."
+          "distance_to_next": "approx. 15 minutes by subway to Shinjuku"
+        },
+        {
+          "name": "Shinjuku Gyoen National Garden",
+          "type": "outdoor",
+          "description": "Relax in this beautiful garden offering a blend of Japanese, English, and French garden styles.",
+          "duration": "2 hours"
         }
       ],
-      "food": [
+      "food_recommendations": [
         {
-          "name": "Laxmi Misthan Bhandar (LMB)",
-          "cuisine": "Rajasthani/Indian",
-          "description": "Enjoy traditional Rajasthani sweets and snacks.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 500-800 for two",
-          "coordinates": {
-            "latitude": 26.9196187,
-            "longitude": 75.8256378
-          },
-          "photos": []
+          "name": "Ichiran Ramen (Shinjuku)",
+          "cuisine": "Ramen",
+          "dietary_notes": "Offers customizable ramen with options to adjust broth richness, toppings, and spice level. Can accommodate some dietary restrictions with modifications. ",
+          "budget": "Budget-friendly"
         },
         {
-          "name": "Rawat Misthan Bhandar",
-          "cuisine": "Rajasthani/Indian",
-          "description": "Try their famous 'Pyaaz Kachori'.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 300-500 for two",
-          "coordinates": {
-            "latitude": 26.9212614,
-            "longitude": 75.7967221
-          },
-          "photos": []
+          "name": "Tsukiji Outer Market (Near Ginza)",
+          "cuisine": "Seafood, Street Food",
+          "dietary_notes": "Offers a variety of seafood dishes and street food. Great option for trying local delicacies.",
+          "budget": "Budget-friendly"
+        }
+      ],
+      "accommodation_recommendation": {
+        "type": "Hotel/Airbnb",
+        "name": "Hotel Gracery Shinjuku (Godzilla Head Hotel) or Similar",
+        "budget": "Mid-range",
+        "notes": "Consider a hotel in Shinjuku for easy access to transportation and attractions. Alternatively, explore Airbnb options for potentially more affordable and spacious accommodations."
+      },
+      "local_events": [
+        {
+          "name": "Sanja Matsuri Festival (Mid-May, if dates align)",
+          "description": "One of Tokyo's largest and wildest festivals, showcasing traditional music, dancing, and portable shrines.",
+          "suitability": "Depends on exact dates within May and user's interest in cultural festivals."
         }
       ]
     },
     "day_2": {
-      "date": "13th May",
-      "weather": "extremely hot",
+      "date": "May 13th",
+      "city": "Hakone (Day Trip)",
+      "weather_suggestion": "Similar to Tokyo, expect pleasant weather in Hakone with average temperatures around 15-25°C (59-77°F). Be prepared for potential changes in weather due to the mountainous region.",
       "activities": [
         {
-          "name": "Amer Fort",
-          "type": "historical site",
-          "description": "Visit Amer Fort, a magnificent fort located on a hill. Opt for a jeep ride or walk up. Explore the palace complex, including the Sheesh Mahal (Mirror Palace).",
-          "duration": "3-4 hours",
-          "estimated_cost": "Rs. 550 per person (entry fee), Rs. 1100 (jeep ride, optional)",
-          "notes": "Visit early in the morning to avoid the scorching sun. There are indoor sections within the fort that offer some relief.",
-          "coordinates": {
-            "latitude": 26.9854865,
-            "longitude": 75.8513454
-          },
-          "photos": []
-        },
-        {
-          "name": "Jaigarh Fort",
-          "type": "historical site",
-          "description": "Visit Jaigarh Fort, overlooking Amer Fort. See the world's largest cannon on wheels and enjoy panoramic views.",
-          "duration": "1-2 hours",
-          "estimated_cost": "Rs. 150 per person",
-          "notes": "Can be extremely hot during the day, plan to visit early morning/late afternoon.",
-          "coordinates": {
-            "latitude": 26.9816052,
-            "longitude": 75.8447917
-          },
-          "photos": []
-        },
-        {
-          "name": "Albert Hall Museum",
-          "type": "museum",
-          "description": "Visit Albert Hall Museum, the oldest museum in Rajasthan, showcasing a collection of artifacts and artworks.",
+          "name": "Hakone Ropeway",
+          "type": "outdoor",
+          "description": "Enjoy stunning views of Mount Fuji (weather permitting) and volcanic hot springs from the Hakone Ropeway.",
           "duration": "2-3 hours",
-          "estimated_cost": "Rs. 300 per person",
-          "notes": " Offers an excellent indoor escape from the heat, with air-conditioned spaces.",
-          "coordinates": {
-            "latitude": 26.9115849,
-            "longitude": 75.81941200000001
-          },
-          "photos": []
+          "distance_to_next": "Part of the Hakone Loop"
         },
         {
-          "name": "Galtaji Temple (Monkey Temple)",
-          "type": "religious/historical site",
-          "description": "Visit the Galtaji Temple, known for its natural springs and temples. Be cautious of monkeys.",
-          "duration": "2-3 hours",
-          "estimated_cost": "Free entry, donations accepted",
-          "notes": "Best visited early morning or late afternoon. Mostly outdoors, but some shaded areas are available. Be aware of monkeys.",
-          "coordinates": {
-            "latitude": 26.917196,
-            "longitude": 75.8582521
-          },
-          "photos": []
+          "name": "Lake Ashi Cruise",
+          "type": "outdoor",
+          "description": "Take a scenic cruise across Lake Ashi, surrounded by beautiful mountain landscapes.",
+          "duration": "1 hour",
+          "distance_to_next": "Part of the Hakone Loop"
+        },
+        {
+          "name": "Hakone Open-Air Museum",
+          "type": "outdoor",
+          "description": "Explore a unique collection of contemporary sculptures set against the backdrop of the Hakone mountains.",
+          "duration": "2-3 hours"
         }
       ],
-      "food": [
+      "food_recommendations": [
         {
-          "name": "Tapri Central",
-          "cuisine": "Cafe/Snacks",
-          "description": "Enjoy tea, snacks, and light meals with a modern twist.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 600-900 for two",
-          "coordinates": {
-            "latitude": 26.9055179,
-            "longitude": 75.8111115
-          },
-          "photos": []
+          "name": "Hatsuhana Soba Honten (Hakone-Yumoto)",
+          "cuisine": "Soba Noodles",
+          "dietary_notes": "Offers traditional soba noodle dishes with various toppings. Vegetarian options may be available; inquire when ordering.",
+          "budget": "Mid-range"
         },
         {
-          "name": "Indian Coffee House",
-          "cuisine": "Indian",
-          "description": "A classic spot for coffee and Indian snacks.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 400-600 for two"
+          "name": "Local Restaurants in Hakone",
+          "cuisine": "Varied",
+          "dietary_notes": "Many restaurants in Hakone offer Japanese cuisine. Look for restaurants with English menus, or use translation apps for easier ordering. ",
+          "budget": "Mid-range"
         }
-      ]
-    }
-  },
-  "accommodation": {
-    "recommendations": [
-      {
-        "name": "Zostel Jaipur",
-        "type": "hostel",
-        "budget": "budget",
-        "estimated_cost": "Rs. 800-1200 per night",
-        "notes": "Good for budget travelers, social atmosphere.",
-        "coordinates": {
-          "latitude": 26.929339,
-          "longitude": 75.8281983
-        },
-        "photos": []
-      },
-      {
-        "name": "Hotel Pearl Palace",
-        "type": "hotel",
-        "budget": "mid-range",
-        "estimated_cost": "Rs. 2500-4000 per night",
-        "notes": "Well-rated, clean and comfortable."
-      },
-      {
-        "name": "Umaid Bhawan - A Heritage Style Boutique Hotel",
-        "type": "hotel",
-        "budget": "mid-range",
-        "estimated_cost": "Rs. 3000-5000 per night",
-        "notes": "offers a luxurious stay in heritage style. Good service and centrally located. "
+      ],
+      "travel_between": "Approx. 1.5-2 hours from Tokyo to Hakone by train (Odakyu Romancecar is recommended for comfort and direct access)",
+      "accommodation_recommendation": {
+        "type": "Return to Tokyo",
+        "name": "Same Hotel in Shinjuku",
+        "budget": "As per previous day",
+        "notes": "Return to your accommodation in Tokyo for the night. This reduces the hassle of checking in and out of different hotels."
       }
-    ]
-  },
-  "weather_notes": "Jaipur in May is extremely hot. It is recommended to limit outdoor activities during the day and stay hydrated. Seek shelter in air-conditioned or shaded areas whenever possible. Travel during the cooler hours of the day, early morning or late afternoon. Consider packing light cotton clothes, sunglasses, sunscreen and a hat.",
-  "transportation": "Use ride-sharing apps like Uber or Ola for convenient transport, or hire a local taxi/auto-rickshaw for shorter distances. Negotiate the fare beforehand."
+    }
+  }
 }

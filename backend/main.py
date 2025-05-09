@@ -360,6 +360,10 @@ def generate_full_itinerary(user_input):
         print("📍 Coordinates saved to coordinates.json")
         print("💬 Chatbot interface saved to chatbot.txt")
         
+        # Create human readable itinerary
+        create_human_readable_itinerary(user_input)
+        print("📝 Human readable itinerary saved to itinerary.txt")
+        
         return True
         
     except Exception as e:
@@ -454,74 +458,91 @@ def generate_map(coordinates_data):
         print(f"❌ Error generating map: {str(e)}")
 
 def create_human_readable_itinerary(user_input):
+    """Create a human-readable itinerary from the LLM output"""
     try:
-        # Get trip details from the input
-        trip_details = user_input.get('trip_details', {})
-        destination = trip_details.get('destination', 'Unknown Destination')
-        days = trip_details.get('days', 0)
-        start_date = trip_details.get('start_date', '')
-        end_date = trip_details.get('end_date', '')
-        budget = trip_details.get('budget', 0)
-        reason = trip_details.get('reason_of_visit', 'Tourism')
-        interests = trip_details.get('interests', [])
+        # Extract trip details
+        destination = user_input.get('destination', 'Unknown Destination')
+        days = user_input.get('days', 0)
+        start_date = user_input.get('start_date', '')
+        end_date = user_input.get('end_date', '')
+        budget = user_input.get('budget', 0)
+        reason = user_input.get('reason_of_visit', 'Tourism')
+        interests = user_input.get('interests', [])
         
+        # Create the itinerary text
         itinerary_text = f"""# {destination} Itinerary ({days} Days)
 **Trip Dates:** {start_date} to {end_date}
 **Budget:** ₹{budget}
 **Reason:** {reason}
-**Interests:** {', '.join(interests)}
+**Interests:** {', '.join(interests) if interests else 'Not specified'}
 
 """
-        # Add daily plans
-        daily_plans = user_input.get('daily_plans', {})
-        for day, plan in daily_plans.items():
-            day_num = day.split('_')[1] if '_' in day else day
-            itinerary_text += f"\n## Day {day_num}\n"
-            itinerary_text += f"**Date:** {plan.get('date', '')}\n"
-            itinerary_text += f"**Weather:** {plan.get('weather', '')}\n\n"
+        
+        # Add daily activities
+        itinerary = user_input.get('itinerary', {})
+        for day_num, day_data in itinerary.items():
+            date = day_data.get('date', '')
+            weather = day_data.get('weather', '')
+            activities = day_data.get('activities', [])
             
-            # Add activities
+            itinerary_text += f"\n## Day {day_num.split('_')[1]}: {date}\n"
+            if weather:
+                itinerary_text += f"**Weather:** {weather}\n\n"
+            
             itinerary_text += "### Activities:\n"
-            for activity in plan.get('activities', []):
-                itinerary_text += f"#### {activity.get('name', '')}\n"
-                itinerary_text += f"- Type: {activity.get('type', '')}\n"
-                itinerary_text += f"- Duration: {activity.get('duration', '')}\n"
-                itinerary_text += f"- Description: {activity.get('description', '')}\n"
-                if activity.get('notes'):
-                    itinerary_text += f"- Notes: {activity.get('notes')}\n"
-                itinerary_text += "\n"
-            
-            # Add food recommendations
-            if plan.get('food'):
-                itinerary_text += "### Food Recommendations:\n"
-                for food in plan['food']:
-                    itinerary_text += f"- {food.get('name', '')}\n"
-                    itinerary_text += f"  Type: {food.get('type', '')}\n"
-                    itinerary_text += f"  Description: {food.get('description', '')}\n\n"
-            
-            # Add accommodation
-            if plan.get('accommodation'):
-                acc = plan['accommodation']
-                itinerary_text += "### Accommodation:\n"
-                itinerary_text += f"- {acc.get('name', '')}\n"
-                if acc.get('suggestions'):
-                    itinerary_text += "Suggested Hotels:\n"
-                    for hotel in acc['suggestions']:
-                        itinerary_text += f"  - {hotel}\n"
-                itinerary_text += "\n"
-            
-            # Add weather notes if available
-            if user_input.get('weather_notes'):
-                itinerary_text += f"**Weather Notes:** {user_input['weather_notes']}\n\n"
+            for activity in activities:
+                name = activity.get('name', '')
+                description = activity.get('description', '')
+                time = activity.get('time', '')
+                indoor = activity.get('indoor', False)
+                
+                itinerary_text += f"- **{name}**\n"
+                if description:
+                    itinerary_text += f"  {description}\n"
+                if time:
+                    itinerary_text += f"  Duration: {time}\n"
+                itinerary_text += f"  Indoor/Outdoor: {'Indoor' if indoor else 'Outdoor'}\n\n"
+        
+        # Add food recommendations
+        food_recs = user_input.get('food_recommendations', {})
+        if food_recs:
+            itinerary_text += "\n## Food Recommendations\n"
+            for meal_type, places in food_recs.items():
+                if places:
+                    itinerary_text += f"\n### {meal_type.title()}:\n"
+                    for place in places:
+                        itinerary_text += f"- {place}\n"
+        
+        # Add accommodation recommendations
+        acc_recs = user_input.get('accommodation_recommendations', {})
+        if acc_recs:
+            itinerary_text += "\n## Accommodation Recommendations\n"
+            for category, hotels in acc_recs.items():
+                if isinstance(hotels, list) and hotels:
+                    itinerary_text += f"\n### {category.replace('_', ' ').title()}:\n"
+                    for hotel in hotels:
+                        itinerary_text += f"- {hotel}\n"
+        
+        # Add weather suggestions and notes
+        weather_suggestion = user_input.get('weather_suggestion', '')
+        notes = user_input.get('notes', '')
+        
+        if weather_suggestion:
+            itinerary_text += f"\n## Weather Considerations\n{weather_suggestion}\n"
+        if notes:
+            itinerary_text += f"\n## Important Notes\n{notes}\n"
         
         # Write to file
-        with open("itinerary.txt", "w", encoding="utf-8") as f:
+        with open('itinerary.txt', 'w', encoding='utf-8') as f:
             f.write(itinerary_text)
             
+        return True
+        
     except Exception as e:
-        print(f"❌ Error creating human-readable itinerary: {str(e)}")
+        print(f"Error creating human readable itinerary: {str(e)}")
         import traceback
-        print(f"Stack trace: {traceback.format_exc()}")
+        print(traceback.format_exc())
+        return False
 
 def get_place_photos(place_name):
     """Get photos for a place using Google Places API"""

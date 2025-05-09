@@ -1,126 +1,36 @@
 {
-  "accommodations": [
-    {
-      "name": "Zostel Jaipur",
-      "latitude": 26.929339,
-      "longitude": 75.8281983,
-      "type": "hostel",
-      "photos": [],
-      "description": "",
-      "price_range": ""
-    },
-    {
-      "name": "Zostel Jaipur",
-      "latitude": 26.929339,
-      "longitude": 75.8281983,
-      "type": "hostel",
-      "photos": [],
-      "description": "",
-      "price_range": ""
-    }
-  ],
-  "restaurants": [
-    {
-      "name": "Laxmi Misthan Bhandar (LMB)",
-      "latitude": 26.9196187,
-      "longitude": 75.8256378,
-      "cuisine": "Rajasthani/Indian",
-      "photos": [],
-      "description": "Enjoy traditional Rajasthani sweets and snacks.",
-      "price_range": "",
-      "type": "vegetarian"
-    },
-    {
-      "name": "Rawat Misthan Bhandar",
-      "latitude": 26.9212614,
-      "longitude": 75.7967221,
-      "cuisine": "Rajasthani/Indian",
-      "photos": [],
-      "description": "Try their famous 'Pyaaz Kachori'.",
-      "price_range": "",
-      "type": "vegetarian"
-    },
-    {
-      "name": "Tapri Central",
-      "latitude": 26.9055179,
-      "longitude": 75.8111115,
-      "cuisine": "Cafe/Snacks",
-      "photos": [],
-      "description": "Enjoy tea, snacks, and light meals with a modern twist.",
-      "price_range": "",
-      "type": "vegetarian"
-    }
-  ],
+  "accommodations": [],
+  "restaurants": [],
   "attractions": [
     {
-      "name": "City Palace",
-      "latitude": 26.9257943,
-      "longitude": 75.8236714,
-      "type": "historical site",
-      "photos": [],
-      "description": "Visit the City Palace, a beautiful complex showcasing a blend of Rajasthani and Mughal architecture. Explore the museums within the palace.",
-      "duration": "3-4 hours",
-      "notes": "Best to visit early in the morning or late afternoon to avoid the midday heat. Indoor sections offer respite from the heat."
+      "name": "Explore the Imperial Palace East Garden",
+      "latitude": 35.6867824,
+      "longitude": 139.7571445
     },
     {
-      "name": "Hawa Mahal",
-      "latitude": 26.9240458,
-      "longitude": 75.8267144,
-      "type": "historical site",
-      "photos": [],
-      "description": "See the iconic Hawa Mahal (Palace of Winds). Take photos from outside or explore the museum inside.",
-      "duration": "1-2 hours",
-      "notes": " Primarily an external viewing attraction, but the museum inside is small and provides a cooler environment."
+      "name": "Ginza District Exploration",
+      "latitude": 35.6712228,
+      "longitude": 139.7664859
     },
     {
-      "name": "Shopping at Bapu Bazaar",
-      "latitude": 26.9165975,
-      "longitude": 75.8222331,
-      "type": "shopping",
-      "photos": [],
-      "description": "Explore Bapu Bazaar for traditional Rajasthani textiles, handicrafts, and jewelry. Bargaining is expected.",
-      "duration": "2-3 hours",
-      "notes": "Look for shaded areas and shops with air conditioning to escape the heat. Carry water."
+      "name": "Shinjuku Gyoen National Garden",
+      "latitude": 35.68517629999999,
+      "longitude": 139.7100517
     },
     {
-      "name": "Amer Fort",
-      "latitude": 26.9854865,
-      "longitude": 75.8513454,
-      "type": "historical site",
-      "photos": [],
-      "description": "Visit Amer Fort, a magnificent fort located on a hill. Opt for a jeep ride or walk up. Explore the palace complex, including the Sheesh Mahal (Mirror Palace).",
-      "duration": "3-4 hours",
-      "notes": "Visit early in the morning to avoid the scorching sun. There are indoor sections within the fort that offer some relief."
+      "name": "Hakone Ropeway",
+      "latitude": 35.2444273,
+      "longitude": 139.0150413
     },
     {
-      "name": "Jaigarh Fort",
-      "latitude": 26.9816052,
-      "longitude": 75.8447917,
-      "type": "historical site",
-      "photos": [],
-      "description": "Visit Jaigarh Fort, overlooking Amer Fort. See the world's largest cannon on wheels and enjoy panoramic views.",
-      "duration": "1-2 hours",
-      "notes": "Can be extremely hot during the day, plan to visit early morning/late afternoon."
+      "name": "Lake Ashi Cruise",
+      "latitude": 35.2095674,
+      "longitude": 139.0034626
     },
     {
-      "name": "Albert Hall Museum",
-      "latitude": 26.9115849,
-      "longitude": 75.81941200000001,
-      "type": "museum",
-      "photos": [],
-      "description": "Visit Albert Hall Museum, the oldest museum in Rajasthan, showcasing a collection of artifacts and artworks.",
-      "duration": "2-3 hours",
-      "notes": " Offers an excellent indoor escape from the heat, with air-conditioned spaces."
-    },
-    {
-      "name": "Galtaji Temple (Monkey Temple)",
-      "latitude": 26.917196,
-      "longitude": 75.8582521,
-      "type": "religious/historical site",
-      "photos": [],
-      "description": "Visit the Galtaji Temple, known for its natural springs and temples. Be cautious of monkeys.",
-      "duration": "2-3 hours",
-      "notes": "Best visited early morning or late afternoon. Mostly outdoors, but some shaded areas are available. Be aware of monkeys."
+      "name": "Hakone Open-Air Museum",
+      "latitude": 35.2448447,
+      "longitude": 139.0513547
     }
   ]
 }

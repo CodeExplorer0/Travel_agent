@@ -1,208 +1,158 @@
 {
-  "trip_details": {
-    "destination": "Jaipur",
-    "days": 2,
-    "budget": 20000,
-    "start_date": "12th May",
-    "end_date": "12th May",
-    "number_of_people": 2,
-    "reason_of_visit": "leisure",
-    "interests": [],
-    "travel_style": "leisure"
-  },
-  "daily_plans": {
-    "day_1": {
-      "date": "12th May",
-      "weather": "extremely hot",
-      "theme": null,
-      "activities": [
-        {
-          "name": "City Palace",
-          "type": "historical site",
-          "description": "Visit the City Palace, a beautiful complex showcasing a blend of Rajasthani and Mughal architecture. Explore the museums within the palace.",
-          "duration": "3-4 hours",
-          "estimated_cost": "Rs. 700 per person",
-          "notes": "Best to visit early in the morning or late afternoon to avoid the midday heat. Indoor sections offer respite from the heat.",
-          "coordinates": {
-            "latitude": 26.9257943,
-            "longitude": 75.8236714
-          },
-          "photos": []
-        },
-        {
-          "name": "Hawa Mahal",
-          "type": "historical site",
-          "description": "See the iconic Hawa Mahal (Palace of Winds). Take photos from outside or explore the museum inside.",
-          "duration": "1-2 hours",
-          "estimated_cost": "Rs. 200 per person",
-          "notes": " Primarily an external viewing attraction, but the museum inside is small and provides a cooler environment.",
-          "coordinates": {
-            "latitude": 26.9240458,
-            "longitude": 75.8267144
-          },
-          "photos": []
-        },
-        {
-          "name": "Shopping at Bapu Bazaar",
-          "type": "shopping",
-          "description": "Explore Bapu Bazaar for traditional Rajasthani textiles, handicrafts, and jewelry. Bargaining is expected.",
-          "duration": "2-3 hours",
-          "estimated_cost": "Varies based on purchases",
-          "notes": "Look for shaded areas and shops with air conditioning to escape the heat. Carry water.",
-          "coordinates": {
-            "latitude": 26.9165975,
-            "longitude": 75.8222331
-          },
-          "photos": []
-        },
-        {
-          "name": "Dinner at Chokhi Dhani (Optional)",
-          "type": "cultural experience/food",
-          "description": "Experience Rajasthani culture and cuisine at Chokhi Dhani, an ethnic village resort.",
-          "duration": "3-4 hours",
-          "estimated_cost": "Rs. 1200-1500 per person",
-          "notes": " Mostly an open-air experience, so consider the heat. Evening visits are preferable."
-        }
-      ],
-      "food": [
-        {
-          "name": "Laxmi Misthan Bhandar (LMB)",
-          "cuisine": "Rajasthani/Indian",
-          "description": "Enjoy traditional Rajasthani sweets and snacks.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 500-800 for two",
-          "coordinates": {
-            "latitude": 26.9196187,
-            "longitude": 75.8256378
-          },
-          "photos": []
-        },
-        {
-          "name": "Rawat Misthan Bhandar",
-          "cuisine": "Rajasthani/Indian",
-          "description": "Try their famous 'Pyaaz Kachori'.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 300-500 for two",
-          "coordinates": {
-            "latitude": 26.9212614,
-            "longitude": 75.7967221
-          },
-          "photos": []
-        }
-      ],
-      "accommodation": {
-        "name": "Zostel Jaipur",
-        "type": "hostel",
-        "budget": "budget",
-        "estimated_cost": "Rs. 800-1200 per night",
-        "notes": "Good for budget travelers, social atmosphere.",
-        "coordinates": {
-          "latitude": 26.929339,
-          "longitude": 75.8281983
-        },
-        "photos": []
-      }
+  "tripData": {
+    "destination": "Japan",
+    "startDate": "12th May",
+    "endDate": "12th May",
+    "duration": 2,
+    "currency": {
+      "name": "Indian Rupee (₹)",
+      "conversionRate": 1.0
     },
-    "day_2": {
-      "date": "13th May",
-      "weather": "extremely hot",
-      "theme": null,
-      "activities": [
-        {
-          "name": "Amer Fort",
-          "type": "historical site",
-          "description": "Visit Amer Fort, a magnificent fort located on a hill. Opt for a jeep ride or walk up. Explore the palace complex, including the Sheesh Mahal (Mirror Palace).",
-          "duration": "3-4 hours",
-          "estimated_cost": "Rs. 550 per person (entry fee), Rs. 1100 (jeep ride, optional)",
-          "notes": "Visit early in the morning to avoid the scorching sun. There are indoor sections within the fort that offer some relief.",
-          "coordinates": {
-            "latitude": 26.9854865,
-            "longitude": 75.8513454
-          },
-          "photos": []
-        },
-        {
-          "name": "Jaigarh Fort",
-          "type": "historical site",
-          "description": "Visit Jaigarh Fort, overlooking Amer Fort. See the world's largest cannon on wheels and enjoy panoramic views.",
-          "duration": "1-2 hours",
-          "estimated_cost": "Rs. 150 per person",
-          "notes": "Can be extremely hot during the day, plan to visit early morning/late afternoon.",
-          "coordinates": {
-            "latitude": 26.9816052,
-            "longitude": 75.8447917
-          },
-          "photos": []
-        },
-        {
-          "name": "Albert Hall Museum",
-          "type": "museum",
-          "description": "Visit Albert Hall Museum, the oldest museum in Rajasthan, showcasing a collection of artifacts and artworks.",
-          "duration": "2-3 hours",
-          "estimated_cost": "Rs. 300 per person",
-          "notes": " Offers an excellent indoor escape from the heat, with air-conditioned spaces.",
-          "coordinates": {
-            "latitude": 26.9115849,
-            "longitude": 75.81941200000001
-          },
-          "photos": []
-        },
-        {
-          "name": "Galtaji Temple (Monkey Temple)",
-          "type": "religious/historical site",
-          "description": "Visit the Galtaji Temple, known for its natural springs and temples. Be cautious of monkeys.",
-          "duration": "2-3 hours",
-          "estimated_cost": "Free entry, donations accepted",
-          "notes": "Best visited early morning or late afternoon. Mostly outdoors, but some shaded areas are available. Be aware of monkeys.",
-          "coordinates": {
-            "latitude": 26.917196,
-            "longitude": 75.8582521
-          },
-          "photos": []
-        }
-      ],
-      "food": [
-        {
-          "name": "Tapri Central",
-          "cuisine": "Cafe/Snacks",
-          "description": "Enjoy tea, snacks, and light meals with a modern twist.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 600-900 for two",
-          "coordinates": {
-            "latitude": 26.9055179,
-            "longitude": 75.8111115
-          },
-          "photos": []
-        },
-        {
-          "name": "Indian Coffee House",
-          "cuisine": "Indian",
-          "description": "A classic spot for coffee and Indian snacks.",
-          "type": "vegetarian",
-          "estimated_cost": "Rs. 400-600 for two"
-        }
-      ],
+    "weather": "",
+    "language": "Hindi, English",
+    "emergencyContact": "112",
+    "electricalOutlet": "Type C, 230V",
+    "transportation": [
+      "Auto-rickshaw",
+      "Taxi",
+      "Bus",
+      "Metro"
+    ],
+    "cost": {
+      "transportation": {
+        "inr": 2000
+      },
       "accommodation": {
-        "name": "Zostel Jaipur",
-        "type": "hostel",
-        "budget": "budget",
-        "estimated_cost": "Rs. 800-1200 per night",
-        "notes": "Good for budget travelers, social atmosphere.",
-        "coordinates": {
-          "latitude": 26.929339,
-          "longitude": 75.8281983
-        },
-        "photos": []
+        "inr": 4000
+      },
+      "food": {
+        "inr": 0
+      },
+      "activities": {
+        "inr": 0
+      },
+      "miscellaneous": {
+        "inr": 5000
+      },
+      "total": {
+        "inr": 200000
       }
     }
   },
-  "places_data": {
-    "attractions": [],
-    "hotels": [],
-    "restaurants": []
-  },
-  "budget_breakdown": {},
-  "weather_info": "Jaipur in May is extremely hot. It is recommended to limit outdoor activities during the day and stay hydrated. Seek shelter in air-conditioned or shaded areas whenever possible. Travel during the cooler hours of the day, early morning or late afternoon. Consider packing light cotton clothes, sunglasses, sunscreen and a hat.",
-  "important_notes": [],
-  "local_events": []
+  "itineraryDays": [
+    {
+      "day": 1,
+      "title": "Day 1",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Explore the Imperial Palace East Garden",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 35.6867824,
+            "longitude": 139.7571445
+          },
+          "description": "Visit the former site of Edo Castle, now a public park offering beautiful gardens and historical sites.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Ginza District Exploration",
+          "time": "3-4 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 35.6712228,
+            "longitude": 139.7664859
+          },
+          "description": "Wander through Ginza, known for its upscale shops, department stores, and art galleries. Enjoy window shopping or explore the Kabuki-za Theatre.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Shinjuku Gyoen National Garden",
+          "time": "2 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 35.68517629999999,
+            "longitude": 139.7100517
+          },
+          "description": "Relax in this beautiful garden offering a blend of Japanese, English, and French garden styles.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 2,
+      "title": "Day 2",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Hakone Ropeway",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 35.2444273,
+            "longitude": 139.0150413
+          },
+          "description": "Enjoy stunning views of Mount Fuji (weather permitting) and volcanic hot springs from the Hakone Ropeway.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Lake Ashi Cruise",
+          "time": "1 hour",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 35.2095674,
+            "longitude": 139.0034626
+          },
+          "description": "Take a scenic cruise across Lake Ashi, surrounded by beautiful mountain landscapes.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Hakone Open-Air Museum",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 35.2448447,
+            "longitude": 139.0513547
+          },
+          "description": "Explore a unique collection of contemporary sculptures set against the backdrop of the Hakone mountains.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    }
+  ]
 }

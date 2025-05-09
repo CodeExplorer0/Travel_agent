@@ -1,12 +1,12 @@
 🤖 Travel Assistant Chat
 
-👋 Hello! I'm your travel assistant. Let me help you plan your trip to Jaipur.
+👋 Hello! I'm your travel assistant. Let me help you plan your trip to Japan.
 
 📅 Trip Details:
 - Duration: 2 days
 - Dates: 12th May to 12th May
-- Budget: ₹20000
-- Travelers: 2 people
+- Budget: ₹200000
+- Travelers: 3 people
 - Purpose: leisure
 
 🎯 Top Attractions:
