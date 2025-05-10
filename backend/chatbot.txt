@@ -1,13 +1,13 @@
 🤖 Travel Assistant Chat
 
-👋 Hello! I'm your travel assistant. Let me help you plan your trip to Japan.
+👋 Hello! I'm your travel assistant. Let me help you plan your trip to Delhi.
 
 📅 Trip Details:
 - Duration: 2 days
 - Dates: 2024-05-12 to 2024-05-13
-- Budget: ₹200000
-- Travelers: 3 people
-- Purpose: honeymoon
+- Budget: ₹30000
+- Travelers: 2 people
+- Purpose: leisure
 
 🎯 Top Attractions:
 

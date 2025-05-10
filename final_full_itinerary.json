@@ -1,9 +1,9 @@
 {
   "tripData": {
-    "destination": "Japan",
-    "startDate": "12th May",
-    "endDate": "12th May",
-    "duration": 2,
+    "destination": "Maharashtra, India",
+    "startDate": "2024-05-14",
+    "endDate": "2024-05-18",
+    "duration": 5,
     "currency": {
       "name": "Indian Rupee (₹)",
       "conversionRate": 1.0
@@ -35,7 +35,7 @@
         "inr": 5000
       },
       "total": {
-        "inr": 200000
+        "inr": 50000
       }
     }
   },
@@ -58,39 +58,27 @@
       },
       "activities": [
         {
-          "name": "Explore the Imperial Palace East Garden",
-          "time": "2-3 hours",
-          "indoor": false,
-          "location": "",
-          "coordinates": {
-            "latitude": 35.6867824,
-            "longitude": 139.7571445
-          },
-          "description": "Visit the former site of Edo Castle, now a public park offering beautiful gardens and historical sites.",
-          "estimated_cost": 0
-        },
-        {
-          "name": "Ginza District Exploration",
+          "name": "Gateway of India",
           "time": "3-4 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 35.6712228,
-            "longitude": 139.7664859
+            "latitude": 18.9219841,
+            "longitude": 72.8346543
           },
-          "description": "Wander through Ginza, known for its upscale shops, department stores, and art galleries. Enjoy window shopping or explore the Kabuki-za Theatre.",
+          "description": "Visit the iconic Gateway of India, a historical monument overlooking the Arabian Sea. Take a ferry to Elephanta Island.",
           "estimated_cost": 0
         },
         {
-          "name": "Shinjuku Gyoen National Garden",
-          "time": "2 hours",
+          "name": "Elephanta Caves",
+          "time": "3-4 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 35.68517629999999,
-            "longitude": 139.7100517
+            "latitude": 18.9633474,
+            "longitude": 72.9314864
           },
-          "description": "Relax in this beautiful garden offering a blend of Japanese, English, and French garden styles.",
+          "description": "Explore the ancient rock-cut Elephanta Caves, a UNESCO World Heritage Site dedicated to Lord Shiva.",
           "estimated_cost": 0
         }
       ],
@@ -115,39 +103,192 @@
       },
       "activities": [
         {
-          "name": "Hakone Ropeway",
+          "name": "Chhatrapati Shivaji Maharaj Terminus (CST)",
           "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 35.2444273,
-            "longitude": 139.0150413
+            "latitude": 18.9398446,
+            "longitude": 72.8354475
           },
-          "description": "Enjoy stunning views of Mount Fuji (weather permitting) and volcanic hot springs from the Hakone Ropeway.",
+          "description": "Visit the historic railway station, a UNESCO World Heritage Site. Admire the Victorian Gothic architecture.",
           "estimated_cost": 0
         },
         {
-          "name": "Lake Ashi Cruise",
-          "time": "1 hour",
+          "name": "Dhobi Ghat",
+          "time": "1-2 hours",
           "indoor": false,
           "location": "",
-          "coordinates": {
-            "latitude": 35.2095674,
-            "longitude": 139.0034626
-          },
-          "description": "Take a scenic cruise across Lake Ashi, surrounded by beautiful mountain landscapes.",
+          "coordinates": null,
+          "description": "Witness the open-air laundry at Dhobi Ghat, where clothes are washed and dried in a traditional way.",
           "estimated_cost": 0
         },
         {
-          "name": "Hakone Open-Air Museum",
+          "name": "Mani Bhavan Gandhi Museum",
           "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 35.2448447,
-            "longitude": 139.0513547
+            "latitude": 18.9598453,
+            "longitude": 72.8115152
           },
-          "description": "Explore a unique collection of contemporary sculptures set against the backdrop of the Hakone mountains.",
+          "description": "Visit the former residence of Mahatma Gandhi, now a museum showcasing his life and work.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 3,
+      "title": "Day 3",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Travel from Mumbai to Lonavala",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 18.7557237,
+            "longitude": 73.4090757
+          },
+          "description": "Take a train or hire a car to Lonavala (approx. 2-3 hours).",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Bhaja Caves",
+          "time": "3-4 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 18.7283929,
+            "longitude": 73.4815457
+          },
+          "description": "Explore the ancient Buddhist caves at Bhaja, known for their intricate carvings.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Lonavala Lake",
+          "time": "1-2 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 18.7417874,
+            "longitude": 73.3996038
+          },
+          "description": "Relax by the serene Lonavala Lake and enjoy the scenic views.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 4,
+      "title": "Day 4",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Karla Caves",
+          "time": "3-4 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 18.7832762,
+            "longitude": 73.4704426
+          },
+          "description": "Visit the Karla Caves, one of the largest and best-preserved Buddhist cave temples in India.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Tiger Point",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 30.37833,
+            "longitude": -87.05556
+          },
+          "description": "Enjoy panoramic views of the surrounding hills and valleys from Tiger Point.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 5,
+      "title": "Day 5",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Travel from Lonavala to Mumbai",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 18.7557237,
+            "longitude": 73.4090757
+          },
+          "description": "Travel back to Mumbai.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Shopping at Colaba Causeway",
+          "time": "3-4 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 18.9246447,
+            "longitude": 72.8321315
+          },
+          "description": "Shop for souvenirs, clothes, and accessories at Colaba Causeway.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Relax and Depart",
+          "time": "Flexible",
+          "indoor": false,
+          "location": "",
+          "coordinates": null,
+          "description": "Relax in the evening before departing from Mumbai.",
           "estimated_cost": 0
         }
       ],

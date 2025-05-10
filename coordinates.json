@@ -3,34 +3,59 @@
   "restaurants": [],
   "attractions": [
     {
-      "name": "Explore the Imperial Palace East Garden",
-      "latitude": 35.6867824,
-      "longitude": 139.7571445
+      "name": "Gateway of India",
+      "latitude": 18.9219841,
+      "longitude": 72.8346543
     },
     {
-      "name": "Ginza District Exploration",
-      "latitude": 35.6712228,
-      "longitude": 139.7664859
+      "name": "Elephanta Caves",
+      "latitude": 18.9633474,
+      "longitude": 72.9314864
     },
     {
-      "name": "Shinjuku Gyoen National Garden",
-      "latitude": 35.68517629999999,
-      "longitude": 139.7100517
+      "name": "Chhatrapati Shivaji Maharaj Terminus (CST)",
+      "latitude": 18.9398446,
+      "longitude": 72.8354475
     },
     {
-      "name": "Hakone Ropeway",
-      "latitude": 35.2444273,
-      "longitude": 139.0150413
+      "name": "Mani Bhavan Gandhi Museum",
+      "latitude": 18.9598453,
+      "longitude": 72.8115152
     },
     {
-      "name": "Lake Ashi Cruise",
-      "latitude": 35.2095674,
-      "longitude": 139.0034626
+      "name": "Travel from Mumbai to Lonavala",
+      "latitude": 18.7557237,
+      "longitude": 73.4090757
     },
     {
-      "name": "Hakone Open-Air Museum",
-      "latitude": 35.2448447,
-      "longitude": 139.0513547
+      "name": "Bhaja Caves",
+      "latitude": 18.7283929,
+      "longitude": 73.4815457
+    },
+    {
+      "name": "Lonavala Lake",
+      "latitude": 18.7417874,
+      "longitude": 73.3996038
+    },
+    {
+      "name": "Karla Caves",
+      "latitude": 18.7832762,
+      "longitude": 73.4704426
+    },
+    {
+      "name": "Tiger Point",
+      "latitude": 30.37833,
+      "longitude": -87.05556
+    },
+    {
+      "name": "Travel from Lonavala to Mumbai",
+      "latitude": 18.7557237,
+      "longitude": 73.4090757
+    },
+    {
+      "name": "Shopping at Colaba Causeway",
+      "latitude": 18.9246447,
+      "longitude": 72.8321315
     }
   ]
 }

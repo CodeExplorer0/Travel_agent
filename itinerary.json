@@ -1,115 +1,204 @@
 {
-  "destination": "Japan",
-  "days": 2,
-  "budget": 200000,
+  "destination": "Maharashtra, India",
+  "days": 5,
+  "budget": 50000,
   "interests": [],
   "travel_style": "leisure",
-  "start_date": "12th May",
-  "end_date": "12th May",
-  "number_of_people": 3,
+  "start_date": "2024-05-14",
+  "end_date": "2024-05-18",
+  "number_of_people": 2,
   "reason_of_visit": "leisure",
   "itinerary": {
     "day_1": {
-      "date": "May 12th",
-      "city": "Tokyo (Likely Arrival Point)",
-      "weather_suggestion": "The weather in Tokyo during mid-May is generally pleasant, with average temperatures ranging from 15-25°C (59-77°F). Expect mostly sunny or partly cloudy skies. Pack light clothing with a light jacket or sweater for cooler evenings.",
+      "date": "2024-05-14",
+      "location": "Mumbai",
       "activities": [
         {
-          "name": "Explore the Imperial Palace East Garden",
-          "type": "outdoor",
-          "description": "Visit the former site of Edo Castle, now a public park offering beautiful gardens and historical sites.",
-          "duration": "2-3 hours",
-          "distance_to_next": "approx. 20 minutes by subway to Ginza"
-        },
-        {
-          "name": "Ginza District Exploration",
-          "type": "indoor/outdoor",
-          "description": "Wander through Ginza, known for its upscale shops, department stores, and art galleries. Enjoy window shopping or explore the Kabuki-za Theatre.",
+          "name": "Gateway of India",
+          "description": "Visit the iconic Gateway of India, a historical monument overlooking the Arabian Sea. Take a ferry to Elephanta Island.",
+          "type": "sightseeing",
           "duration": "3-4 hours",
-          "distance_to_next": "approx. 15 minutes by subway to Shinjuku"
+          "travel_time_to_next_activity": "1 hour"
         },
         {
-          "name": "Shinjuku Gyoen National Garden",
-          "type": "outdoor",
-          "description": "Relax in this beautiful garden offering a blend of Japanese, English, and French garden styles.",
-          "duration": "2 hours"
+          "name": "Elephanta Caves",
+          "description": "Explore the ancient rock-cut Elephanta Caves, a UNESCO World Heritage Site dedicated to Lord Shiva.",
+          "type": "historical",
+          "duration": "3-4 hours"
         }
       ],
-      "food_recommendations": [
-        {
-          "name": "Ichiran Ramen (Shinjuku)",
-          "cuisine": "Ramen",
-          "dietary_notes": "Offers customizable ramen with options to adjust broth richness, toppings, and spice level. Can accommodate some dietary restrictions with modifications. ",
-          "budget": "Budget-friendly"
-        },
-        {
-          "name": "Tsukiji Outer Market (Near Ginza)",
-          "cuisine": "Seafood, Street Food",
-          "dietary_notes": "Offers a variety of seafood dishes and street food. Great option for trying local delicacies.",
-          "budget": "Budget-friendly"
-        }
-      ],
-      "accommodation_recommendation": {
-        "type": "Hotel/Airbnb",
-        "name": "Hotel Gracery Shinjuku (Godzilla Head Hotel) or Similar",
-        "budget": "Mid-range",
-        "notes": "Consider a hotel in Shinjuku for easy access to transportation and attractions. Alternatively, explore Airbnb options for potentially more affordable and spacious accommodations."
+      "food": {
+        "recommendations": [
+          {
+            "name": "Street Food at Girgaum Chowpatty",
+            "description": "Enjoy local Mumbai street food like Pav Bhaji, Vada Pav, and Pani Puri. Vegetarian options available.",
+            "cuisine": "Indian Street Food",
+            "dietary_preferences": "vegetarian"
+          }
+        ]
       },
-      "local_events": [
-        {
-          "name": "Sanja Matsuri Festival (Mid-May, if dates align)",
-          "description": "One of Tokyo's largest and wildest festivals, showcasing traditional music, dancing, and portable shrines.",
-          "suitability": "Depends on exact dates within May and user's interest in cultural festivals."
-        }
-      ]
+      "accommodation": {
+        "type": "hotel",
+        "recommendation": "Consider hotels in Colaba or Fort area to be near the Gateway of India and other attractions. Check for options within your budget on booking websites. Examples: Hotel Sea Princess, The Taj Mahal Tower Mumbai (luxury)"
+      }
     },
     "day_2": {
-      "date": "May 13th",
-      "city": "Hakone (Day Trip)",
-      "weather_suggestion": "Similar to Tokyo, expect pleasant weather in Hakone with average temperatures around 15-25°C (59-77°F). Be prepared for potential changes in weather due to the mountainous region.",
+      "date": "2024-05-15",
+      "location": "Mumbai",
       "activities": [
         {
-          "name": "Hakone Ropeway",
-          "type": "outdoor",
-          "description": "Enjoy stunning views of Mount Fuji (weather permitting) and volcanic hot springs from the Hakone Ropeway.",
+          "name": "Chhatrapati Shivaji Maharaj Terminus (CST)",
+          "description": "Visit the historic railway station, a UNESCO World Heritage Site. Admire the Victorian Gothic architecture.",
+          "type": "historical",
           "duration": "2-3 hours",
-          "distance_to_next": "Part of the Hakone Loop"
+          "travel_time_to_next_activity": "30 minutes"
         },
         {
-          "name": "Lake Ashi Cruise",
-          "type": "outdoor",
-          "description": "Take a scenic cruise across Lake Ashi, surrounded by beautiful mountain landscapes.",
-          "duration": "1 hour",
-          "distance_to_next": "Part of the Hakone Loop"
+          "name": "Dhobi Ghat",
+          "description": "Witness the open-air laundry at Dhobi Ghat, where clothes are washed and dried in a traditional way.",
+          "type": "cultural",
+          "duration": "1-2 hours",
+          "travel_time_to_next_activity": "1 hour"
         },
         {
-          "name": "Hakone Open-Air Museum",
-          "type": "outdoor",
-          "description": "Explore a unique collection of contemporary sculptures set against the backdrop of the Hakone mountains.",
+          "name": "Mani Bhavan Gandhi Museum",
+          "description": "Visit the former residence of Mahatma Gandhi, now a museum showcasing his life and work.",
+          "type": "historical",
           "duration": "2-3 hours"
         }
       ],
-      "food_recommendations": [
+      "food": {
+        "recommendations": [
+          {
+            "name": "Britannia & Co.",
+            "description": "Enjoy Parsi cuisine at this iconic restaurant. Try the Berry Pulav.",
+            "cuisine": "Parsi",
+            "dietary_preferences": "non-vegetarian"
+          },
+          {
+            "name": "Cafe Madras",
+            "description": "Enjoy South Indian Breakfast",
+            "cuisine": "South Indian",
+            "dietary_preferences": "vegetarian"
+          }
+        ]
+      },
+      "accommodation": {
+        "type": "hotel",
+        "recommendation": "Continue staying at the same hotel or explore other options in the city."
+      }
+    },
+    "day_3": {
+      "date": "2024-05-16",
+      "location": "Lonavala",
+      "activities": [
         {
-          "name": "Hatsuhana Soba Honten (Hakone-Yumoto)",
-          "cuisine": "Soba Noodles",
-          "dietary_notes": "Offers traditional soba noodle dishes with various toppings. Vegetarian options may be available; inquire when ordering.",
-          "budget": "Mid-range"
+          "name": "Travel from Mumbai to Lonavala",
+          "description": "Take a train or hire a car to Lonavala (approx. 2-3 hours).",
+          "type": "travel",
+          "duration": "2-3 hours"
         },
         {
-          "name": "Local Restaurants in Hakone",
-          "cuisine": "Varied",
-          "dietary_notes": "Many restaurants in Hakone offer Japanese cuisine. Look for restaurants with English menus, or use translation apps for easier ordering. ",
-          "budget": "Mid-range"
+          "name": "Bhaja Caves",
+          "description": "Explore the ancient Buddhist caves at Bhaja, known for their intricate carvings.",
+          "type": "historical",
+          "duration": "3-4 hours",
+          "travel_time_to_next_activity": "30 minutes"
+        },
+        {
+          "name": "Lonavala Lake",
+          "description": "Relax by the serene Lonavala Lake and enjoy the scenic views.",
+          "type": "nature",
+          "duration": "1-2 hours"
         }
       ],
-      "travel_between": "Approx. 1.5-2 hours from Tokyo to Hakone by train (Odakyu Romancecar is recommended for comfort and direct access)",
-      "accommodation_recommendation": {
-        "type": "Return to Tokyo",
-        "name": "Same Hotel in Shinjuku",
-        "budget": "As per previous day",
-        "notes": "Return to your accommodation in Tokyo for the night. This reduces the hassle of checking in and out of different hotels."
+      "food": {
+        "recommendations": [
+          {
+            "name": "Local Restaurants in Lonavala",
+            "description": "Try local Maharashtrian cuisine. Misal Pav is a must-try.",
+            "cuisine": "Maharashtrian",
+            "dietary_preferences": "vegetarian"
+          }
+        ]
+      },
+      "accommodation": {
+        "type": "hotel",
+        "recommendation": "Find budget-friendly hotels or guesthouses in Lonavala."
+      }
+    },
+    "day_4": {
+      "date": "2024-05-17",
+      "location": "Lonavala",
+      "activities": [
+        {
+          "name": "Karla Caves",
+          "description": "Visit the Karla Caves, one of the largest and best-preserved Buddhist cave temples in India.",
+          "type": "historical",
+          "duration": "3-4 hours",
+          "travel_time_to_next_activity": "1 hour"
+        },
+        {
+          "name": "Tiger Point",
+          "description": "Enjoy panoramic views of the surrounding hills and valleys from Tiger Point.",
+          "type": "nature",
+          "duration": "2-3 hours"
+        }
+      ],
+      "food": {
+        "recommendations": [
+          {
+            "name": "Maggi Point near Tiger Point",
+            "description": "Enjoy Maggi and tea with a view.",
+            "cuisine": "Snacks",
+            "dietary_preferences": "vegetarian"
+          }
+        ]
+      },
+      "accommodation": {
+        "type": "hotel",
+        "recommendation": "Continue staying in Lonavala."
+      }
+    },
+    "day_5": {
+      "date": "2024-05-18",
+      "location": "Mumbai",
+      "activities": [
+        {
+          "name": "Travel from Lonavala to Mumbai",
+          "description": "Travel back to Mumbai.",
+          "type": "travel",
+          "duration": "2-3 hours"
+        },
+        {
+          "name": "Shopping at Colaba Causeway",
+          "description": "Shop for souvenirs, clothes, and accessories at Colaba Causeway.",
+          "type": "shopping",
+          "duration": "3-4 hours"
+        },
+        {
+          "name": "Relax and Depart",
+          "description": "Relax in the evening before departing from Mumbai.",
+          "type": "leisure",
+          "duration": "Flexible"
+        }
+      ],
+      "food": {
+        "recommendations": [
+          {
+            "name": "Leopold Cafe",
+            "description": "Enjoy a meal at this iconic cafe.",
+            "cuisine": "Multi-cuisine",
+            "dietary_preferences": "available"
+          }
+        ]
+      },
+      "accommodation": {
+        "type": "n/a",
+        "recommendation": "N/A"
       }
     }
-  }
+  },
+  "weather_suggestion": "May in Maharashtra is generally hot. Pack light cotton clothes and stay hydrated. Given the heat, consider visiting attractions during the cooler parts of the day (early morning or late afternoon).",
+  "local_events": "Check local listings for any events or festivals happening during your travel dates."
 }

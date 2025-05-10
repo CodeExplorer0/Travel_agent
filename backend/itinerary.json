@@ -1,11 +1,86 @@
 {
-  "destination": "Japan",
+  "destination": "Delhi",
   "days": 2,
-  "budget": 200000,
+  "budget": 30000,
   "interests": [],
-  "travel_style": null,
+  "travel_style": "leisure",
   "start_date": "2024-05-12",
   "end_date": "2024-05-13",
-  "number_of_people": 3,
-  "reason_of_visit": "honeymoon"
+  "number_of_people": 2,
+  "reason_of_visit": "leisure",
+  "itinerary": {
+    "day_1": {
+      "date": "2024-05-12",
+      "weather": "extremely hot",
+      "morning": {
+        "activity": "Visit Humayun's Tomb",
+        "description": "Explore this magnificent Mughal-era tomb, a precursor to the Taj Mahal. Arrive early to avoid the peak heat.",
+        "duration": "2-3 hours",
+        "travel_time_to_next_activity": "30 minutes",
+        "estimated_cost": "Rs. 600 (entry fee for 2)"
+      },
+      "afternoon": {
+        "activity": "Explore Dilli Haat",
+        "description": "Experience the diverse cultures of India at Dilli Haat. Shop for handicrafts, textiles, and enjoy regional cuisine in a sheltered environment.",
+        "duration": "3-4 hours",
+        "travel_time_to_next_activity": "15 minutes",
+        "estimated_cost": "Rs. 200 (entry fee for 2) + shopping/food costs"
+      },
+      "evening": {
+        "activity": "Dinner at Karim's",
+        "description": "Enjoy a delicious Mughlai dinner at Karim's, a legendary restaurant known for its non-vegetarian dishes. Consider ordering takeaway or dining in an air-conditioned area due to the heat.",
+        "duration": "1-2 hours",
+        "estimated_cost": "Rs. 1500"
+      }
+    },
+    "day_2": {
+      "date": "2024-05-13",
+      "weather": "extremely hot",
+      "morning": {
+        "activity": "Visit the National Museum",
+        "description": "Discover India's rich history and art at the National Museum, a large, air-conditioned museum with diverse collections.",
+        "duration": "3-4 hours",
+        "travel_time_to_next_activity": "20 minutes",
+        "estimated_cost": "Rs. 600 (entry fee for 2)"
+      },
+      "afternoon": {
+        "activity": "Shopping at Select Citywalk Mall",
+        "description": "Enjoy some retail therapy in the air-conditioned comfort of Select Citywalk, a large shopping mall with a variety of brands and restaurants.",
+        "duration": "3-4 hours",
+        "travel_time_to_next_activity": "1 hour",
+        "estimated_cost": "Variable, depending on shopping"
+      },
+      "evening": {
+        "activity": "Dinner at Indian Accent (Optional, requires booking)",
+        "description": "If budget allows and you're interested in fine dining, try Indian Accent for a modern take on Indian cuisine. Booking in advance is essential. Alternatively, explore restaurants in Connaught Place.",
+        "duration": "2-3 hours",
+        "estimated_cost": "Rs. 5000-8000 (Indian Accent, per person) or Rs. 2000-3000 (Connaught Place)"
+      }
+    }
+  },
+  "food_recommendations": {
+    "vegetarian": [
+      "Haldiram's (Indian)",
+      "Sagar Ratna (South Indian)",
+      "Gulati Restaurant (North Indian)"
+    ],
+    "non_vegetarian": [
+      "Karim's (Mughlai)",
+      "Indian Accent (Modern Indian, requires reservation)",
+      "Bukhara (ITC Maurya, North Indian, expensive)"
+    ]
+  },
+  "accommodation_recommendations": {
+    "budget_hotels": [
+      "Hotel Broadway",
+      "The Bloomrooms @ New Delhi Railway Station",
+      "Smyle Inn"
+    ],
+    "airbnb": [
+      "Search for options in areas like Hauz Khas, Defence Colony, or Greater Kailash for a range of price points."
+    ]
+  },
+  "weather_suggestion": "Due to the extremely hot weather in Delhi during May, prioritize indoor activities and stay hydrated. Limit outdoor exposure to the early morning or late evening hours. Seek out air-conditioned spaces whenever possible.",
+  "transportation": "Use ride-sharing apps like Uber or Ola for convenient transportation. Delhi also has a metro system, which can be a cost-effective way to travel between locations. Auto-rickshaws are available, but negotiate the fare beforehand.",
+  "local_events": "Check local listings closer to your travel dates for any specific events or festivals happening during your visit. However, expect fewer outdoor events due to the heat."
 }

@@ -1,6 +1,6 @@
 {
   "tripData": {
-    "destination": "Japan",
+    "destination": "Delhi",
     "startDate": "2024-05-12",
     "endDate": "2024-05-13",
     "duration": 2,
@@ -35,9 +35,50 @@
         "inr": 5000
       },
       "total": {
-        "inr": 200000
+        "inr": 30000
       }
     }
   },
-  "itineraryDays": []
+  "itineraryDays": [
+    {
+      "day": 1,
+      "title": "Day 1",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 2,
+      "title": "Day 2",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [],
+      "food": [],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    }
+  ]
 }
