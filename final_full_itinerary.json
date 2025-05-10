@@ -1,9 +1,9 @@
 {
   "tripData": {
-    "destination": "Maharashtra, India",
-    "startDate": "2024-05-14",
-    "endDate": "2024-05-18",
-    "duration": 5,
+    "destination": "Uttarakhand, India",
+    "startDate": "2024-05-15",
+    "endDate": "2024-05-21",
+    "duration": 7,
     "currency": {
       "name": "Indian Rupee (₹)",
       "conversionRate": 1.0
@@ -35,7 +35,7 @@
         "inr": 5000
       },
       "total": {
-        "inr": 50000
+        "inr": 100000
       }
     }
   },
@@ -58,31 +58,66 @@
       },
       "activities": [
         {
-          "name": "Gateway of India",
-          "time": "3-4 hours",
+          "name": "Arrival in Kathgodam and transfer to Nainital (approx. 2 hours)",
+          "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 18.9219841,
-            "longitude": 72.8346543
+            "latitude": 29.2693264,
+            "longitude": 79.54411979999999
           },
-          "description": "Visit the iconic Gateway of India, a historical monument overlooking the Arabian Sea. Take a ferry to Elephanta Island.",
+          "description": "Arrive at Kathgodam railway station. Hire a taxi to Nainital. Check into your hotel.",
           "estimated_cost": 0
         },
         {
-          "name": "Elephanta Caves",
-          "time": "3-4 hours",
+          "name": "Naini Lake Boat Ride",
+          "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 18.9633474,
-            "longitude": 72.9314864
+            "latitude": 29.3868622,
+            "longitude": 79.459841
           },
-          "description": "Explore the ancient rock-cut Elephanta Caves, a UNESCO World Heritage Site dedicated to Lord Shiva.",
+          "description": "Enjoy a romantic boat ride on the serene Naini Lake.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Naina Devi Temple",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 31.3064166,
+            "longitude": 76.53581729999999
+          },
+          "description": "Visit the Naina Devi Temple located on the edge of Naini Lake. (Optional)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Mall Road Stroll",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": null,
+          "description": "Evening stroll on the bustling Mall Road, shopping for souvenirs.",
           "estimated_cost": 0
         }
       ],
-      "food": [],
+      "food": [
+        {
+          "name": "Machan Restaurant",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": {
+            "latitude": -36.8828302,
+            "longitude": 174.7618128
+          },
+          "description": "Enjoy dinner with a view of the lake. Vegetarian and non-vegetarian options are available.",
+          "estimated_cost": 0
+        }
+      ],
       "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
     },
     {
@@ -103,40 +138,67 @@
       },
       "activities": [
         {
-          "name": "Chhatrapati Shivaji Maharaj Terminus (CST)",
+          "name": "Tiffin Top (Dorothy's Seat)",
           "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 18.9398446,
-            "longitude": 72.8354475
+            "latitude": 29.3836288,
+            "longitude": 79.45056079999999
           },
-          "description": "Visit the historic railway station, a UNESCO World Heritage Site. Admire the Victorian Gothic architecture.",
+          "description": "Hike or horse ride to Tiffin Top for panoramic views of Nainital and the surrounding hills.",
           "estimated_cost": 0
         },
         {
-          "name": "Dhobi Ghat",
+          "name": "Snow View Point",
           "time": "1-2 hours",
           "indoor": false,
           "location": "",
-          "coordinates": null,
-          "description": "Witness the open-air laundry at Dhobi Ghat, where clothes are washed and dried in a traditional way.",
+          "coordinates": {
+            "latitude": 29.3949263,
+            "longitude": 79.4614672
+          },
+          "description": "Take a cable car to Snow View Point for breathtaking views of the Himalayan peaks.",
           "estimated_cost": 0
         },
         {
-          "name": "Mani Bhavan Gandhi Museum",
-          "time": "2-3 hours",
+          "name": "Nainital Zoo",
+          "time": "2 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 18.9598453,
-            "longitude": 72.8115152
+            "latitude": 29.3807621,
+            "longitude": 79.4686432
           },
-          "description": "Visit the former residence of Mahatma Gandhi, now a museum showcasing his life and work.",
+          "description": "Visit the high altitude zoo to see Himalayan wildlife.",
           "estimated_cost": 0
         }
       ],
-      "food": [],
+      "food": [
+        {
+          "name": "Zooby's Kitchen",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": {
+            "latitude": 28.5442751,
+            "longitude": 77.3047337
+          },
+          "description": "Enjoy lunch at this popular cafe.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Sakley's Restaurant & Pastry Shop",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": null,
+          "description": "Dine at Sakley's for a romantic dinner.",
+          "estimated_cost": 0
+        }
+      ],
       "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
     },
     {
@@ -157,43 +219,51 @@
       },
       "activities": [
         {
-          "name": "Travel from Mumbai to Lonavala",
+          "name": "Transfer to Kausani (approx. 5-6 hours)",
           "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 18.7557237,
-            "longitude": 73.4090757
+            "latitude": 29.8445269,
+            "longitude": 79.6038842
           },
-          "description": "Take a train or hire a car to Lonavala (approx. 2-3 hours).",
+          "description": "Hire a taxi from Nainital to Kausani.",
           "estimated_cost": 0
         },
         {
-          "name": "Bhaja Caves",
-          "time": "3-4 hours",
+          "name": "Check into Hotel and Relax",
+          "time": "2-3 hours",
           "indoor": false,
           "location": "",
-          "coordinates": {
-            "latitude": 18.7283929,
-            "longitude": 73.4815457
-          },
-          "description": "Explore the ancient Buddhist caves at Bhaja, known for their intricate carvings.",
+          "coordinates": null,
+          "description": "Check into your hotel and enjoy the scenic beauty.",
           "estimated_cost": 0
         },
         {
-          "name": "Lonavala Lake",
-          "time": "1-2 hours",
+          "name": "Sunset View at View Point",
+          "time": "2-3 hours",
           "indoor": false,
           "location": "",
-          "coordinates": {
-            "latitude": 18.7417874,
-            "longitude": 73.3996038
-          },
-          "description": "Relax by the serene Lonavala Lake and enjoy the scenic views.",
+          "coordinates": null,
+          "description": "Enjoy a romantic sunset view over the Himalayan peaks from a viewpoint in Kausani.",
           "estimated_cost": 0
         }
       ],
-      "food": [],
+      "food": [
+        {
+          "name": "Garden Restaurant at Kausani Best Inn",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": {
+            "latitude": 29.85276309999999,
+            "longitude": 79.5959409
+          },
+          "description": "Enjoy a delicious dinner with local flavors. Vegetarian options available.",
+          "estimated_cost": 0
+        }
+      ],
       "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
     },
     {
@@ -214,31 +284,51 @@
       },
       "activities": [
         {
-          "name": "Karla Caves",
-          "time": "3-4 hours",
-          "indoor": false,
-          "location": "",
-          "coordinates": {
-            "latitude": 18.7832762,
-            "longitude": 73.4704426
-          },
-          "description": "Visit the Karla Caves, one of the largest and best-preserved Buddhist cave temples in India.",
-          "estimated_cost": 0
-        },
-        {
-          "name": "Tiger Point",
+          "name": "Anasakti Ashram",
           "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 30.37833,
-            "longitude": -87.05556
+            "latitude": 29.8441997,
+            "longitude": 79.6013043
           },
-          "description": "Enjoy panoramic views of the surrounding hills and valleys from Tiger Point.",
+          "description": "Visit the Anasakti Ashram where Mahatma Gandhi stayed for some time.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Rudradhari Falls and Caves",
+          "time": "3-4 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 29.8495143,
+            "longitude": 79.5559861
+          },
+          "description": "Trek to Rudradhari Falls and explore the caves. (Moderate trek)",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Tea Garden Visit",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": null,
+          "description": "Visit the Kausani Tea Estate and enjoy a tea tasting session.",
           "estimated_cost": 0
         }
       ],
-      "food": [],
+      "food": [
+        {
+          "name": "Restaurant at your hotel",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": null,
+          "description": "Enjoy a relaxing dinner at your hotel.",
+          "estimated_cost": 0
+        }
+      ],
       "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
     },
     {
@@ -259,36 +349,174 @@
       },
       "activities": [
         {
-          "name": "Travel from Lonavala to Mumbai",
+          "name": "Transfer to Mukteshwar (approx. 4-5 hours)",
           "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 18.7557237,
-            "longitude": 73.4090757
+            "latitude": 29.4604149,
+            "longitude": 79.6558242
           },
-          "description": "Travel back to Mumbai.",
+          "description": "Hire a taxi from Kausani to Mukteshwar.",
           "estimated_cost": 0
         },
         {
-          "name": "Shopping at Colaba Causeway",
+          "name": "Check into Hotel and Relax",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": null,
+          "description": "Check into your hotel and enjoy the serene atmosphere.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Mukteshwar Temple",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 20.2427055,
+            "longitude": 85.8404499
+          },
+          "description": "Visit the Mukteshwar Temple dedicated to Lord Shiva. Enjoy panoramic views from here.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [
+        {
+          "name": "Chirping Tales Cafe",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": {
+            "latitude": 29.4501661,
+            "longitude": 79.6545912
+          },
+          "description": "Enjoy lunch at this scenic cafe.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "The Birdcage",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": null,
+          "description": "Have dinner at The Birdcage",
+          "estimated_cost": 0
+        }
+      ],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 6,
+      "title": "Day 6",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Chauli ki Jali",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 29.474749,
+            "longitude": 79.6426637
+          },
+          "description": "Visit Chauli ki Jali, a cliff famous for rock climbing and rappelling (optional adventure activity).",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Bhalu Gaad Waterfalls",
           "time": "3-4 hours",
           "indoor": false,
           "location": "",
           "coordinates": {
-            "latitude": 18.9246447,
-            "longitude": 72.8321315
+            "latitude": 29.4072135,
+            "longitude": 79.6334918
           },
-          "description": "Shop for souvenirs, clothes, and accessories at Colaba Causeway.",
+          "description": "Hike to Bhalu Gaad Waterfalls for a refreshing experience. (Moderate trek)",
           "estimated_cost": 0
         },
         {
-          "name": "Relax and Depart",
-          "time": "Flexible",
+          "name": "Sunset at viewpoint",
+          "time": "2-3 hours",
           "indoor": false,
           "location": "",
           "coordinates": null,
-          "description": "Relax in the evening before departing from Mumbai.",
+          "description": "Enjoy a romantic sunset view.",
+          "estimated_cost": 0
+        }
+      ],
+      "food": [
+        {
+          "name": "Nathukhan Market",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": {
+            "latitude": 29.47201119999999,
+            "longitude": 79.6116069
+          },
+          "description": "Explore the local market and enjoy street food.",
+          "estimated_cost": 0
+        },
+        {
+          "name": "Dining at The Swiss Village",
+          "cuisine": "Local",
+          "mealType": "Lunch/Dinner",
+          "price": "₹₹",
+          "location": "",
+          "coordinates": {
+            "latitude": 29.430684,
+            "longitude": 79.5943221
+          },
+          "description": "Enjoy a romantic dinner at your resort.",
+          "estimated_cost": 0
+        }
+      ],
+      "tips": "Stay hydrated and carry water. Wear comfortable walking shoes."
+    },
+    {
+      "day": 7,
+      "title": "Day 7",
+      "transport": {
+        "type": "Auto-rickshaw",
+        "details": "Local transport",
+        "time": "09:00",
+        "cost": "₹200-300"
+      },
+      "accommodation": {
+        "name": "Hotel to be booked",
+        "checkIn": "14:00",
+        "checkOut": "11:00",
+        "price": "₹2000-3000/night",
+        "location": "City Center"
+      },
+      "activities": [
+        {
+          "name": "Transfer to Kathgodam (approx. 3-4 hours)",
+          "time": "2-3 hours",
+          "indoor": false,
+          "location": "",
+          "coordinates": {
+            "latitude": 29.2693264,
+            "longitude": 79.54411979999999
+          },
+          "description": "Hire a taxi from Mukteshwar to Kathgodam railway station for your departure.",
           "estimated_cost": 0
         }
       ],

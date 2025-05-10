@@ -1,13 +1,13 @@
 🤖 Travel Assistant Chat
 
-👋 Hello! I'm your travel assistant. Let me help you plan your trip to Maharashtra, India.
+👋 Hello! I'm your travel assistant. Let me help you plan your trip to Uttarakhand, India.
 
 📅 Trip Details:
-- Duration: 5 days
-- Dates: 2024-05-14 to 2024-05-18
-- Budget: ₹50000
+- Duration: 7 days
+- Dates: 2024-05-15 to 2024-05-21
+- Budget: ₹100000
 - Travelers: 2 people
-- Purpose: leisure
+- Purpose: Honeymoon
 
 🎯 Top Attractions:
 

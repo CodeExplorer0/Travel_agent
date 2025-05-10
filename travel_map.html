@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_27249147f82d65ecd98b2cad729e8c57 {
+                #map_670acde37708df4560bee7b3d9c42175 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,19 +39,19 @@
 <body>
     
     
-            <div class="folium-map" id="map_27249147f82d65ecd98b2cad729e8c57" ></div>
+            <div class="folium-map" id="map_670acde37708df4560bee7b3d9c42175" ></div>
         
 </body>
 <script>
     
     
-            var map_27249147f82d65ecd98b2cad729e8c57 = L.map(
-                "map_27249147f82d65ecd98b2cad729e8c57",
+            var map_670acde37708df4560bee7b3d9c42175 = L.map(
+                "map_670acde37708df4560bee7b3d9c42175",
                 {
-                    center: [18.9219841, 72.8346543],
+                    center: [-36.8828302, 174.7618128],
                     crs: L.CRS.EPSG3857,
                     ...{
-  "zoom": 13,
+  "zoom": 12,
   "zoomControl": true,
   "preferCanvas": false,
 }
@@ -63,7 +63,7 @@
 
         
     
-            var tile_layer_68847f1d40644c52358cdd41404e9ddf = L.tileLayer(
+            var tile_layer_018fb8ece313cc7e0539ec2735a627a4 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -80,17 +80,245 @@
             );
         
     
-            tile_layer_68847f1d40644c52358cdd41404e9ddf.addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            tile_layer_018fb8ece313cc7e0539ec2735a627a4.addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var marker_dabbc9b322a6662296274291939876c9 = L.marker(
-                [18.9219841, 72.8346543],
+            var marker_31e3db114ad6b5bc9354ebc79117959b = L.marker(
+                [-36.8828302, 174.7618128],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_30cb31abb7019928fe1dddbc6179a9ac = L.AwesomeMarkers.icon(
+            var icon_4a18c8d433c53f2fec23cfe4f632a65d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c02627b62c35c8574387e4b127b6e341 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ce175943bcf1bcb26f9623a9e3266d5 = $(`<div id="html_8ce175943bcf1bcb26f9623a9e3266d5" style="width: 100.0%; height: 100.0%;">                 <b>Machan Restaurant</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_c02627b62c35c8574387e4b127b6e341.setContent(html_8ce175943bcf1bcb26f9623a9e3266d5);
+            
+        
+
+        marker_31e3db114ad6b5bc9354ebc79117959b.bindPopup(popup_c02627b62c35c8574387e4b127b6e341)
+        ;
+
+        
+    
+    
+                marker_31e3db114ad6b5bc9354ebc79117959b.setIcon(icon_4a18c8d433c53f2fec23cfe4f632a65d);
+            
+    
+            var marker_f9d8fa671b5d81f257833394d495a7f8 = L.marker(
+                [28.5442751, 77.3047337],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_a3a9d5cba9b60daff5e215c670b077ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7282d4a1c6889fec0c3568435a8fd7f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbaf6d121408a6f15c507e65e6d48451 = $(`<div id="html_bbaf6d121408a6f15c507e65e6d48451" style="width: 100.0%; height: 100.0%;">                 <b>Zooby's Kitchen</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_7282d4a1c6889fec0c3568435a8fd7f1.setContent(html_bbaf6d121408a6f15c507e65e6d48451);
+            
+        
+
+        marker_f9d8fa671b5d81f257833394d495a7f8.bindPopup(popup_7282d4a1c6889fec0c3568435a8fd7f1)
+        ;
+
+        
+    
+    
+                marker_f9d8fa671b5d81f257833394d495a7f8.setIcon(icon_a3a9d5cba9b60daff5e215c670b077ce);
+            
+    
+            var marker_e834ebec2fda7ccbee79e1a62cdcd03f = L.marker(
+                [29.85276309999999, 79.5959409],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_172321b7503a86e322ad48dc26f31fa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_991d3ec3723a85a603d5d2a743f0ca26 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4f212efee6497cd8472cfcbbfa3f386a = $(`<div id="html_4f212efee6497cd8472cfcbbfa3f386a" style="width: 100.0%; height: 100.0%;">                 <b>Garden Restaurant at Kausani Best Inn</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_991d3ec3723a85a603d5d2a743f0ca26.setContent(html_4f212efee6497cd8472cfcbbfa3f386a);
+            
+        
+
+        marker_e834ebec2fda7ccbee79e1a62cdcd03f.bindPopup(popup_991d3ec3723a85a603d5d2a743f0ca26)
+        ;
+
+        
+    
+    
+                marker_e834ebec2fda7ccbee79e1a62cdcd03f.setIcon(icon_172321b7503a86e322ad48dc26f31fa5);
+            
+    
+            var marker_0eb85f0f7dac9e2b86ba500451fe6c55 = L.marker(
+                [29.4501661, 79.6545912],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_37d3156e243dce51bdfaa90633ac8b85 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_006b7e84b26f41ac79cadc290e5ea2ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f85fe3e1a50e4b8f3c7066ac88d94d65 = $(`<div id="html_f85fe3e1a50e4b8f3c7066ac88d94d65" style="width: 100.0%; height: 100.0%;">                 <b>Chirping Tales Cafe</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_006b7e84b26f41ac79cadc290e5ea2ca.setContent(html_f85fe3e1a50e4b8f3c7066ac88d94d65);
+            
+        
+
+        marker_0eb85f0f7dac9e2b86ba500451fe6c55.bindPopup(popup_006b7e84b26f41ac79cadc290e5ea2ca)
+        ;
+
+        
+    
+    
+                marker_0eb85f0f7dac9e2b86ba500451fe6c55.setIcon(icon_37d3156e243dce51bdfaa90633ac8b85);
+            
+    
+            var marker_e8ad8b7ead306508dcab7c49237cc743 = L.marker(
+                [29.47201119999999, 79.6116069],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_8520b09666aa2468132e2c203640eb26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5bacb2467eb88d60f8bfae5a818d0873 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58ad16118e4773bbeb7c0f5e847d181c = $(`<div id="html_58ad16118e4773bbeb7c0f5e847d181c" style="width: 100.0%; height: 100.0%;">                 <b>Nathukhan Market</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_5bacb2467eb88d60f8bfae5a818d0873.setContent(html_58ad16118e4773bbeb7c0f5e847d181c);
+            
+        
+
+        marker_e8ad8b7ead306508dcab7c49237cc743.bindPopup(popup_5bacb2467eb88d60f8bfae5a818d0873)
+        ;
+
+        
+    
+    
+                marker_e8ad8b7ead306508dcab7c49237cc743.setIcon(icon_8520b09666aa2468132e2c203640eb26);
+            
+    
+            var marker_bc5f95dd22c8da4a2db1a4527b0c6e80 = L.marker(
+                [29.430684, 79.5943221],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_6bd5872eed5540cf0229cdfd1b582d37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2548cd97d9c4f8739103e46062cabaa6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f7e909abb308fe1584e9cdb53a9b946 = $(`<div id="html_5f7e909abb308fe1584e9cdb53a9b946" style="width: 100.0%; height: 100.0%;">                 <b>Dining at The Swiss Village</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_2548cd97d9c4f8739103e46062cabaa6.setContent(html_5f7e909abb308fe1584e9cdb53a9b946);
+            
+        
+
+        marker_bc5f95dd22c8da4a2db1a4527b0c6e80.bindPopup(popup_2548cd97d9c4f8739103e46062cabaa6)
+        ;
+
+        
+    
+    
+                marker_bc5f95dd22c8da4a2db1a4527b0c6e80.setIcon(icon_6bd5872eed5540cf0229cdfd1b582d37);
+            
+    
+            var marker_e5fad925e325138549f2102f150a5877 = L.marker(
+                [29.2693264, 79.54411979999999],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_78d7889590cc2e18e6a05a7305976513 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -101,34 +329,34 @@
             );
         
     
-        var popup_b093375c29f7ce1eaf0c0e1fd2a9af86 = L.popup({
+        var popup_642d5f6d203a4ac145f8481039d20e0a = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fa77fb2c161f55fdc4df2cbdcba6ef7b = $(`<div id="html_fa77fb2c161f55fdc4df2cbdcba6ef7b" style="width: 100.0%; height: 100.0%;">                 <b>Gateway of India</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_b093375c29f7ce1eaf0c0e1fd2a9af86.setContent(html_fa77fb2c161f55fdc4df2cbdcba6ef7b);
+                var html_239d3ab028ce2ed3ef5acfd1e2b77b98 = $(`<div id="html_239d3ab028ce2ed3ef5acfd1e2b77b98" style="width: 100.0%; height: 100.0%;">                 <b>Arrival in Kathgodam and transfer to Nainital (approx. 2 hours)</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_642d5f6d203a4ac145f8481039d20e0a.setContent(html_239d3ab028ce2ed3ef5acfd1e2b77b98);
             
         
 
-        marker_dabbc9b322a6662296274291939876c9.bindPopup(popup_b093375c29f7ce1eaf0c0e1fd2a9af86)
+        marker_e5fad925e325138549f2102f150a5877.bindPopup(popup_642d5f6d203a4ac145f8481039d20e0a)
         ;
 
         
     
     
-                marker_dabbc9b322a6662296274291939876c9.setIcon(icon_30cb31abb7019928fe1dddbc6179a9ac);
+                marker_e5fad925e325138549f2102f150a5877.setIcon(icon_78d7889590cc2e18e6a05a7305976513);
             
     
-            var marker_a6e0551c4ed10461aa20a68b0ea249fe = L.marker(
-                [18.9633474, 72.9314864],
+            var marker_a2f7a55994d29e6026c269185eda0a9a = L.marker(
+                [29.3868622, 79.459841],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_ec9ba7600fbcf68fe715271337779bd2 = L.AwesomeMarkers.icon(
+            var icon_7826bcd2ac1b863286be13cb68196268 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -139,34 +367,34 @@
             );
         
     
-        var popup_885f4229215e58b602094cbd3f6d80b9 = L.popup({
+        var popup_79354df9e37ab7b3b1517384b2e5482e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_cbcf0d6a71a2c9d6cf87c20029d47083 = $(`<div id="html_cbcf0d6a71a2c9d6cf87c20029d47083" style="width: 100.0%; height: 100.0%;">                 <b>Elephanta Caves</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_885f4229215e58b602094cbd3f6d80b9.setContent(html_cbcf0d6a71a2c9d6cf87c20029d47083);
+                var html_c2f0d2579bd5de2de955f2c1aa32d6e7 = $(`<div id="html_c2f0d2579bd5de2de955f2c1aa32d6e7" style="width: 100.0%; height: 100.0%;">                 <b>Naini Lake Boat Ride</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_79354df9e37ab7b3b1517384b2e5482e.setContent(html_c2f0d2579bd5de2de955f2c1aa32d6e7);
             
         
 
-        marker_a6e0551c4ed10461aa20a68b0ea249fe.bindPopup(popup_885f4229215e58b602094cbd3f6d80b9)
+        marker_a2f7a55994d29e6026c269185eda0a9a.bindPopup(popup_79354df9e37ab7b3b1517384b2e5482e)
         ;
 
         
     
     
-                marker_a6e0551c4ed10461aa20a68b0ea249fe.setIcon(icon_ec9ba7600fbcf68fe715271337779bd2);
+                marker_a2f7a55994d29e6026c269185eda0a9a.setIcon(icon_7826bcd2ac1b863286be13cb68196268);
             
     
-            var marker_b13d602c21f93b0f9798ab3741c1a83b = L.marker(
-                [18.9398446, 72.8354475],
+            var marker_dc7efaf8e06fdfda8d12d07a17a148c1 = L.marker(
+                [31.3064166, 76.53581729999999],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_c177d4d537aab3df61285cf042171115 = L.AwesomeMarkers.icon(
+            var icon_bae48511eaed7aeecbc9b0e873307250 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -177,34 +405,34 @@
             );
         
     
-        var popup_34cf967b98093f937484c78ebf4497e4 = L.popup({
+        var popup_559646f818975a5d80eba3c9e37794d8 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_3a41ec1b20b6f0346cf482958a4143bc = $(`<div id="html_3a41ec1b20b6f0346cf482958a4143bc" style="width: 100.0%; height: 100.0%;">                 <b>Chhatrapati Shivaji Maharaj Terminus (CST)</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_34cf967b98093f937484c78ebf4497e4.setContent(html_3a41ec1b20b6f0346cf482958a4143bc);
+                var html_0a5836e3a782aadc7fcc81d2ce22a925 = $(`<div id="html_0a5836e3a782aadc7fcc81d2ce22a925" style="width: 100.0%; height: 100.0%;">                 <b>Naina Devi Temple</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_559646f818975a5d80eba3c9e37794d8.setContent(html_0a5836e3a782aadc7fcc81d2ce22a925);
             
         
 
-        marker_b13d602c21f93b0f9798ab3741c1a83b.bindPopup(popup_34cf967b98093f937484c78ebf4497e4)
+        marker_dc7efaf8e06fdfda8d12d07a17a148c1.bindPopup(popup_559646f818975a5d80eba3c9e37794d8)
         ;
 
         
     
     
-                marker_b13d602c21f93b0f9798ab3741c1a83b.setIcon(icon_c177d4d537aab3df61285cf042171115);
+                marker_dc7efaf8e06fdfda8d12d07a17a148c1.setIcon(icon_bae48511eaed7aeecbc9b0e873307250);
             
     
-            var marker_d548fbf884ac09efed0e10572d5d536c = L.marker(
-                [18.9598453, 72.8115152],
+            var marker_7080f40e107eeaa313b0a42d7a510c2c = L.marker(
+                [29.3836288, 79.45056079999999],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_ac731e683d39ae256a60fdf16ef80f31 = L.AwesomeMarkers.icon(
+            var icon_ad6d76f8214321f58eec816624bd4383 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -215,34 +443,34 @@
             );
         
     
-        var popup_2f83296de5fedc211b279275fff902f5 = L.popup({
+        var popup_0511a36b425fd413fc320f482315f359 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_faced88feab42ee7bdd5a680067e410f = $(`<div id="html_faced88feab42ee7bdd5a680067e410f" style="width: 100.0%; height: 100.0%;">                 <b>Mani Bhavan Gandhi Museum</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_2f83296de5fedc211b279275fff902f5.setContent(html_faced88feab42ee7bdd5a680067e410f);
+                var html_0eca7e04a2f515b9ca7c2efb6e823731 = $(`<div id="html_0eca7e04a2f515b9ca7c2efb6e823731" style="width: 100.0%; height: 100.0%;">                 <b>Tiffin Top (Dorothy's Seat)</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_0511a36b425fd413fc320f482315f359.setContent(html_0eca7e04a2f515b9ca7c2efb6e823731);
             
         
 
-        marker_d548fbf884ac09efed0e10572d5d536c.bindPopup(popup_2f83296de5fedc211b279275fff902f5)
+        marker_7080f40e107eeaa313b0a42d7a510c2c.bindPopup(popup_0511a36b425fd413fc320f482315f359)
         ;
 
         
     
     
-                marker_d548fbf884ac09efed0e10572d5d536c.setIcon(icon_ac731e683d39ae256a60fdf16ef80f31);
+                marker_7080f40e107eeaa313b0a42d7a510c2c.setIcon(icon_ad6d76f8214321f58eec816624bd4383);
             
     
-            var marker_9025b1050e4a813f29b227c6732a031d = L.marker(
-                [18.7557237, 73.4090757],
+            var marker_9ce4326d69e6bd7d37a76109405f278c = L.marker(
+                [29.3949263, 79.4614672],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_2057085e65b76e4815a0696d14546f63 = L.AwesomeMarkers.icon(
+            var icon_edc591d3baf7acd6d7fafb6b856c7f67 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -253,34 +481,34 @@
             );
         
     
-        var popup_9a995dee868a66e4a9344ad9d5f4af6d = L.popup({
+        var popup_1f5d69e6fe765a2ac7de1fb68af5660a = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_c148d9099b12d3b2beaf43e0c6e21be8 = $(`<div id="html_c148d9099b12d3b2beaf43e0c6e21be8" style="width: 100.0%; height: 100.0%;">                 <b>Travel from Mumbai to Lonavala</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_9a995dee868a66e4a9344ad9d5f4af6d.setContent(html_c148d9099b12d3b2beaf43e0c6e21be8);
+                var html_93269062ba6ed1e70dcd561346cb73dd = $(`<div id="html_93269062ba6ed1e70dcd561346cb73dd" style="width: 100.0%; height: 100.0%;">                 <b>Snow View Point</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_1f5d69e6fe765a2ac7de1fb68af5660a.setContent(html_93269062ba6ed1e70dcd561346cb73dd);
             
         
 
-        marker_9025b1050e4a813f29b227c6732a031d.bindPopup(popup_9a995dee868a66e4a9344ad9d5f4af6d)
+        marker_9ce4326d69e6bd7d37a76109405f278c.bindPopup(popup_1f5d69e6fe765a2ac7de1fb68af5660a)
         ;
 
         
     
     
-                marker_9025b1050e4a813f29b227c6732a031d.setIcon(icon_2057085e65b76e4815a0696d14546f63);
+                marker_9ce4326d69e6bd7d37a76109405f278c.setIcon(icon_edc591d3baf7acd6d7fafb6b856c7f67);
             
     
-            var marker_3616a9b3e52e3618a4099d60646858dc = L.marker(
-                [18.7283929, 73.4815457],
+            var marker_466b32a75e6c33a082a227494708d721 = L.marker(
+                [29.3807621, 79.4686432],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_e56b717733ed8bb27ff34487e9cb7859 = L.AwesomeMarkers.icon(
+            var icon_5514bbe50071c04dbb0181be37381ab4 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -291,34 +519,34 @@
             );
         
     
-        var popup_c6a393bae67c2e1eb49b49fc47812ab9 = L.popup({
+        var popup_c82db66e91f55a2f9c68869ed2591242 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_8e9d52545d6586ff38fbd955c41ee2bb = $(`<div id="html_8e9d52545d6586ff38fbd955c41ee2bb" style="width: 100.0%; height: 100.0%;">                 <b>Bhaja Caves</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_c6a393bae67c2e1eb49b49fc47812ab9.setContent(html_8e9d52545d6586ff38fbd955c41ee2bb);
+                var html_65f295ad7c14969aabd24980d0bc0566 = $(`<div id="html_65f295ad7c14969aabd24980d0bc0566" style="width: 100.0%; height: 100.0%;">                 <b>Nainital Zoo</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_c82db66e91f55a2f9c68869ed2591242.setContent(html_65f295ad7c14969aabd24980d0bc0566);
             
         
 
-        marker_3616a9b3e52e3618a4099d60646858dc.bindPopup(popup_c6a393bae67c2e1eb49b49fc47812ab9)
+        marker_466b32a75e6c33a082a227494708d721.bindPopup(popup_c82db66e91f55a2f9c68869ed2591242)
         ;
 
         
     
     
-                marker_3616a9b3e52e3618a4099d60646858dc.setIcon(icon_e56b717733ed8bb27ff34487e9cb7859);
+                marker_466b32a75e6c33a082a227494708d721.setIcon(icon_5514bbe50071c04dbb0181be37381ab4);
             
     
-            var marker_9de3bb9370e53c7f604b5b2bf91faed7 = L.marker(
-                [18.7417874, 73.3996038],
+            var marker_6e782ec17cf420c061af91b810501573 = L.marker(
+                [29.8445269, 79.6038842],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_012f10840ae2a579afaa28f67f28ae16 = L.AwesomeMarkers.icon(
+            var icon_30ba1e695a8c4b73f5561874d32e1fd6 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -329,34 +557,34 @@
             );
         
     
-        var popup_b89863dafafcdf2feafd864da67b9f09 = L.popup({
+        var popup_65c3c7cc5c0857fb2c4c4784333a79ac = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_7b8b40e904ebbf1667f22021bea9acea = $(`<div id="html_7b8b40e904ebbf1667f22021bea9acea" style="width: 100.0%; height: 100.0%;">                 <b>Lonavala Lake</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_b89863dafafcdf2feafd864da67b9f09.setContent(html_7b8b40e904ebbf1667f22021bea9acea);
+                var html_cfb8ea1ad8472d20f3f247168e95c313 = $(`<div id="html_cfb8ea1ad8472d20f3f247168e95c313" style="width: 100.0%; height: 100.0%;">                 <b>Transfer to Kausani (approx. 5-6 hours)</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_65c3c7cc5c0857fb2c4c4784333a79ac.setContent(html_cfb8ea1ad8472d20f3f247168e95c313);
             
         
 
-        marker_9de3bb9370e53c7f604b5b2bf91faed7.bindPopup(popup_b89863dafafcdf2feafd864da67b9f09)
+        marker_6e782ec17cf420c061af91b810501573.bindPopup(popup_65c3c7cc5c0857fb2c4c4784333a79ac)
         ;
 
         
     
     
-                marker_9de3bb9370e53c7f604b5b2bf91faed7.setIcon(icon_012f10840ae2a579afaa28f67f28ae16);
+                marker_6e782ec17cf420c061af91b810501573.setIcon(icon_30ba1e695a8c4b73f5561874d32e1fd6);
             
     
-            var marker_6a9a5855a028df8f6916c1d898e1aa51 = L.marker(
-                [18.7832762, 73.4704426],
+            var marker_5dd1d640ad3118450c5cbeca17c51c86 = L.marker(
+                [29.8441997, 79.6013043],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_27618eeb56adb12caa7f2cb96c8d19ca = L.AwesomeMarkers.icon(
+            var icon_da9bc2b6fc05181e3f3e545e15346a5c = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -367,34 +595,34 @@
             );
         
     
-        var popup_90a86869cd8225a29776be387582f11c = L.popup({
+        var popup_facdb8d2facbda888c25162e45a05812 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_3b6393587bcee01bdf747a301c8a697b = $(`<div id="html_3b6393587bcee01bdf747a301c8a697b" style="width: 100.0%; height: 100.0%;">                 <b>Karla Caves</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_90a86869cd8225a29776be387582f11c.setContent(html_3b6393587bcee01bdf747a301c8a697b);
+                var html_545460a2a112d2c289476c7d0cb5333c = $(`<div id="html_545460a2a112d2c289476c7d0cb5333c" style="width: 100.0%; height: 100.0%;">                 <b>Anasakti Ashram</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_facdb8d2facbda888c25162e45a05812.setContent(html_545460a2a112d2c289476c7d0cb5333c);
             
         
 
-        marker_6a9a5855a028df8f6916c1d898e1aa51.bindPopup(popup_90a86869cd8225a29776be387582f11c)
+        marker_5dd1d640ad3118450c5cbeca17c51c86.bindPopup(popup_facdb8d2facbda888c25162e45a05812)
         ;
 
         
     
     
-                marker_6a9a5855a028df8f6916c1d898e1aa51.setIcon(icon_27618eeb56adb12caa7f2cb96c8d19ca);
+                marker_5dd1d640ad3118450c5cbeca17c51c86.setIcon(icon_da9bc2b6fc05181e3f3e545e15346a5c);
             
     
-            var marker_e2b11487e743c0da04c2a55bd228d40e = L.marker(
-                [30.37833, -87.05556],
+            var marker_b96b005df8cd390a733dafba39f51296 = L.marker(
+                [29.8495143, 79.5559861],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_709188e39809ea70227f2a521d0dec9b = L.AwesomeMarkers.icon(
+            var icon_ca5686cac26450620d54233979e798bd = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -405,34 +633,34 @@
             );
         
     
-        var popup_8a84fbbd4144235efe789b9ed4f9b897 = L.popup({
+        var popup_7caf42c13c6359892edd577146080d06 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_c09c25ef362c8cb984e40cb6fdc31eb1 = $(`<div id="html_c09c25ef362c8cb984e40cb6fdc31eb1" style="width: 100.0%; height: 100.0%;">                 <b>Tiger Point</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_8a84fbbd4144235efe789b9ed4f9b897.setContent(html_c09c25ef362c8cb984e40cb6fdc31eb1);
+                var html_8bed6489392c1e908d9eed2a240a6849 = $(`<div id="html_8bed6489392c1e908d9eed2a240a6849" style="width: 100.0%; height: 100.0%;">                 <b>Rudradhari Falls and Caves</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_7caf42c13c6359892edd577146080d06.setContent(html_8bed6489392c1e908d9eed2a240a6849);
             
         
 
-        marker_e2b11487e743c0da04c2a55bd228d40e.bindPopup(popup_8a84fbbd4144235efe789b9ed4f9b897)
+        marker_b96b005df8cd390a733dafba39f51296.bindPopup(popup_7caf42c13c6359892edd577146080d06)
         ;
 
         
     
     
-                marker_e2b11487e743c0da04c2a55bd228d40e.setIcon(icon_709188e39809ea70227f2a521d0dec9b);
+                marker_b96b005df8cd390a733dafba39f51296.setIcon(icon_ca5686cac26450620d54233979e798bd);
             
     
-            var marker_fb84dda0573a6924e86105e5bd3f82d7 = L.marker(
-                [18.7557237, 73.4090757],
+            var marker_aef6d3cded97bdb1cf6efab970e6678e = L.marker(
+                [29.4604149, 79.6558242],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_69a4c744a28fd84de59be2c897fc13d8 = L.AwesomeMarkers.icon(
+            var icon_63256ff66ca71951a447090b33b06a78 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -443,34 +671,34 @@
             );
         
     
-        var popup_153492b3cd00e5d48299c0ce394e2525 = L.popup({
+        var popup_f9cd80865c2eac5df23b24207021b021 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fedcf4fedd509d8e1176bcc6d82ed3e5 = $(`<div id="html_fedcf4fedd509d8e1176bcc6d82ed3e5" style="width: 100.0%; height: 100.0%;">                 <b>Travel from Lonavala to Mumbai</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_153492b3cd00e5d48299c0ce394e2525.setContent(html_fedcf4fedd509d8e1176bcc6d82ed3e5);
+                var html_e36986b2c5cdd7b8e32a54d0b4b7859d = $(`<div id="html_e36986b2c5cdd7b8e32a54d0b4b7859d" style="width: 100.0%; height: 100.0%;">                 <b>Transfer to Mukteshwar (approx. 4-5 hours)</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_f9cd80865c2eac5df23b24207021b021.setContent(html_e36986b2c5cdd7b8e32a54d0b4b7859d);
             
         
 
-        marker_fb84dda0573a6924e86105e5bd3f82d7.bindPopup(popup_153492b3cd00e5d48299c0ce394e2525)
+        marker_aef6d3cded97bdb1cf6efab970e6678e.bindPopup(popup_f9cd80865c2eac5df23b24207021b021)
         ;
 
         
     
     
-                marker_fb84dda0573a6924e86105e5bd3f82d7.setIcon(icon_69a4c744a28fd84de59be2c897fc13d8);
+                marker_aef6d3cded97bdb1cf6efab970e6678e.setIcon(icon_63256ff66ca71951a447090b33b06a78);
             
     
-            var marker_b93e4205cfeb187e71b51b183897ee97 = L.marker(
-                [18.9246447, 72.8321315],
+            var marker_9e37247d836eadb40d5cbe29ceebedc5 = L.marker(
+                [20.2427055, 85.8404499],
                 {
 }
-            ).addTo(map_27249147f82d65ecd98b2cad729e8c57);
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
         
     
-            var icon_348c0e6036bad988dd8faceb6419afd2 = L.AwesomeMarkers.icon(
+            var icon_8c8c404bc519f005d31acca47d119d97 = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
@@ -481,24 +709,138 @@
             );
         
     
-        var popup_c912a10d18005e164e92ecf17e010bed = L.popup({
+        var popup_db9051353ae852298d742d3a2e7ea27e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_c0a4d37e28db367f1985649789d3fb20 = $(`<div id="html_c0a4d37e28db367f1985649789d3fb20" style="width: 100.0%; height: 100.0%;">                 <b>Shopping at Colaba Causeway</b><br>                 Type: Attractions<br>                                  </div>`)[0];
-                popup_c912a10d18005e164e92ecf17e010bed.setContent(html_c0a4d37e28db367f1985649789d3fb20);
+                var html_ceea6907976b0af50a27e6efbeeb9bd7 = $(`<div id="html_ceea6907976b0af50a27e6efbeeb9bd7" style="width: 100.0%; height: 100.0%;">                 <b>Mukteshwar Temple</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_db9051353ae852298d742d3a2e7ea27e.setContent(html_ceea6907976b0af50a27e6efbeeb9bd7);
             
         
 
-        marker_b93e4205cfeb187e71b51b183897ee97.bindPopup(popup_c912a10d18005e164e92ecf17e010bed)
+        marker_9e37247d836eadb40d5cbe29ceebedc5.bindPopup(popup_db9051353ae852298d742d3a2e7ea27e)
         ;
 
         
     
     
-                marker_b93e4205cfeb187e71b51b183897ee97.setIcon(icon_348c0e6036bad988dd8faceb6419afd2);
+                marker_9e37247d836eadb40d5cbe29ceebedc5.setIcon(icon_8c8c404bc519f005d31acca47d119d97);
+            
+    
+            var marker_c7f6acdc2c686c430475346be0ce9640 = L.marker(
+                [29.474749, 79.6426637],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_1fe9dd189860198af1158ce25772fa58 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54fe402701e9a23526a23f8c68326131 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4cdd6c986295d2c291d4822d57a8480 = $(`<div id="html_d4cdd6c986295d2c291d4822d57a8480" style="width: 100.0%; height: 100.0%;">                 <b>Chauli ki Jali</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_54fe402701e9a23526a23f8c68326131.setContent(html_d4cdd6c986295d2c291d4822d57a8480);
+            
+        
+
+        marker_c7f6acdc2c686c430475346be0ce9640.bindPopup(popup_54fe402701e9a23526a23f8c68326131)
+        ;
+
+        
+    
+    
+                marker_c7f6acdc2c686c430475346be0ce9640.setIcon(icon_1fe9dd189860198af1158ce25772fa58);
+            
+    
+            var marker_9a69d066438d89ea899f179eedfd705d = L.marker(
+                [29.4072135, 79.6334918],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_01df5e2bbc4c545cd75bec403dd052f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ae7bae3c50b4060f24475b0bf87fd8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbb2d0a0c73e9e20b27d662ed3b395a2 = $(`<div id="html_bbb2d0a0c73e9e20b27d662ed3b395a2" style="width: 100.0%; height: 100.0%;">                 <b>Bhalu Gaad Waterfalls</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_5ae7bae3c50b4060f24475b0bf87fd8f.setContent(html_bbb2d0a0c73e9e20b27d662ed3b395a2);
+            
+        
+
+        marker_9a69d066438d89ea899f179eedfd705d.bindPopup(popup_5ae7bae3c50b4060f24475b0bf87fd8f)
+        ;
+
+        
+    
+    
+                marker_9a69d066438d89ea899f179eedfd705d.setIcon(icon_01df5e2bbc4c545cd75bec403dd052f3);
+            
+    
+            var marker_807acfedd69889442901170f173a0c40 = L.marker(
+                [29.2693264, 79.54411979999999],
+                {
+}
+            ).addTo(map_670acde37708df4560bee7b3d9c42175);
+        
+    
+            var icon_7a41f740c3c51f3bc9dcb69ca22f3fde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96e105e3826e9c6a0bc6416c3c9698eb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e08329f99a4e7e9831c912aea255bffd = $(`<div id="html_e08329f99a4e7e9831c912aea255bffd" style="width: 100.0%; height: 100.0%;">                 <b>Transfer to Kathgodam (approx. 3-4 hours)</b><br>                 Rating: N/A<br>                                  </div>`)[0];
+                popup_96e105e3826e9c6a0bc6416c3c9698eb.setContent(html_e08329f99a4e7e9831c912aea255bffd);
+            
+        
+
+        marker_807acfedd69889442901170f173a0c40.bindPopup(popup_96e105e3826e9c6a0bc6416c3c9698eb)
+        ;
+
+        
+    
+    
+                marker_807acfedd69889442901170f173a0c40.setIcon(icon_7a41f740c3c51f3bc9dcb69ca22f3fde);
             
 </script>
 </html>

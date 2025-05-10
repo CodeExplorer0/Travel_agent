@@ -1,204 +1,260 @@
 {
-  "destination": "Maharashtra, India",
-  "days": 5,
-  "budget": 50000,
-  "interests": [],
-  "travel_style": "leisure",
-  "start_date": "2024-05-14",
-  "end_date": "2024-05-18",
+  "destination": "Uttarakhand, India",
+  "days": 7,
+  "budget": 100000,
+  "interests": [
+    "Romantic Scenery",
+    "Nature",
+    "Relaxation",
+    "Hill Stations",
+    "Temples (optional)",
+    "Adventure (moderate)"
+  ],
+  "travel_style": "Honeymoon",
+  "start_date": "2024-05-15",
+  "end_date": "2024-05-21",
   "number_of_people": 2,
-  "reason_of_visit": "leisure",
+  "reason_of_visit": "Honeymoon",
   "itinerary": {
     "day_1": {
-      "date": "2024-05-14",
-      "location": "Mumbai",
+      "date": "2024-05-15",
+      "location": "Nainital",
       "activities": [
         {
-          "name": "Gateway of India",
-          "description": "Visit the iconic Gateway of India, a historical monument overlooking the Arabian Sea. Take a ferry to Elephanta Island.",
-          "type": "sightseeing",
-          "duration": "3-4 hours",
-          "travel_time_to_next_activity": "1 hour"
+          "name": "Arrival in Kathgodam and transfer to Nainital (approx. 2 hours)",
+          "type": "Travel",
+          "description": "Arrive at Kathgodam railway station. Hire a taxi to Nainital. Check into your hotel."
         },
         {
-          "name": "Elephanta Caves",
-          "description": "Explore the ancient rock-cut Elephanta Caves, a UNESCO World Heritage Site dedicated to Lord Shiva.",
-          "type": "historical",
-          "duration": "3-4 hours"
+          "name": "Naini Lake Boat Ride",
+          "type": "Outdoor",
+          "description": "Enjoy a romantic boat ride on the serene Naini Lake."
+        },
+        {
+          "name": "Naina Devi Temple",
+          "type": "Religious",
+          "description": "Visit the Naina Devi Temple located on the edge of Naini Lake. (Optional)"
+        },
+        {
+          "name": "Mall Road Stroll",
+          "type": "Leisure",
+          "description": "Evening stroll on the bustling Mall Road, shopping for souvenirs."
         }
       ],
-      "food": {
-        "recommendations": [
-          {
-            "name": "Street Food at Girgaum Chowpatty",
-            "description": "Enjoy local Mumbai street food like Pav Bhaji, Vada Pav, and Pani Puri. Vegetarian options available.",
-            "cuisine": "Indian Street Food",
-            "dietary_preferences": "vegetarian"
-          }
-        ]
-      },
+      "food": [
+        {
+          "name": "Machan Restaurant",
+          "type": "Multi-cuisine",
+          "description": "Enjoy dinner with a view of the lake. Vegetarian and non-vegetarian options are available."
+        }
+      ],
       "accommodation": {
-        "type": "hotel",
-        "recommendation": "Consider hotels in Colaba or Fort area to be near the Gateway of India and other attractions. Check for options within your budget on booking websites. Examples: Hotel Sea Princess, The Taj Mahal Tower Mumbai (luxury)"
+        "name": "Vikram Vintage Inn",
+        "type": "Hotel",
+        "description": "A charming hotel with beautiful views and comfortable rooms."
       }
     },
     "day_2": {
-      "date": "2024-05-15",
-      "location": "Mumbai",
+      "date": "2024-05-16",
+      "location": "Nainital",
       "activities": [
         {
-          "name": "Chhatrapati Shivaji Maharaj Terminus (CST)",
-          "description": "Visit the historic railway station, a UNESCO World Heritage Site. Admire the Victorian Gothic architecture.",
-          "type": "historical",
-          "duration": "2-3 hours",
-          "travel_time_to_next_activity": "30 minutes"
-        },
-        {
-          "name": "Dhobi Ghat",
-          "description": "Witness the open-air laundry at Dhobi Ghat, where clothes are washed and dried in a traditional way.",
-          "type": "cultural",
-          "duration": "1-2 hours",
-          "travel_time_to_next_activity": "1 hour"
-        },
-        {
-          "name": "Mani Bhavan Gandhi Museum",
-          "description": "Visit the former residence of Mahatma Gandhi, now a museum showcasing his life and work.",
-          "type": "historical",
+          "name": "Tiffin Top (Dorothy's Seat)",
+          "type": "Outdoor",
+          "description": "Hike or horse ride to Tiffin Top for panoramic views of Nainital and the surrounding hills.",
           "duration": "2-3 hours"
+        },
+        {
+          "name": "Snow View Point",
+          "type": "Outdoor",
+          "description": "Take a cable car to Snow View Point for breathtaking views of the Himalayan peaks.",
+          "duration": "1-2 hours"
+        },
+        {
+          "name": "Nainital Zoo",
+          "type": "Outdoor",
+          "description": "Visit the high altitude zoo to see Himalayan wildlife.",
+          "duration": "2 hours"
         }
       ],
-      "food": {
-        "recommendations": [
-          {
-            "name": "Britannia & Co.",
-            "description": "Enjoy Parsi cuisine at this iconic restaurant. Try the Berry Pulav.",
-            "cuisine": "Parsi",
-            "dietary_preferences": "non-vegetarian"
-          },
-          {
-            "name": "Cafe Madras",
-            "description": "Enjoy South Indian Breakfast",
-            "cuisine": "South Indian",
-            "dietary_preferences": "vegetarian"
-          }
-        ]
-      },
+      "food": [
+        {
+          "name": "Zooby's Kitchen",
+          "type": "Cafe",
+          "description": "Enjoy lunch at this popular cafe."
+        },
+        {
+          "name": "Sakley's Restaurant & Pastry Shop",
+          "type": "Multi-cuisine",
+          "description": "Dine at Sakley's for a romantic dinner."
+        }
+      ],
       "accommodation": {
-        "type": "hotel",
-        "recommendation": "Continue staying at the same hotel or explore other options in the city."
+        "name": "Vikram Vintage Inn",
+        "type": "Hotel",
+        "description": "Continue your stay at Vikram Vintage Inn."
       }
     },
     "day_3": {
-      "date": "2024-05-16",
-      "location": "Lonavala",
+      "date": "2024-05-17",
+      "location": "Kausani",
       "activities": [
         {
-          "name": "Travel from Mumbai to Lonavala",
-          "description": "Take a train or hire a car to Lonavala (approx. 2-3 hours).",
-          "type": "travel",
-          "duration": "2-3 hours"
+          "name": "Transfer to Kausani (approx. 5-6 hours)",
+          "type": "Travel",
+          "description": "Hire a taxi from Nainital to Kausani."
         },
         {
-          "name": "Bhaja Caves",
-          "description": "Explore the ancient Buddhist caves at Bhaja, known for their intricate carvings.",
-          "type": "historical",
-          "duration": "3-4 hours",
-          "travel_time_to_next_activity": "30 minutes"
+          "name": "Check into Hotel and Relax",
+          "type": "Leisure",
+          "description": "Check into your hotel and enjoy the scenic beauty."
         },
         {
-          "name": "Lonavala Lake",
-          "description": "Relax by the serene Lonavala Lake and enjoy the scenic views.",
-          "type": "nature",
-          "duration": "1-2 hours"
+          "name": "Sunset View at View Point",
+          "type": "Outdoor",
+          "description": "Enjoy a romantic sunset view over the Himalayan peaks from a viewpoint in Kausani."
         }
       ],
-      "food": {
-        "recommendations": [
-          {
-            "name": "Local Restaurants in Lonavala",
-            "description": "Try local Maharashtrian cuisine. Misal Pav is a must-try.",
-            "cuisine": "Maharashtrian",
-            "dietary_preferences": "vegetarian"
-          }
-        ]
-      },
+      "food": [
+        {
+          "name": "Garden Restaurant at Kausani Best Inn",
+          "type": "Indian",
+          "description": "Enjoy a delicious dinner with local flavors. Vegetarian options available."
+        }
+      ],
       "accommodation": {
-        "type": "hotel",
-        "recommendation": "Find budget-friendly hotels or guesthouses in Lonavala."
+        "name": "Kausani Best Inn",
+        "type": "Hotel",
+        "description": "Hotel with amazing views."
       }
     },
     "day_4": {
-      "date": "2024-05-17",
-      "location": "Lonavala",
-      "activities": [
-        {
-          "name": "Karla Caves",
-          "description": "Visit the Karla Caves, one of the largest and best-preserved Buddhist cave temples in India.",
-          "type": "historical",
-          "duration": "3-4 hours",
-          "travel_time_to_next_activity": "1 hour"
-        },
-        {
-          "name": "Tiger Point",
-          "description": "Enjoy panoramic views of the surrounding hills and valleys from Tiger Point.",
-          "type": "nature",
-          "duration": "2-3 hours"
-        }
-      ],
-      "food": {
-        "recommendations": [
-          {
-            "name": "Maggi Point near Tiger Point",
-            "description": "Enjoy Maggi and tea with a view.",
-            "cuisine": "Snacks",
-            "dietary_preferences": "vegetarian"
-          }
-        ]
-      },
-      "accommodation": {
-        "type": "hotel",
-        "recommendation": "Continue staying in Lonavala."
-      }
-    },
-    "day_5": {
       "date": "2024-05-18",
-      "location": "Mumbai",
+      "location": "Kausani",
       "activities": [
         {
-          "name": "Travel from Lonavala to Mumbai",
-          "description": "Travel back to Mumbai.",
-          "type": "travel",
-          "duration": "2-3 hours"
+          "name": "Anasakti Ashram",
+          "type": "Spiritual",
+          "description": "Visit the Anasakti Ashram where Mahatma Gandhi stayed for some time."
         },
         {
-          "name": "Shopping at Colaba Causeway",
-          "description": "Shop for souvenirs, clothes, and accessories at Colaba Causeway.",
-          "type": "shopping",
+          "name": "Rudradhari Falls and Caves",
+          "type": "Outdoor",
+          "description": "Trek to Rudradhari Falls and explore the caves. (Moderate trek)",
           "duration": "3-4 hours"
         },
         {
-          "name": "Relax and Depart",
-          "description": "Relax in the evening before departing from Mumbai.",
-          "type": "leisure",
-          "duration": "Flexible"
+          "name": "Tea Garden Visit",
+          "type": "Outdoor",
+          "description": "Visit the Kausani Tea Estate and enjoy a tea tasting session."
         }
       ],
-      "food": {
-        "recommendations": [
-          {
-            "name": "Leopold Cafe",
-            "description": "Enjoy a meal at this iconic cafe.",
-            "cuisine": "Multi-cuisine",
-            "dietary_preferences": "available"
-          }
-        ]
-      },
+      "food": [
+        {
+          "name": "Restaurant at your hotel",
+          "type": "Multi-cuisine",
+          "description": "Enjoy a relaxing dinner at your hotel."
+        }
+      ],
       "accommodation": {
-        "type": "n/a",
-        "recommendation": "N/A"
+        "name": "Kausani Best Inn",
+        "type": "Hotel",
+        "description": "Continue your stay"
       }
+    },
+    "day_5": {
+      "date": "2024-05-19",
+      "location": "Mukteshwar",
+      "activities": [
+        {
+          "name": "Transfer to Mukteshwar (approx. 4-5 hours)",
+          "type": "Travel",
+          "description": "Hire a taxi from Kausani to Mukteshwar."
+        },
+        {
+          "name": "Check into Hotel and Relax",
+          "type": "Leisure",
+          "description": "Check into your hotel and enjoy the serene atmosphere."
+        },
+        {
+          "name": "Mukteshwar Temple",
+          "type": "Religious",
+          "description": "Visit the Mukteshwar Temple dedicated to Lord Shiva. Enjoy panoramic views from here."
+        }
+      ],
+      "food": [
+        {
+          "name": "Chirping Tales Cafe",
+          "type": "Cafe",
+          "description": "Enjoy lunch at this scenic cafe."
+        },
+        {
+          "name": "The Birdcage",
+          "type": "Multi-cuisine",
+          "description": "Have dinner at The Birdcage"
+        }
+      ],
+      "accommodation": {
+        "name": "The Swiss Village",
+        "type": "Resort",
+        "description": "A charming resort with breathtaking views and comfortable stay."
+      }
+    },
+    "day_6": {
+      "date": "2024-05-20",
+      "location": "Mukteshwar",
+      "activities": [
+        {
+          "name": "Chauli ki Jali",
+          "type": "Adventure",
+          "description": "Visit Chauli ki Jali, a cliff famous for rock climbing and rappelling (optional adventure activity).",
+          "duration": "2-3 hours"
+        },
+        {
+          "name": "Bhalu Gaad Waterfalls",
+          "type": "Outdoor",
+          "description": "Hike to Bhalu Gaad Waterfalls for a refreshing experience. (Moderate trek)",
+          "duration": "3-4 hours"
+        },
+        {
+          "name": "Sunset at viewpoint",
+          "type": "Outdoor",
+          "description": "Enjoy a romantic sunset view."
+        }
+      ],
+      "food": [
+        {
+          "name": "Nathukhan Market",
+          "type": "Local",
+          "description": "Explore the local market and enjoy street food."
+        },
+        {
+          "name": "Dining at The Swiss Village",
+          "type": "Multi-cuisine",
+          "description": "Enjoy a romantic dinner at your resort."
+        }
+      ],
+      "accommodation": {
+        "name": "The Swiss Village",
+        "type": "Resort",
+        "description": "Continue your stay at The Swiss Village."
+      }
+    },
+    "day_7": {
+      "date": "2024-05-21",
+      "location": "Departure",
+      "activities": [
+        {
+          "name": "Transfer to Kathgodam (approx. 3-4 hours)",
+          "type": "Travel",
+          "description": "Hire a taxi from Mukteshwar to Kathgodam railway station for your departure."
+        }
+      ],
+      "food": [],
+      "accommodation": {}
     }
   },
-  "weather_suggestion": "May in Maharashtra is generally hot. Pack light cotton clothes and stay hydrated. Given the heat, consider visiting attractions during the cooler parts of the day (early morning or late afternoon).",
-  "local_events": "Check local listings for any events or festivals happening during your travel dates."
+  "weather_suggestion": "The weather in Uttarakhand in May is generally pleasant. Expect sunny days, but pack light woolens for evenings as the temperature may drop. Consider carrying rain gear as occasional showers are possible, especially in the hills. It's best to check the specific forecast closer to your travel dates.",
+  "budget_considerations": "This itinerary is designed to be within your budget of INR 100,000. Accommodation is estimated at INR 3000-5000 per night. Travel between locations is estimated at INR 2000-3000 per day. Food expenses can be adjusted based on your dining preferences. Activities are generally budget-friendly.",
+  "local_events": "There are no major festivals typically during this time. However, local temple fairs might be happening. Inquire locally upon arrival."
 }

@@ -1,61 +1,107 @@
 {
   "accommodations": [],
-  "restaurants": [],
+  "restaurants": [
+    {
+      "name": "Machan Restaurant",
+      "latitude": -36.8828302,
+      "longitude": 174.7618128
+    },
+    {
+      "name": "Zooby's Kitchen",
+      "latitude": 28.5442751,
+      "longitude": 77.3047337
+    },
+    {
+      "name": "Garden Restaurant at Kausani Best Inn",
+      "latitude": 29.85276309999999,
+      "longitude": 79.5959409
+    },
+    {
+      "name": "Chirping Tales Cafe",
+      "latitude": 29.4501661,
+      "longitude": 79.6545912
+    },
+    {
+      "name": "Nathukhan Market",
+      "latitude": 29.47201119999999,
+      "longitude": 79.6116069
+    },
+    {
+      "name": "Dining at The Swiss Village",
+      "latitude": 29.430684,
+      "longitude": 79.5943221
+    }
+  ],
   "attractions": [
     {
-      "name": "Gateway of India",
-      "latitude": 18.9219841,
-      "longitude": 72.8346543
+      "name": "Arrival in Kathgodam and transfer to Nainital (approx. 2 hours)",
+      "latitude": 29.2693264,
+      "longitude": 79.54411979999999
     },
     {
-      "name": "Elephanta Caves",
-      "latitude": 18.9633474,
-      "longitude": 72.9314864
+      "name": "Naini Lake Boat Ride",
+      "latitude": 29.3868622,
+      "longitude": 79.459841
     },
     {
-      "name": "Chhatrapati Shivaji Maharaj Terminus (CST)",
-      "latitude": 18.9398446,
-      "longitude": 72.8354475
+      "name": "Naina Devi Temple",
+      "latitude": 31.3064166,
+      "longitude": 76.53581729999999
     },
     {
-      "name": "Mani Bhavan Gandhi Museum",
-      "latitude": 18.9598453,
-      "longitude": 72.8115152
+      "name": "Tiffin Top (Dorothy's Seat)",
+      "latitude": 29.3836288,
+      "longitude": 79.45056079999999
     },
     {
-      "name": "Travel from Mumbai to Lonavala",
-      "latitude": 18.7557237,
-      "longitude": 73.4090757
+      "name": "Snow View Point",
+      "latitude": 29.3949263,
+      "longitude": 79.4614672
     },
     {
-      "name": "Bhaja Caves",
-      "latitude": 18.7283929,
-      "longitude": 73.4815457
+      "name": "Nainital Zoo",
+      "latitude": 29.3807621,
+      "longitude": 79.4686432
     },
     {
-      "name": "Lonavala Lake",
-      "latitude": 18.7417874,
-      "longitude": 73.3996038
+      "name": "Transfer to Kausani (approx. 5-6 hours)",
+      "latitude": 29.8445269,
+      "longitude": 79.6038842
     },
     {
-      "name": "Karla Caves",
-      "latitude": 18.7832762,
-      "longitude": 73.4704426
+      "name": "Anasakti Ashram",
+      "latitude": 29.8441997,
+      "longitude": 79.6013043
     },
     {
-      "name": "Tiger Point",
-      "latitude": 30.37833,
-      "longitude": -87.05556
+      "name": "Rudradhari Falls and Caves",
+      "latitude": 29.8495143,
+      "longitude": 79.5559861
     },
     {
-      "name": "Travel from Lonavala to Mumbai",
-      "latitude": 18.7557237,
-      "longitude": 73.4090757
+      "name": "Transfer to Mukteshwar (approx. 4-5 hours)",
+      "latitude": 29.4604149,
+      "longitude": 79.6558242
     },
     {
-      "name": "Shopping at Colaba Causeway",
-      "latitude": 18.9246447,
-      "longitude": 72.8321315
+      "name": "Mukteshwar Temple",
+      "latitude": 20.2427055,
+      "longitude": 85.8404499
+    },
+    {
+      "name": "Chauli ki Jali",
+      "latitude": 29.474749,
+      "longitude": 79.6426637
+    },
+    {
+      "name": "Bhalu Gaad Waterfalls",
+      "latitude": 29.4072135,
+      "longitude": 79.6334918
+    },
+    {
+      "name": "Transfer to Kathgodam (approx. 3-4 hours)",
+      "latitude": 29.2693264,
+      "longitude": 79.54411979999999
     }
   ]
 }
